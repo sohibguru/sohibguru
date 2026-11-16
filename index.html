@@ -912,14 +912,14 @@ tailwind.config = {
   </div>
 </div>
 
-<!-- MODAL / HALAMAN LOGIN & DAFTAR AKUN PENDIDIK (GOOGLE & EMAIL) -->
+<!-- MODAL / HALAMAN LOGIN & DAFTAR AKUN PENDIDIK -->
 <div id="auth-modal" class="noprint fixed inset-0 z-50 hidden items-center justify-center p-4 bg-slate-900/60 backdrop-blur-sm" role="dialog" aria-modal="true" aria-labelledby="auth-modal-title">
-  <div class="bg-white border border-slate-200/90 rounded-3xl max-w-lg w-full shadow-2xl overflow-hidden max-h-[94vh] flex flex-col">
+  <div class="bg-white border border-slate-200/90 rounded-3xl max-w-md w-full shadow-2xl overflow-hidden max-h-[94vh] flex flex-col">
     <!-- Header -->
     <div class="hero-mesh px-6 py-5 border-b border-slate-100 flex items-center justify-between gap-3 shrink-0">
       <div>
         <span class="text-[11px] font-extrabold uppercase tracking-wider text-brand-700 block">Portal Pendidik Indonesia · SohibGuru</span>
-        <h3 id="auth-modal-title" class="text-base sm:text-lg font-extrabold text-slate-900 mt-0.5">Masuk atau Daftar Akun Guru</h3>
+        <h3 id="auth-modal-title" class="text-base sm:text-lg font-extrabold text-slate-900 mt-0.5">Masuk ke Akun SohibGuru</h3>
       </div>
       <button type="button" id="close-auth-x" aria-label="Tutup dialog" class="hidden w-8 h-8 rounded-full bg-white/90 hover:bg-slate-100 border border-slate-200 text-slate-500 hover:text-slate-800 flex items-center justify-center font-bold text-sm transition cursor-pointer shrink-0">✕</button>
     </div>
@@ -927,119 +927,66 @@ tailwind.config = {
     <!-- Body -->
     <div class="px-6 py-5 overflow-y-auto space-y-4 text-xs sm:text-sm text-slate-600">
       <div id="auth-gate-notice" class="p-3 rounded-2xl bg-brand-50/80 border border-brand-100 text-xs text-slate-700 leading-relaxed">
-        🔒 <strong>Akses Khusus Akun Terdaftar:</strong> Silakan masuk atau daftar menggunakan <strong>Akun Google</strong> maupun <strong>Email</strong> Anda. Draf dokumen dan API Key Gemini pribadi tersimpan aman per akun.
+        🔒 Sudah punya akun? Langsung pilih <strong>Masuk</strong>. Jika belum memiliki akun, silakan pilih <strong>Daftar Akun</strong> terlebih dahulu.
       </div>
 
-      <!-- Tombol Masuk / Daftar dengan Google -->
-      <div id="google-auth-box">
-        <button type="button" id="btn-google-signin" class="w-full py-2.5 px-4 rounded-2xl bg-white hover:bg-slate-50 border-2 border-slate-200 hover:border-brand-300 text-slate-800 font-bold text-xs sm:text-sm shadow-2xs transition flex items-center justify-center gap-2.5 cursor-pointer">
-          <svg class="w-5 h-5 shrink-0" viewBox="0 0 24 24" aria-hidden="true">
-            <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.665-5.17 3.665-9.17Z"/>
-            <path fill="#34A853" d="M12 24c3.3 0 6.08-1.09 8.1-2.96l-3.88-3.05c-1.1.74-2.51 1.18-4.22 1.18-3.25 0-6-2.19-6.98-5.14H1.01v3.14C3.05 21.2 7.24 24 12 24Z"/>
-            <path fill="#FBBC05" d="M5.02 14.03c-.25-.74-.39-1.54-.39-2.36 0-.82.14-1.62.39-2.36V6.17H1.01C.37 7.45 0 8.89 0 10.42s.37 2.97 1.01 4.25l4.01-3.14Z"/>
-            <path fill="#EA4335" d="M12 4.75c1.79 0 3.41.62 4.68 1.82l3.51-3.51C18.07 1.19 15.3 0 12 0 7.24 0 3.05 2.8 1.01 6.83l4.01 3.14c.98-2.95 3.73-5.22 6.98-5.22Z"/>
-          </svg>
-          <span>Lanjutkan dengan Akun Google</span>
-        </button>
-
-        <!-- Form Konfirmasi Simulasi Google Sign-In (Saat dibuka di browser tanpa popup OAuth eksternal) -->
-        <div id="google-chooser-panel" class="hidden mt-3 p-3.5 rounded-2xl bg-skysoft-50/80 border border-skysoft-100 space-y-2.5">
-          <div class="flex items-center justify-between">
-            <span class="text-xs font-extrabold text-slate-800">Pilih / Masukkan Akun Google Anda</span>
-            <button type="button" id="cancel-google-chooser" class="text-[11px] font-bold text-slate-500 hover:text-slate-800 cursor-pointer">Batal</button>
-          </div>
-          <div>
-            <label for="g-email" class="block text-[11px] font-bold text-slate-700 mb-1">Alamat Gmail / Akun Belajar.id</label>
-            <input id="g-email" type="email" class="sg-input text-xs" placeholder="nama.guru@gmail.com atau @guru.belajar.id">
-          </div>
-          <div>
-            <label for="g-name" class="block text-[11px] font-bold text-slate-700 mb-1">Nama Lengkap &amp; Gelar</label>
-            <input id="g-name" class="sg-input text-xs" placeholder="Contoh: Siti Aminah, S.Pd.">
-          </div>
-          <button type="button" id="confirm-google-btn" class="w-full py-2 px-4 rounded-xl bg-brand-600 hover:bg-brand-700 text-white text-xs font-bold shadow-xs transition cursor-pointer">
-            Masuk dengan Akun Google Ini
-          </button>
-        </div>
-      </div>
-
-      <!-- Divider -->
-      <div id="auth-divider" class="relative flex items-center py-0.5">
-        <div class="flex-grow border-t border-slate-200"></div>
-        <span class="shrink mx-3 text-[11px] font-bold uppercase tracking-wider text-slate-400">atau gunakan email</span>
-        <div class="flex-grow border-t border-slate-200"></div>
-      </div>
-
-      <!-- Mode Switcher: Masuk Email vs Daftar Akun Baru -->
+      <!-- Pilihan Tab: Masuk vs Daftar Akun -->
       <div id="email-auth-tabs" class="grid grid-cols-2 gap-1.5 p-1 rounded-2xl bg-slate-100">
         <button type="button" id="tab-login-email" class="py-2 rounded-xl text-xs font-extrabold bg-white text-brand-700 shadow-2xs transition cursor-pointer">
-          Masuk dengan Email
+          Masuk
         </button>
         <button type="button" id="tab-register-email" class="py-2 rounded-xl text-xs font-bold text-slate-600 hover:text-slate-900 transition cursor-pointer">
-          Daftar Akun Baru
+          Daftar Akun
         </button>
       </div>
 
-      <!-- Form Email & Password -->
+      <!-- Form Email, Kata Sandi & API Key Gemini di bawahnya -->
       <div id="email-auth-form" class="space-y-3">
-        <div id="reg-extra-fields" class="hidden space-y-3">
-          <div>
-            <label for="auth-nama" class="block text-xs font-bold text-slate-700 mb-1">Nama Lengkap &amp; Gelar Guru <span class="text-rose-500">*</span></label>
-            <input id="auth-nama" class="sg-input text-xs" placeholder="Contoh: Siti Aminah, S.Pd.">
-          </div>
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-            <div>
-              <label for="auth-nip" class="block text-xs font-bold text-slate-700 mb-1">NIP / NUPTK / NIM</label>
-              <input id="auth-nip" class="sg-input text-xs" placeholder="Nomor induk (opsional)">
-            </div>
-            <div>
-              <label for="auth-sekolah" class="block text-xs font-bold text-slate-700 mb-1">Sekolah / Madrasah</label>
-              <input id="auth-sekolah" class="sg-input text-xs" placeholder="Contoh: SMAN 1 Cilegon">
-            </div>
-          </div>
-        </div>
-
         <div>
-          <label for="auth-email" class="block text-xs font-bold text-slate-700 mb-1">Alamat Email <span class="text-rose-500">*</span></label>
+          <label for="auth-email" class="block text-xs font-bold text-slate-700 mb-1">Email <span class="text-rose-500">*</span></label>
           <input id="auth-email" type="email" class="sg-input text-xs" placeholder="guru@email.com">
         </div>
 
         <div>
           <label for="auth-pass" class="block text-xs font-bold text-slate-700 mb-1">Kata Sandi <span class="text-rose-500">*</span></label>
           <div class="relative">
-            <input id="auth-pass" type="password" class="sg-input text-xs pr-20" placeholder="Minimal 6 karakter">
+            <input id="auth-pass" type="password" class="sg-input text-xs pr-20" placeholder="Masukkan kata sandi">
             <button type="button" id="toggle-pass-vis" class="absolute right-2.5 top-1/2 -translate-y-1/2 text-[11px] font-bold text-slate-500 hover:text-slate-800 px-2 py-1 rounded-lg bg-slate-100 cursor-pointer">
               Lihat
             </button>
           </div>
         </div>
+
+        <!-- Kolom API Key Gemini Pribadi (Selalu tampil di bawah form Masuk maupun Daftar Akun) -->
+        <div id="apikey-field-box" class="p-3.5 rounded-2xl bg-brand-50/70 border border-brand-100 space-y-2">
+          <div class="flex items-center justify-between gap-2 flex-wrap">
+            <label for="auth-apikey" class="text-xs font-extrabold text-slate-900 flex items-center gap-1">
+              <span>🔑 API Key Gemini Pribadi</span>
+            </label>
+            <a href="https://aistudio.google.com/apikey" target="_blank" rel="noopener" class="text-[11px] font-bold text-brand-700 hover:underline">
+              Ambil Gratis ↗
+            </a>
+          </div>
+          <div class="relative">
+            <input id="auth-apikey" type="password" class="sg-input text-xs pr-20 font-mono" placeholder="Tempel kode AIzaSy... milik Anda di sini">
+            <button type="button" id="toggle-key-vis" class="absolute right-2.5 top-1/2 -translate-y-1/2 text-[11px] font-bold text-slate-500 hover:text-slate-800 px-2 py-1 rounded-lg bg-slate-100 cursor-pointer">
+              Lihat
+            </button>
+          </div>
+          <p id="apikey-hint-text" class="text-[11px] text-slate-600 leading-snug">
+            Otomatis terisi jika sudah tersimpan di akun Anda, atau tempel kode baru untuk memperbarui.
+          </p>
+          <details class="text-[11px] text-slate-600">
+            <summary class="font-bold text-brand-700 cursor-pointer select-none">Cara ambil API Key Gemini gratis (30 detik)</summary>
+            <ol class="list-decimal pl-4 mt-1.5 space-y-1 text-slate-600">
+              <li>Buka <a href="https://aistudio.google.com/apikey" target="_blank" rel="noopener" class="underline font-semibold text-brand-600">aistudio.google.com/apikey</a> dan masuk dengan akun Google Anda.</li>
+              <li>Klik <strong>“Create API key”</strong> lalu salin kode <code class="bg-white px-1 py-0.5 rounded border border-slate-200">AIzaSy...</code>.</li>
+              <li>Tempel kode tersebut di atas agar kuota AI memakai akun Anda sendiri.</li>
+            </ol>
+          </details>
+        </div>
       </div>
 
-      <!-- API Key Gemini Pribadi -->
-      <div class="p-4 rounded-2xl bg-brand-50/60 border border-brand-100 space-y-2.5">
-        <div class="flex items-center justify-between gap-2 flex-wrap">
-          <label for="auth-apikey" class="text-xs font-extrabold text-slate-900 flex items-center gap-1.5">
-            <span>🔑 API Key Google Gemini Pribadi (Gratis)</span>
-          </label>
-          <a href="https://aistudio.google.com/apikey" target="_blank" rel="noopener" class="text-[11px] font-bold text-brand-700 hover:underline">
-            Ambil API Key Gratis ↗
-          </a>
-        </div>
-        <div class="relative">
-          <input id="auth-apikey" type="password" class="sg-input text-xs pr-20 font-mono" placeholder="Tempel kode AIzaSy... milik Anda di sini (opsional saat daftar)">
-          <button type="button" id="toggle-key-vis" class="absolute right-2.5 top-1/2 -translate-y-1/2 text-[11px] font-bold text-slate-500 hover:text-slate-800 px-2 py-1 rounded-lg bg-slate-100 cursor-pointer">
-            Lihat
-          </button>
-        </div>
-        <details class="text-[11px] text-slate-600">
-          <summary class="font-bold text-brand-700 cursor-pointer select-none">Cara mendapatkan API Key Gemini gratis (30 detik)</summary>
-          <ol class="list-decimal pl-4 mt-1.5 space-y-1 text-slate-600">
-            <li>Buka <a href="https://aistudio.google.com/apikey" target="_blank" rel="noopener" class="underline font-semibold text-brand-600">aistudio.google.com/apikey</a> dan masuk dengan akun Google Anda.</li>
-            <li>Klik tombol biru <strong>“Create API key”</strong>.</li>
-            <li>Salin kode yang diawali huruf <code class="bg-white px-1 py-0.5 rounded border border-slate-200">AIzaSy...</code> lalu tempel di kotak di atas.</li>
-            <li>Setiap guru menggunakan kuota AI gratis miliknya sendiri tanpa membebani akun pembuat website.</li>
-          </ol>
-        </details>
-      </div>
       <div id="auth-status" class="text-xs font-semibold text-rose-600 min-h-[1rem]" role="status"></div>
     </div>
 
@@ -1053,7 +1000,7 @@ tailwind.config = {
           Batal
         </button>
         <button type="button" id="auth-submit-btn" class="px-5 py-2.5 rounded-2xl bg-brand-600 hover:bg-brand-700 text-white text-xs sm:text-sm font-bold shadow-xs transition cursor-pointer">
-          Masuk ke Workspace
+          Masuk
         </button>
       </div>
     </div>
@@ -1094,15 +1041,60 @@ const ENV_API_KEY = ""; // Kosong agar publik memakai API Key Gemini pribadi mas
 const USERS_KEY = "sohibguru-accounts-v1";
 const SESSION_KEY = "sohibguru-session-email";
 
+// Penyimpanan tahan banting (localStorage + sessionStorage + window.name fallback)
+const MEM_STORE = {};
+function readStore(key) {
+  try {
+    const v = localStorage.getItem(key);
+    if (v !== null) return v;
+  } catch (e) {}
+  try {
+    const v = sessionStorage.getItem(key);
+    if (v !== null) return v;
+  } catch (e) {}
+  try {
+    if (window.name && window.name.startsWith("SG_STORE:")) {
+      const parsed = JSON.parse(window.name.slice(9));
+      if (parsed && key in parsed) return parsed[key];
+    }
+  } catch (e) {}
+  return key in MEM_STORE ? MEM_STORE[key] : null;
+}
+function writeStore(key, val) {
+  MEM_STORE[key] = val;
+  try { localStorage.setItem(key, val); } catch (e) {}
+  try { sessionStorage.setItem(key, val); } catch (e) {}
+  try {
+    let parsed = {};
+    if (window.name && window.name.startsWith("SG_STORE:")) {
+      parsed = JSON.parse(window.name.slice(9)) || {};
+    }
+    parsed[key] = val;
+    window.name = "SG_STORE:" + JSON.stringify(parsed);
+  } catch (e) {}
+}
+function removeStore(key) {
+  delete MEM_STORE[key];
+  try { localStorage.removeItem(key); } catch (e) {}
+  try { sessionStorage.removeItem(key); } catch (e) {}
+  try {
+    if (window.name && window.name.startsWith("SG_STORE:")) {
+      const parsed = JSON.parse(window.name.slice(9)) || {};
+      delete parsed[key];
+      window.name = "SG_STORE:" + JSON.stringify(parsed);
+    }
+  } catch (e) {}
+}
+
 function getUsersDB() {
-  try { return JSON.parse(localStorage.getItem(USERS_KEY) || "{}"); } catch (e) { return {}; }
+  try { return JSON.parse(readStore(USERS_KEY) || "{}"); } catch (e) { return {}; }
 }
 function saveUsersDB(db) {
-  try { localStorage.setItem(USERS_KEY, JSON.stringify(db)); } catch (e) {}
+  writeStore(USERS_KEY, JSON.stringify(db));
 }
 function getCurrentUser() {
   try {
-    const email = (localStorage.getItem(SESSION_KEY) || "").trim().toLowerCase();
+    const email = (readStore(SESSION_KEY) || "").trim().toLowerCase();
     if (!email) return null;
     const db = getUsersDB();
     return db[email] || null;
@@ -1210,12 +1202,12 @@ function getDraftStorageKey() {
   return user ? `sohibguru-draft-${user.email}` : "sohibguru-v2";
 }
 function loadDraftForCurrentUser() {
-  try { D = JSON.parse(localStorage.getItem(getDraftStorageKey()) || "{}"); } catch (e) { D = {}; }
+  try { D = JSON.parse(readStore(getDraftStorageKey()) || "{}"); } catch (e) { D = {}; }
   if (!g("kota")) put("kota", "Cilegon, 16 November 2026");
   if (!g("ta")) put("ta", "2026/2027");
 }
 function save() {
-  try { localStorage.setItem(getDraftStorageKey(), JSON.stringify(D)); } catch (e) {}
+  writeStore(getDraftStorageKey(), JSON.stringify(D));
 }
 
 function g(k) {
@@ -2087,6 +2079,8 @@ if (introModal) {
 // ==========================================
 // 10. SISTEM AKUN PENDIDIK (GOOGLE / EMAIL) & API KEY MANDIRI
 // ==========================================
+// 10. SISTEM AKUN PENDIDIK (MASUK & DAFTAR AKUN)
+// ==========================================
 const authModal = $("auth-modal");
 let authMode = "login"; // "login" | "register" | "profile"
 
@@ -2096,27 +2090,32 @@ function setAuthMode(mode) {
   const isProfile = mode === "profile";
   const user = getCurrentUser();
 
+  $("auth-status").className = "text-xs font-semibold text-rose-600 min-h-[1rem]";
   $("auth-status").textContent = "";
-  $("google-auth-box").classList.toggle("hidden", isProfile);
-  $("auth-divider").classList.toggle("hidden", isProfile);
   $("email-auth-tabs").classList.toggle("hidden", isProfile);
-  $("reg-extra-fields").classList.toggle("hidden", !isReg && !isProfile);
+  $("apikey-field-box").classList.remove("hidden");
 
-  // Email & password fields hidden in profile edit mode if logged in via Google
   const emailWrap = $("auth-email").parentElement;
   const passWrap = $("auth-pass").parentElement.parentElement;
+
   if (isProfile) {
     emailWrap.classList.add("hidden");
     passWrap.classList.add("hidden");
-    $("auth-modal-title").textContent = "Pengaturan Profil & API Key Gemini";
-    $("auth-gate-notice").innerHTML = `👩‍🏫 Masuk sebagai <strong>${esc(user?.nama || "")}</strong> (${esc(user?.email || "")}). Perbarui identitas atau tempel API Key Gemini pribadi Anda di bawah ini.`;
-    $("auth-submit-btn").textContent = "Simpan Perubahan";
+    $("auth-modal-title").textContent = "Pengaturan API Key Gemini";
+    $("auth-gate-notice").innerHTML = `👩‍🏫 Masuk dengan akun <strong>${esc(user?.email || "")}</strong>. Anda dapat melihat atau memperbarui API Key Gemini pribadi di bawah ini.`;
+    $("apikey-hint-text").textContent = "API Key ini tersimpan pada akun Anda untuk menjalankan fitur AI & Generate Gambar.";
+    $("auth-submit-btn").textContent = "Simpan API Key";
   } else {
     emailWrap.classList.remove("hidden");
     passWrap.classList.remove("hidden");
-    $("auth-modal-title").textContent = isReg ? "Daftar Akun Pendidik Baru" : "Masuk ke Akun SohibGuru";
-    $("auth-gate-notice").innerHTML = "🔒 <strong>Wajib Memiliki Akun:</strong> Masuk atau daftar menggunakan <strong>Akun Google</strong> maupun <strong>Email</strong> Anda. Draf dokumen dan API Key Gemini tersimpan khusus untuk akun Anda.";
-    $("auth-submit-btn").textContent = isReg ? "Daftar & Masuk" : "Masuk ke Workspace";
+    $("auth-modal-title").textContent = isReg ? "Daftar Akun Baru" : "Masuk ke Akun SohibGuru";
+    $("auth-gate-notice").innerHTML = isReg
+      ? "📝 Belum punya akun? Daftarkan <strong>Email</strong>, <strong>Kata Sandi</strong>, dan <strong>API Key Gemini</strong> Anda. Jika sudah pernah daftar, cukup pilih tab <strong>Masuk</strong>."
+      : "🔒 Sudah punya akun? Langsung masukkan <strong>Email</strong> dan <strong>Kata Sandi</strong> Anda untuk masuk (tidak perlu daftar ulang).";
+    $("apikey-hint-text").textContent = isReg
+      ? "Simpan API Key Gemini gratis Anda sekalian saat mendaftar agar siap digunakan."
+      : "Jika sebelumnya sudah disimpan saat daftar, kolom ini boleh dikosongkan (otomatis memakai API Key akun Anda).";
+    $("auth-submit-btn").textContent = isReg ? "Daftar Akun" : "Masuk";
   }
 
   $("tab-login-email").className = !isReg
@@ -2126,7 +2125,6 @@ function setAuthMode(mode) {
     ? "py-2 rounded-xl text-xs font-extrabold bg-white text-brand-700 shadow-2xs transition cursor-pointer"
     : "py-2 rounded-xl text-xs font-bold text-slate-600 hover:text-slate-900 transition cursor-pointer";
 
-  // Show close/cancel/logout controls only when a user is already logged in
   $("close-auth-x").classList.toggle("hidden", !user);
   $("auth-cancel-btn").classList.toggle("hidden", !user);
   $("auth-logout-btn").classList.toggle("hidden", !user);
@@ -2142,19 +2140,19 @@ function syncAuthUI() {
   const accBar = $("user-account-bar");
 
   if (user) {
-    const shortName = (user.nama || user.email).split(",")[0].split(" ").slice(0, 2).join(" ");
-    labelEl.textContent = shortName;
+    const emailPrefix = user.email.split("@")[0];
+    labelEl.textContent = emailPrefix;
     iconEl.textContent = "👩‍🏫";
 
     if (accBar) {
       accBar.classList.remove("hidden");
-      $("acc-avatar").textContent = (user.nama || user.email).charAt(0).toUpperCase();
-      $("acc-display-name").textContent = user.nama || "Pendidik SohibGuru";
-      $("acc-display-email").textContent = user.email + (user.sekolah ? ` · ${user.sekolah}` : "");
-      $("acc-provider-badge").textContent = user.provider === "google" ? "Akun Google" : "Akun Email";
+      $("acc-avatar").textContent = emailPrefix.charAt(0).toUpperCase();
+      $("acc-display-name").textContent = emailPrefix;
+      $("acc-display-email").textContent = user.email;
+      $("acc-provider-badge").textContent = key ? "API Key Aktif" : "Akun Terdaftar";
     }
   } else {
-    labelEl.textContent = "Masuk / Daftar Akun";
+    labelEl.textContent = "Masuk / Daftar";
     iconEl.textContent = "🔐";
     if (accBar) accBar.classList.add("hidden");
   }
@@ -2165,7 +2163,7 @@ function syncAuthUI() {
       remText.textContent = "✅ API Key Gemini pribadi aktif — siap menyusun perangkat & gambar ilustrasi.";
     } else {
       remBar.className = "px-3 py-2 rounded-xl bg-amber-50/90 border border-amber-200/80 flex items-center justify-between gap-2 text-[11px] text-amber-900";
-      remText.textContent = "🔑 Pakai AI Anda sendiri: tempel API Key Gemini gratis di profil akun untuk mengaktifkan fitur susun langsung.";
+      remText.textContent = "🔑 API Key Gemini belum diisi. Klik untuk menambahkan kunci gratis Anda.";
     }
   }
 }
@@ -2177,42 +2175,33 @@ function openAuthModal(preferredMode) {
   setAuthMode(mode);
 
   if (user) {
-    $("auth-nama").value = user.nama || g("guru");
-    $("auth-nip").value = user.nip || g("nip");
-    $("auth-sekolah").value = user.sekolah || g("sekolah");
     $("auth-apikey").value = user.apiKey || "";
   } else {
-    $("auth-nama").value = "";
-    $("auth-nip").value = "";
-    $("auth-sekolah").value = "";
     $("auth-email").value = "";
     $("auth-pass").value = "";
     $("auth-apikey").value = "";
   }
 
-  $("google-chooser-panel").classList.add("hidden");
   authModal.classList.remove("hidden");
   authModal.classList.add("flex");
 }
 
 function closeAuthModal() {
-  if (!getCurrentUser()) return; // Wajib masuk akun terlebih dahulu
+  if (!getCurrentUser()) return;
   if (!authModal) return;
   authModal.classList.add("hidden");
   authModal.classList.remove("flex");
 }
 
 function completeUserLogin(accountObj, welcomeMsg) {
+  const normalizedEmail = (accountObj.email || "").trim().toLowerCase();
+  accountObj.email = normalizedEmail;
   const db = getUsersDB();
-  db[accountObj.email] = accountObj;
+  db[normalizedEmail] = accountObj;
   saveUsersDB(db);
-  try { localStorage.setItem(SESSION_KEY, accountObj.email); } catch (e) {}
+  writeStore(SESSION_KEY, normalizedEmail);
 
   loadDraftForCurrentUser();
-  if (accountObj.nama) put("guru", accountObj.nama);
-  if (accountObj.nip) put("nip", accountObj.nip);
-  if (accountObj.sekolah) put("sekolah", accountObj.sekolah);
-
   load();
   syncAuthUI();
   closeAuthModal();
@@ -2228,57 +2217,44 @@ if ($("auth-cancel-btn")) $("auth-cancel-btn").onclick = closeAuthModal;
 if ($("tab-login-email")) $("tab-login-email").onclick = () => setAuthMode("login");
 if ($("tab-register-email")) $("tab-register-email").onclick = () => setAuthMode("register");
 
-if ($("btn-google-signin")) {
-  $("btn-google-signin").onclick = () => {
-    $("google-chooser-panel").classList.remove("hidden");
-    $("g-email").focus();
-  };
-}
-if ($("cancel-google-chooser")) {
-  $("cancel-google-chooser").onclick = () => {
-    $("google-chooser-panel").classList.add("hidden");
-  };
-}
-if ($("confirm-google-btn")) {
-  $("confirm-google-btn").onclick = () => {
-    const email = $("g-email").value.trim().toLowerCase();
-    const namaInput = $("g-name").value.trim();
-    const keyInput = $("auth-apikey").value.trim();
-    if (!email || !email.includes("@")) {
-      $("auth-status").className = "text-xs font-semibold text-rose-600 min-h-[1rem]";
-      $("auth-status").textContent = "Masukkan alamat akun Google / Belajar.id yang valid.";
-      return;
+// Otomatis isi kolom API Key jika email sudah terdaftar saat mengetik di tab Masuk
+if ($("auth-email")) {
+  $("auth-email").addEventListener("input", () => {
+    if (authMode !== "login") return;
+    const em = $("auth-email").value.trim().toLowerCase();
+    const existing = getUsersDB()[em];
+    if (existing && existing.apiKey && !$("auth-apikey").value.trim()) {
+      $("auth-apikey").value = existing.apiKey;
     }
-    const db = getUsersDB();
-    const existing = db[email] || {};
-    const inferredName = namaInput || existing.nama || email.split("@")[0].replace(/[._]/g, " ").replace(/\b\w/g, c => c.toUpperCase());
-    const acc = {
-      email,
-      provider: "google",
-      nama: inferredName,
-      nip: existing.nip || "",
-      sekolah: existing.sekolah || "",
-      apiKey: keyInput || existing.apiKey || ""
-    };
-    completeUserLogin(acc, `Selamat datang, ${acc.nama}! Masuk via Akun Google berhasil.`);
-  };
+  });
 }
+
+["auth-email", "auth-pass", "auth-apikey"].forEach(id => {
+  if ($(id)) {
+    $(id).addEventListener("keydown", e => {
+      if (e.key === "Enter") {
+        e.preventDefault();
+        $("auth-submit-btn").click();
+      }
+    });
+  }
+});
 
 if ($("toggle-pass-vis")) {
   $("toggle-pass-vis").onclick = () => {
     const inp = $("auth-pass");
-    const isPass = inp.type === "password";
-    inp.type = isPass ? "text" : "password";
-    $("toggle-pass-vis").textContent = isPass ? "Sembunyikan" : "Lihat";
+    const isHidden = inp.type === "password";
+    inp.type = isHidden ? "text" : "password";
+    $("toggle-pass-vis").textContent = isHidden ? "Sembunyi" : "Lihat";
   };
 }
 
 if ($("toggle-key-vis")) {
   $("toggle-key-vis").onclick = () => {
     const inp = $("auth-apikey");
-    const isPass = inp.type === "password";
-    inp.type = isPass ? "text" : "password";
-    $("toggle-key-vis").textContent = isPass ? "Sembunyikan" : "Lihat";
+    const isHidden = inp.type === "password";
+    inp.type = isHidden ? "text" : "password";
+    $("toggle-key-vis").textContent = isHidden ? "Sembunyi" : "Lihat";
   };
 }
 
@@ -2286,16 +2262,16 @@ if ($("auth-submit-btn")) {
   $("auth-submit-btn").onclick = () => {
     const st = $("auth-status");
     st.className = "text-xs font-semibold text-rose-600 min-h-[1rem]";
+    st.textContent = "";
+
     const db = getUsersDB();
 
     if (authMode === "profile") {
-      const user = getCurrentUser();
-      if (!user) return;
-      user.nama = $("auth-nama").value.trim() || user.nama;
-      user.nip = $("auth-nip").value.trim();
-      user.sekolah = $("auth-sekolah").value.trim();
-      user.apiKey = $("auth-apikey").value.trim();
-      completeUserLogin(user, "Profil guru dan API Key Gemini berhasil diperbarui!");
+      const current = getCurrentUser();
+      if (!current) return;
+      const apiKey = $("auth-apikey").value.trim();
+      const updated = { ...current, apiKey };
+      completeUserLogin(updated, "API Key Gemini berhasil disimpan!");
       return;
     }
 
@@ -2304,84 +2280,82 @@ if ($("auth-submit-btn")) {
     const key = $("auth-apikey").value.trim();
 
     if (!email || !email.includes("@")) {
-      st.textContent = "Silakan masukkan alamat email yang valid.";
+      st.textContent = "Masukkan alamat email yang valid.";
+      $("auth-email").focus();
       return;
     }
-    if (!pass || pass.length < 6) {
-      st.textContent = "Kata sandi minimal terdiri dari 6 karakter.";
+    if (!pass || pass.length < 4) {
+      st.textContent = "Masukkan kata sandi (minimal 4 karakter).";
+      $("auth-pass").focus();
       return;
     }
 
     if (authMode === "register") {
-      const nama = $("auth-nama").value.trim();
-      if (!nama) {
-        st.textContent = "Nama lengkap & gelar guru wajib diisi saat mendaftar.";
-        return;
-      }
       if (db[email]) {
-        st.textContent = "Email ini sudah terdaftar. Silakan pindah ke tab “Masuk dengan Email”.";
+        const savedKey = db[email].apiKey || "";
+        setAuthMode("login");
+        $("auth-email").value = email;
+        $("auth-pass").value = "";
+        $("auth-apikey").value = savedKey;
+        st.className = "text-xs font-semibold text-brand-700 min-h-[1rem]";
+        st.textContent = "Akun sudah terdaftar! Tidak perlu daftar lagi—silakan masukkan kata sandi untuk masuk.";
+        $("auth-pass").focus();
         return;
       }
-      const newAcc = {
-        email,
-        pass,
-        provider: "email",
-        nama,
-        nip: $("auth-nip").value.trim(),
-        sekolah: $("auth-sekolah").value.trim(),
-        apiKey: key
-      };
-      completeUserLogin(newAcc, `Pendaftaran berhasil! Selamat datang di SohibGuru, ${nama}.`);
+      db[email] = { email, pass, apiKey: key };
+      saveUsersDB(db);
+
+      // Setelah daftar berhasil, langsung pindah ke tab Masuk dengan email & API Key terisi
+      setAuthMode("login");
+      $("auth-email").value = email;
+      $("auth-pass").value = "";
+      $("auth-apikey").value = key;
+      st.className = "text-xs font-semibold text-emerald-700 min-h-[1rem]";
+      st.textContent = "✅ Pendaftaran berhasil! Akun & API Key tersimpan. Silakan masukkan kata sandi untuk masuk.";
+      $("auth-pass").focus();
     } else {
       const existing = db[email];
       if (!existing) {
-        st.textContent = "Akun email belum terdaftar. Klik tab “Daftar Akun Baru” terlebih dahulu.";
-        return;
-      }
-      if (existing.provider === "google" && !existing.pass) {
-        st.textContent = "Email ini terdaftar menggunakan Akun Google. Klik tombol “Lanjutkan dengan Akun Google” di atas.";
+        st.textContent = "Akun belum terdaftar. Silakan pilih tab “Daftar Akun” terlebih dahulu.";
         return;
       }
       if (existing.pass !== pass) {
-        st.textContent = "Kata sandi tidak sesuai. Silakan periksa kembali.";
+        st.textContent = "Kata sandi salah. Silakan periksa kembali.";
+        $("auth-pass").focus();
         return;
       }
-      if (key) existing.apiKey = key;
-      completeUserLogin(existing, `Selamat datang kembali, ${existing.nama}!`);
+      const finalAccount = {
+        ...existing,
+        apiKey: key || existing.apiKey || ""
+      };
+      completeUserLogin(finalAccount, `Berhasil masuk sebagai ${email}!`);
     }
   };
 }
 
 function logoutCurrentUser() {
-  try { localStorage.removeItem(SESSION_KEY); } catch (e) {}
+  removeStore(SESSION_KEY);
   D = {};
   load();
   syncAuthUI();
   openAuthModal("login");
   $("auth-status").className = "text-xs font-semibold text-brand-700 min-h-[1rem]";
-  $("auth-status").textContent = "Anda telah keluar dari akun. Silakan masuk kembali untuk melanjutkan.";
+  $("auth-status").textContent = "Anda telah keluar. Masukkan email dan kata sandi untuk masuk kembali.";
 }
 
-if ($("auth-logout-btn")) $("auth-logout-btn").onclick = logoutCurrentUser;
 if ($("bar-logout-btn")) $("bar-logout-btn").onclick = logoutCurrentUser;
-
-if (authModal) {
-  authModal.addEventListener("click", e => {
-    if (e.target === authModal && getCurrentUser()) closeAuthModal();
-  });
-}
+if ($("auth-logout-btn")) $("auth-logout-btn").onclick = logoutCurrentUser;
 
 document.addEventListener("keydown", e => {
   if (e.key === "Escape") {
-    if (introModal && !introModal.classList.contains("hidden")) closeIntroModal();
-    if (authModal && !authModal.classList.contains("hidden") && getCurrentUser()) closeAuthModal();
+    closeIntroModal();
+    if (getCurrentUser()) closeAuthModal();
   }
 });
 
+// Inisialisasi aplikasi & cek sesi akun pendidik
 load();
 syncAuthUI();
-
-// Wajibkan masuk/daftar akun jika belum ada sesi aktif
 if (!getCurrentUser()) {
   openAuthModal("login");
 }
