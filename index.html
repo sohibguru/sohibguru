@@ -105,15 +105,14 @@ tailwind.config = {
   /* A4 Paper Document Preview */
   .paper-sheet {
     background: #FFFFFF;
-    color: #0F172A;
-    border: 1px solid #CBD5E1;
+    color: #111827;
+    border: 1px solid #E2E8F0;
     border-radius: 0.75rem;
     padding: 2.25rem 2.5rem;
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 10.75pt;
-    line-height: 1.55;
-    box-shadow: 0 12px 36px rgba(15, 23, 42, 0.08);
-    position: relative;
+    font-size: 10.5pt;
+    line-height: 1.62;
+    box-shadow: 0 12px 32px rgba(15, 23, 42, 0.06);
   }
   @media (max-width: 640px) {
     .paper-sheet {
@@ -343,10 +342,6 @@ tailwind.config = {
       <span class="hidden xl:inline-flex items-center px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-brand-50 text-brand-700 border border-brand-100">Workspace Administrasi Guru</span>
     </div>
     <div class="flex items-center gap-2 text-xs text-slate-500">
-      <button type="button" id="nav-pro-btn" class="inline-flex items-center gap-1.5 bg-amber-50 hover:bg-amber-100 text-amber-800 border border-amber-200/80 px-3 py-1.5 rounded-full font-extrabold transition cursor-pointer">
-        <span id="nav-pro-icon">👑</span>
-        <span id="nav-pro-label">Gratis (1x Coba)</span>
-      </button>
       <button type="button" id="nav-intro-btn" class="inline-flex items-center gap-1.5 bg-slate-100 hover:bg-slate-200/80 text-slate-700 px-3 py-1.5 rounded-full font-bold transition cursor-pointer">
         <span>💌 <span class="hidden sm:inline">Kata Pengantar</span></span>
       </button>
@@ -372,9 +367,6 @@ tailwind.config = {
       </div>
     </div>
     <div class="flex items-center gap-2">
-      <button type="button" id="bar-pro-btn" class="px-3 py-1.5 rounded-xl bg-amber-50 hover:bg-amber-100 text-amber-800 border border-amber-200/80 font-extrabold transition cursor-pointer">
-        <span id="bar-pro-text">👑 Upgrade Pro</span>
-      </button>
       <button type="button" id="bar-edit-profile" class="px-3 py-1.5 rounded-xl bg-brand-50 hover:bg-brand-100 text-brand-700 font-bold transition cursor-pointer">
         ⚙️ Profil &amp; API Key AI
       </button>
@@ -428,7 +420,7 @@ tailwind.config = {
               <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
             </div>
             <div>
-              <div class="text-xs font-bold text-slate-800">7 Perangkat</div>
+              <div class="text-xs font-bold text-slate-800">4 Perangkat</div>
               <div class="text-[11px] text-slate-500">Lengkap &amp; Rapi</div>
             </div>
           </div>
@@ -511,49 +503,35 @@ tailwind.config = {
             <path d="M337 34l4.5 4.5 9.5-9.5" stroke="#FFFFFF" stroke-width="2.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
 
             <!-- CHARACTER 1: IBU GURU BERJILBAB (Left) -->
-            <!-- Tunic / Modest Blazer -->
             <path d="M34 276c0-54 25-76 60-76s60 22 60 76z" fill="#312E81"/>
-            <!-- Hijab Flowing Drape -->
             <path d="M56 126c0-25 16-40 38-40s38 15 38 40c0 22-4 58-14 78-14 9-34 9-48 0-10-20-14-56-14-78z" fill="url(#hijabTeacher)"/>
-            <!-- Inner Hijab Ciput -->
             <path d="M68 124c0-15 11-26 26-26s26 11 26 26c0 16-11 27-26 27s-26-11-26-27z" fill="#E0E7FF"/>
-            <!-- Face -->
             <circle cx="94" cy="126" r="22" fill="#FED7AA"/>
-            <!-- Glasses & Friendly Smile -->
             <circle cx="85" cy="125" r="6" fill="none" stroke="#1E293B" stroke-width="1.8"/>
             <circle cx="103" cy="125" r="6" fill="none" stroke="#1E293B" stroke-width="1.8"/>
             <line x1="91" y1="125" x2="97" y2="125" stroke="#1E293B" stroke-width="1.8"/>
             <circle cx="85" cy="125" r="1.8" fill="#1E293B"/>
             <circle cx="103" cy="125" r="1.8" fill="#1E293B"/>
             <path d="M88 136q6 5.5 12 0" stroke="#9A3412" stroke-width="2" fill="none" stroke-linecap="round"/>
-            <!-- Hijab Fold Detail -->
             <path d="M66 150c16 10 40 10 56 0" fill="none" stroke="#818CF8" stroke-width="2" stroke-linecap="round"/>
-            <!-- Teacher Pointing Arm -->
             <path d="M138 214c22-12 30-34 22-54" stroke="#312E81" stroke-width="13" fill="none" stroke-linecap="round"/>
             <circle cx="160" cy="157" r="7" fill="#FED7AA"/>
 
             <!-- CHARACTER 2: SISWA LAKI-LAKI BERPECI HITAM (Center-Right) -->
-            <!-- School Uniform Shirt -->
             <path d="M210 276c0-38 17-54 42-54s42 16 42 54z" fill="#0077E6"/>
             <path d="M241 222l11 16 11-16z" fill="#FFFFFF"/>
-            <!-- Neck & Face -->
             <rect x="245" y="205" width="14" height="18" rx="6" fill="#FED7AA"/>
             <circle cx="252" cy="186" r="21" fill="#FED7AA"/>
-            <!-- Black National Peci Cap -->
             <path d="M231 176c0-10 9-15 21-15s21 5 21 15v6h-42v-6z" fill="#0F172A"/>
             <path d="M231 180h42" stroke="#334155" stroke-width="1.5"/>
-            <!-- Eyes & Smile -->
             <circle cx="245" cy="186" r="2" fill="#1E293B"/>
             <circle cx="259" cy="186" r="2" fill="#1E293B"/>
             <path d="M246 195q6 5 12 0" stroke="#9A3412" stroke-width="1.9" fill="none" stroke-linecap="round"/>
 
             <!-- CHARACTER 3: SISWA PEREMPUAN BERJILBAB (Right) -->
-            <!-- School Uniform -->
             <path d="M300 276c0-36 16-52 40-52s40 16 40 52z" fill="#059669"/>
-            <!-- Student Hijab -->
             <path d="M314 185c0-18 11-29 26-29s26 11 26 29c0 16-3 38-10 50-10 6-22 6-32 0-7-12-10-34-10-50z" fill="url(#hijabStudent)"/>
             <circle cx="340" cy="186" r="18" fill="#FED7AA"/>
-            <!-- Eyes & Smile -->
             <circle cx="334" cy="186" r="1.9" fill="#1E293B"/>
             <circle cx="346" cy="186" r="1.9" fill="#1E293B"/>
             <path d="M335 194q5 4.5 10 0" stroke="#9A3412" stroke-width="1.8" fill="none" stroke-linecap="round"/>
@@ -570,13 +548,106 @@ tailwind.config = {
   </div>
 </header>
 
-<!-- 7 NAVIGATION TABS FOR TEACHER ADMINISTRATION -->
+<!-- 4 NAVIGATION TABS FOR TEACHER ADMINISTRATION -->
 <nav class="noprint max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 pt-4 pb-2" aria-label="Kategori Administrasi Guru">
   <div class="bg-white border border-slate-200/80 rounded-2xl p-1.5 shadow-card flex items-center gap-1.5 overflow-x-auto" role="tablist" id="tabs"></div>
 </nav>
 
 <!-- MAIN WORKSPACE GRID -->
 <main class="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-4 pb-16 grid grid-cols-1 lg:grid-cols-12 gap-6 items-start flex-1">
+
+  <!-- DEDICATED TAB VIEW: PROFIL SAYA (IDENTITAS DEFAULT GURU & SEKOLAH) -->
+  <section id="profil-view" class="hidden lg:col-span-12 max-w-4xl w-full mx-auto bg-white border border-slate-200/80 rounded-3xl p-5 sm:p-8 shadow-soft">
+    <div class="flex items-start justify-between gap-4 flex-wrap pb-5 border-b border-slate-100">
+      <div class="flex items-center gap-3">
+        <div class="w-12 h-12 rounded-2xl bg-brand-50 text-brand-600 flex items-center justify-center text-2xl shrink-0">🪪</div>
+        <div>
+          <span class="text-[11px] font-extrabold uppercase tracking-wider text-brand-600 block">Pengaturan Identitas Pendidik</span>
+          <h2 class="text-lg sm:text-xl font-extrabold text-slate-900">Profil Identitas Guru &amp; Satuan Pendidikan</h2>
+          <p class="text-xs sm:text-sm text-slate-500 mt-0.5">Isi data identitas Anda satu kali di sini. Semua perangkat ajar (Modul Ajar, LKPD, Worksheet, dan Asesmen/Ujian) akan terisi otomatis tanpa mengetik ulang.</p>
+        </div>
+      </div>
+      <span id="profil-account-badge" class="text-xs font-bold px-3 py-1.5 rounded-full bg-brand-50 text-brand-700 border border-brand-100">Akun Pendidik</span>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-6">
+      <!-- Kolom Kiri: Data Satuan Pendidikan & Mapel -->
+      <div class="space-y-4">
+        <div class="text-xs font-extrabold uppercase tracking-wider text-slate-500">🏫 Data Sekolah &amp; Pembelajaran</div>
+        <div>
+          <label for="tab-prof-sekolah" class="block text-xs font-bold text-slate-700 mb-1">Nama Sekolah / Madrasah</label>
+          <input id="tab-prof-sekolah" class="sg-input" placeholder="Contoh: SMAN 1 Cilegon / MTsN 1">
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label for="tab-prof-ta" class="block text-xs font-bold text-slate-700 mb-1">Tahun Ajaran</label>
+            <input id="tab-prof-ta" class="sg-input" placeholder="2026/2027">
+          </div>
+          <div>
+            <label for="tab-prof-kur" class="block text-xs font-bold text-slate-700 mb-1">Kurikulum Default</label>
+            <select id="tab-prof-kur" class="sg-input">
+              <option>Kurikulum Merdeka</option>
+              <option>Kurikulum 2013</option>
+              <option>Pembelajaran Mendalam (Deep Learning)</option>
+              <option>Kurikulum Madrasah (KMA 183)</option>
+            </select>
+          </div>
+        </div>
+        <div>
+          <label for="tab-prof-mapel" class="block text-xs font-bold text-slate-700 mb-1">Mata Pelajaran Utama</label>
+          <input id="tab-prof-mapel" class="sg-input" placeholder="Contoh: Ilmu Pengetahuan Alam / PAI">
+        </div>
+        <div>
+          <label for="tab-prof-kelas" class="block text-xs font-bold text-slate-700 mb-1">Kelas / Fase Ampuan</label>
+          <input id="tab-prof-kelas" class="sg-input" placeholder="Contoh: Kelas VII / Fase D">
+        </div>
+      </div>
+
+      <!-- Kolom Kanan: Data Penyusun & Pengesahan -->
+      <div class="space-y-4">
+        <div class="text-xs font-extrabold uppercase tracking-wider text-slate-500">✍️ Data Penyusun &amp; Pengesahan</div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label for="tab-prof-guru" class="block text-xs font-bold text-slate-700 mb-1">Nama Guru / Penyusun</label>
+            <input id="tab-prof-guru" class="sg-input" placeholder="Nama lengkap &amp; gelar">
+          </div>
+          <div>
+            <label for="tab-prof-nip" class="block text-xs font-bold text-slate-700 mb-1">NIP / NUPTK / NIM</label>
+            <input id="tab-prof-nip" class="sg-input" placeholder="Nomor induk">
+          </div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label for="tab-prof-kepsek" class="block text-xs font-bold text-slate-700 mb-1">Kepala Sekolah / Dosen</label>
+            <input id="tab-prof-kepsek" class="sg-input" placeholder="Nama lengkap &amp; gelar">
+          </div>
+          <div>
+            <label for="tab-prof-nipk" class="block text-xs font-bold text-slate-700 mb-1">NIP Kepala Sekolah / Dosen</label>
+            <input id="tab-prof-nipk" class="sg-input" placeholder="Nomor induk">
+          </div>
+        </div>
+        <div>
+          <label for="tab-prof-kota" class="block text-xs font-bold text-slate-700 mb-1">Kota &amp; Tanggal Pengesahan</label>
+          <input id="tab-prof-kota" class="sg-input" placeholder="Cilegon, 16 November 2026">
+        </div>
+        <div class="p-3.5 rounded-2xl bg-brand-50/70 border border-brand-100 text-xs text-slate-700 leading-relaxed">
+          💡 Setelah disimpan, identitas ini akan langsung terisi saat Anda membuka tab <strong>Modul Ajar</strong>, <strong>LKPD</strong>, <strong>Worksheet</strong>, atau <strong>Asesmen / Ujian</strong>.
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-6 pt-5 border-t border-slate-100 flex items-center justify-between gap-3 flex-wrap">
+      <div id="tab-profil-status" class="text-xs font-semibold text-emerald-700 min-h-[1.25rem]" role="status"></div>
+      <div class="flex items-center gap-2.5 ml-auto">
+        <button type="button" id="btn-save-tab-profil" class="px-5 py-2.5 rounded-2xl bg-brand-600 hover:bg-brand-700 text-white text-xs sm:text-sm font-bold shadow-xs transition cursor-pointer">
+          💾 Simpan Profil Identitas
+        </button>
+        <button type="button" id="btn-save-and-go-modul" class="px-5 py-2.5 rounded-2xl bg-mint-600 hover:bg-emerald-700 text-white text-xs sm:text-sm font-bold shadow-xs transition cursor-pointer">
+          Simpan &amp; Lanjut Susun Perangkat →
+        </button>
+      </div>
+    </div>
+  </section>
 
   <!-- LEFT COLUMN: STRUCTURED FORM & EXTERNAL AI PROMPT -->
   <div class="lg:col-span-5 space-y-6" id="left-col">
@@ -692,8 +763,13 @@ tailwind.config = {
 
         <!-- Identitas Penyusun & Pengesahan -->
         <div class="pt-2 border-t border-slate-100">
-          <div class="text-xs font-extrabold text-slate-800 uppercase tracking-wider mb-2.5 flex items-center gap-1.5">
-            <span>✍️ Pengesahan &amp; Tanda Tangan Dokumen</span>
+          <div class="flex items-center justify-between gap-2 flex-wrap mb-2.5">
+            <div class="text-xs font-extrabold text-slate-800 uppercase tracking-wider flex items-center gap-1.5">
+              <span>✍️ Pengesahan &amp; Tanda Tangan Dokumen</span>
+            </div>
+            <button type="button" id="btn-apply-profile" class="text-[11px] font-bold px-2.5 py-1 rounded-xl bg-brand-50 hover:bg-brand-100 text-brand-700 border border-brand-100 transition cursor-pointer">
+              ⚡ Isi Otomatis dari Profil
+            </button>
           </div>
           <div class="space-y-3">
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -769,7 +845,7 @@ tailwind.config = {
           <div class="w-8 h-8 rounded-xl bg-mint-50 text-mint-600 flex items-center justify-center font-extrabold text-sm">2</div>
           <div>
             <h2 class="text-base font-extrabold text-slate-900">Editor Dokumen &amp; Studio Gambar AI</h2>
-            <p class="text-xs text-slate-500">Sunting teks perangkat ajar atau buat ilustrasi pendukung soal &amp; LKPD.</p>
+            <p class="text-xs text-slate-500">Sunting teks bebas atau buat ilustrasi pendidikan otomatis ke dalam dokumen.</p>
           </div>
         </div>
         <button type="button" id="cr" class="text-xs font-bold px-3 py-1.5 rounded-xl border border-slate-200 hover:bg-slate-50 text-slate-700 transition cursor-pointer">
@@ -777,39 +853,39 @@ tailwind.config = {
         </button>
       </div>
 
-      <textarea id="res" rows="8" class="sg-input font-sans text-sm leading-relaxed" placeholder="Hasil penyusunan perangkat ajar akan tampil di sini. Anda juga dapat langsung mengetik atau menempelkan hasil dari AI lain..."></textarea>
+      <textarea id="res" rows="7" class="sg-input font-sans text-sm leading-relaxed" placeholder="Hasil penyusunan perangkat ajar akan tampil di sini dan langsung terformat pada pratinjau kertas A4 di bawah..."></textarea>
 
-      <!-- Studio Generate Gambar Edukatif -->
-      <div class="mt-4 p-4 rounded-2xl bg-gradient-to-br from-brand-50/80 via-skysoft-50/70 to-mint-50/70 border border-brand-100/90">
+      <!-- STUDIO GENERATE GAMBAR EDUKATIF -->
+      <div class="mt-4 rounded-2xl bg-gradient-to-br from-brand-50/70 via-white to-peach-50/70 border border-brand-100 p-4">
         <div class="flex items-center justify-between gap-2 flex-wrap mb-2">
           <div class="flex items-center gap-2">
-            <span class="text-base">🎨</span>
+            <span class="w-7 h-7 rounded-xl bg-brand-600 text-white flex items-center justify-center text-xs shadow-xs">🎨</span>
             <div>
               <h3 class="text-xs sm:text-sm font-extrabold text-slate-900">Studio Generate Gambar Edukatif</h3>
-              <p class="text-[11px] text-slate-600">Buat diagram, ilustrasi percobaan, atau gambar soal (tokoh perempuan berjilbab &amp; laki-laki berpeci hitam).</p>
+              <p class="text-[11px] text-slate-600">Butuh gambar pendukung soal? Biar SohibGuru yang menggambarkannya untuk Anda.</p>
             </div>
           </div>
-          <button type="button" id="gen-all-img" style="display:none" class="items-center gap-1.5 bg-mint-600 hover:bg-mint-500 text-white text-[11px] font-bold px-3 py-1.5 rounded-xl shadow-2xs transition cursor-pointer">
+          <button type="button" id="gen-all-img" style="display:none" class="bg-brand-600 hover:bg-brand-700 text-white text-xs font-bold px-3 py-1.5 rounded-xl shadow-xs transition items-center gap-1.5 cursor-pointer">
             <span>✨ Generate Semua Penanda (<span id="marker-count">0</span>)</span>
           </button>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-12 gap-2.5 mt-2.5">
-          <div class="sm:col-span-6">
-            <label for="img-prompt" class="block text-[11px] font-bold text-slate-700 mb-1">Deskripsi Gambar / Ilustrasi Soal</label>
-            <input id="img-prompt" class="sg-input text-xs" placeholder="Contoh: Siklus air hujan atau siswa berdiskusi di kelas">
+        <div class="grid grid-cols-1 sm:grid-cols-12 gap-2.5 mt-3">
+          <div class="sm:col-span-12">
+            <label for="img-prompt" class="block text-[11px] font-bold text-slate-700 mb-1">Deskripsi Gambar / Diagram yang Diinginkan</label>
+            <input id="img-prompt" class="sg-input text-xs" placeholder="Contoh: Diagram siklus air dengan label penguapan, kondensasi, dan hujan untuk siswa SMP">
           </div>
-          <div class="sm:col-span-3">
-            <label for="img-style" class="block text-[11px] font-bold text-slate-700 mb-1">Gaya Visual</label>
+          <div class="sm:col-span-6">
+            <label for="img-style" class="block text-[11px] font-bold text-slate-700 mb-1">Gaya Visual Ilustrasi</label>
             <select id="img-style" class="sg-input text-xs">
-              <option>Ilustrasi Buku Pelajaran Berwarna</option>
-              <option>Diagram Skema Sains / Edukasi</option>
-              <option>Sketsa Garis Hitam-Putih (Hemat Tinta)</option>
-              <option>Kartun Edukatif Ramah Anak</option>
+              <option value="Ilustrasi Buku Pelajaran Berwarna">Ilustrasi Buku Pelajaran (Berwarna Soft)</option>
+              <option value="Diagram Sains & Bagan Edukatif">Diagram Sains &amp; Bagan Edukatif</option>
+              <option value="Sketsa Garis Hitam Putih Siap Fotokopi">Sketsa Hitam-Putih (Hemat Tinta / Fotokopi)</option>
+              <option value="Kartun Anak Edukatif Ramah Siswa">Kartun Edukatif Ramah Siswa SD/MI</option>
             </select>
           </div>
-          <div class="sm:col-span-3">
-            <label for="img-pos" class="block text-[11px] font-bold text-slate-700 mb-1">Posisi Sisipan</label>
+          <div class="sm:col-span-6">
+            <label for="img-pos" class="block text-[11px] font-bold text-slate-700 mb-1">Posisi Sisipan di Dokumen</label>
             <select id="img-pos" class="sg-input text-xs">
               <option value="top">Bagian Atas (Setelah Identitas/Kop)</option>
               <option value="mid">Bagian Tengah Dokumen</option>
@@ -949,18 +1025,18 @@ tailwind.config = {
         </button>
       </div>
 
-      <!-- Form Email, Kata Sandi & API Key Gemini di bawahnya -->
+      <!-- Form Email, Kata Sandi & API Key Gemini -->
       <div id="email-auth-form" class="space-y-3">
         <div>
           <label for="auth-email" class="block text-xs font-bold text-slate-700 mb-1">Email <span class="text-rose-500">*</span></label>
           <input id="auth-email" type="email" class="sg-input text-xs" placeholder="guru@email.com">
         </div>
 
-        <div id="pass-field-wrap">
-          <div class="flex items-center justify-between mb-1">
-            <label for="auth-pass" id="auth-pass-label" class="block text-xs font-bold text-slate-700">Kata Sandi <span class="text-rose-500">*</span></label>
-            <button type="button" id="forgot-pass-link" class="text-[11px] font-bold text-brand-700 hover:underline cursor-pointer">
-              Lupa kata sandi?
+        <div>
+          <div class="flex items-center justify-between gap-2 mb-1">
+            <label for="auth-pass" class="block text-xs font-bold text-slate-700">Kata Sandi <span class="text-rose-500">*</span></label>
+            <button type="button" id="btn-forgot-pass" class="text-[11px] font-bold text-brand-700 hover:underline cursor-pointer">
+              Lupa Kata Sandi?
             </button>
           </div>
           <div class="relative">
@@ -971,63 +1047,28 @@ tailwind.config = {
           </div>
         </div>
 
-        <!-- Panel Verifikasi Email / Reset Password OTP -->
-        <div id="otp-verify-box" class="hidden p-3.5 rounded-2xl bg-amber-50/90 border border-amber-200 space-y-2.5">
+        <!-- Form Atur Ulang Kata Sandi (Muncul saat Lupa Kata Sandi) -->
+        <div id="reset-pass-box" class="hidden space-y-3 p-3.5 rounded-2xl bg-amber-50/70 border border-amber-200">
           <div class="flex items-center justify-between gap-2">
-            <span id="otp-box-title" class="text-xs font-extrabold text-amber-950">📧 Verifikasi Email (Kode 6 Digit)</span>
-            <button type="button" id="resend-otp-btn" class="text-[11px] font-bold text-brand-700 hover:underline cursor-pointer">Kirim Ulang Kode</button>
-          </div>
-          <p id="otp-box-desc" class="text-[11px] text-amber-900 leading-snug">
-            Masukkan 6 digit kode verifikasi yang dikirim ke inbox Gmail Anda.
-          </p>
-          <div id="email-delivery-badge" class="p-2.5 rounded-xl bg-white border border-amber-200/90 text-[11px] text-slate-700">
-            ⏳ Mengirim kode verifikasi ke alamat Gmail Anda...
-          </div>
-          <!-- Cadangan OTP Otomatis (Muncul hanya jika Admin belum memasang kredensial EmailJS) -->
-          <div id="simulated-inbox-card" class="hidden p-2.5 rounded-xl bg-white border border-amber-200/90 flex items-center justify-between gap-2 text-[11px]">
-            <div>
-              <span class="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">📬 Mode Cadangan (EmailJS Belum Diatur)</span>
-              <span class="text-slate-700">Kode OTP SohibGuru: <strong id="simulated-otp-code" class="font-mono text-sm text-brand-700 tracking-widest">------</strong></span>
-            </div>
-            <button type="button" id="autofill-otp-btn" class="px-2.5 py-1 rounded-lg bg-brand-50 hover:bg-brand-100 text-brand-700 font-bold text-[11px] shrink-0 cursor-pointer">
-              Tempel Kode
-            </button>
+            <span class="text-xs font-extrabold text-amber-900">🔑 Buat Kata Sandi Baru</span>
+            <button type="button" id="btn-back-to-login" class="text-[11px] font-bold text-brand-700 hover:underline cursor-pointer">← Kembali ke Masuk</button>
           </div>
           <div>
-            <label for="auth-otp-input" class="block text-[11px] font-bold text-slate-700 mb-1">Masukkan Kode Verifikasi (6 Digit) <span class="text-rose-500">*</span></label>
-            <input id="auth-otp-input" type="text" maxlength="6" inputmode="numeric" class="sg-input text-xs font-mono tracking-widest text-center font-bold" placeholder="000000">
+            <label for="auth-new-pass" class="block text-xs font-bold text-slate-700 mb-1">Kata Sandi Baru (min. 4 karakter) <span class="text-rose-500">*</span></label>
+            <div class="relative">
+              <input id="auth-new-pass" type="password" class="sg-input text-xs pr-20" placeholder="Masukkan kata sandi baru">
+              <button type="button" id="toggle-newpass-vis" class="absolute right-2.5 top-1/2 -translate-y-1/2 text-[11px] font-bold text-slate-500 hover:text-slate-800 px-2 py-1 rounded-lg bg-slate-100 cursor-pointer">
+                Lihat
+              </button>
+            </div>
           </div>
-          <div id="new-pass-wrap" class="hidden">
-            <label for="auth-new-pass" class="block text-[11px] font-bold text-slate-700 mb-1">Kata Sandi Baru <span class="text-rose-500">*</span></label>
-            <input id="auth-new-pass" type="password" class="sg-input text-xs" placeholder="Minimal 4 karakter">
-          </div>
-          <div class="text-right">
-            <button type="button" id="back-to-login-link" class="text-[11px] font-bold text-slate-600 hover:text-slate-900 underline cursor-pointer">
-              ← Kembali ke halaman Masuk
-            </button>
+          <div>
+            <label for="auth-confirm-pass" class="block text-xs font-bold text-slate-700 mb-1">Konfirmasi Kata Sandi Baru <span class="text-rose-500">*</span></label>
+            <input id="auth-confirm-pass" type="password" class="sg-input text-xs" placeholder="Ulangi kata sandi baru">
           </div>
         </div>
 
-        <!-- Pengaturan Pengiriman Email OTP Sungguhan ke Gmail (EmailJS - Khusus Admin) -->
-        <details id="emailjs-admin-box" class="p-3 rounded-2xl bg-slate-50 border border-slate-200/90 text-[11px] text-slate-600">
-          <summary class="font-bold text-slate-700 cursor-pointer select-none flex items-center justify-between">
-            <span>📨 Konfigurasi Pengiriman OTP ke Gmail (Admin)</span>
-            <span id="emailjs-status-pill" class="text-[10px] font-extrabold px-2 py-0.5 rounded-full bg-slate-200 text-slate-700">Mode Cadangan</span>
-          </summary>
-          <div class="mt-2.5 space-y-2 pt-2 border-t border-slate-200/70">
-            <p class="leading-snug">
-              Agar kode OTP 6 digit masuk langsung ke <strong>Inbox Gmail</strong> guru, isi kredensial gratis dari <a href="https://www.emailjs.com" target="_blank" rel="noopener" class="underline font-bold text-brand-700">emailjs.com</a> (variabel template: <code class="bg-white px-1 rounded border">{{to_email}}</code>, <code class="bg-white px-1 rounded border">{{otp_code}}</code>, <code class="bg-white px-1 rounded border">{{purpose}}</code>):
-            </p>
-            <input id="ejs-service" type="text" class="sg-input text-xs font-mono" placeholder="Service ID (contoh: service_xxxxxxx)">
-            <input id="ejs-template" type="text" class="sg-input text-xs font-mono" placeholder="Template ID (contoh: template_xxxxxxx)">
-            <input id="ejs-pubkey" type="text" class="sg-input text-xs font-mono" placeholder="Public Key (contoh: user_xxxxxxxxxxxx)">
-            <button type="button" id="ejs-save-btn" class="w-full py-1.5 px-3 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-bold text-xs cursor-pointer">
-              Simpan Pengaturan EmailJS
-            </button>
-          </div>
-        </details>
-
-        <!-- Kolom API Key Gemini Pribadi (Selalu tampil di bawah form Masuk maupun Daftar Akun) -->
+        <!-- Kolom API Key Gemini Pribadi -->
         <div id="apikey-field-box" class="p-3.5 rounded-2xl bg-brand-50/70 border border-brand-100 space-y-2">
           <div class="flex items-center justify-between gap-2 flex-wrap">
             <label for="auth-apikey" class="text-xs font-extrabold text-slate-900 flex items-center gap-1">
@@ -1055,6 +1096,34 @@ tailwind.config = {
             </ol>
           </details>
         </div>
+
+        <!-- Kotak Verifikasi Kode OTP Email (Muncul saat Daftar Akun / Akun Belum Terverifikasi) -->
+        <div id="email-verify-box" class="hidden p-3.5 rounded-2xl bg-mint-50/90 border border-emerald-200 space-y-2.5">
+          <div class="flex items-center justify-between gap-2">
+            <span class="text-xs font-extrabold text-emerald-900">📧 Verifikasi Email Pendidik</span>
+            <button type="button" id="btn-resend-otp" class="text-[11px] font-bold text-brand-700 hover:underline cursor-pointer">Kirim Ulang Kode</button>
+          </div>
+          <p id="verify-email-desc" class="text-[11px] text-emerald-800 leading-relaxed">
+            Masukkan 6 digit kode verifikasi yang telah dikirim ke kotak masuk email Anda.
+          </p>
+          <div id="otp-delivery-status" class="px-3 py-2 rounded-xl bg-white border border-emerald-200 text-[11px] text-slate-700 leading-relaxed">
+            Sedang mengirim kode OTP ke email...
+          </div>
+          <div>
+            <label for="auth-otp-input" class="block text-[11px] font-bold text-slate-700 mb-1">Masukkan 6 Digit Kode Verifikasi</label>
+            <input id="auth-otp-input" type="text" inputmode="numeric" maxlength="6" class="sg-input text-center font-mono text-base tracking-[0.35em] font-extrabold" placeholder="••••••">
+          </div>
+          <details class="text-[11px] text-slate-600 pt-1 border-t border-emerald-200/70">
+            <summary class="font-bold text-emerald-800 cursor-pointer select-none">⚙️ Pengaturan Pengirim Email (EmailJS Aktif)</summary>
+            <div class="mt-2 space-y-2 bg-white p-2.5 rounded-xl border border-emerald-100">
+              <p class="text-[10.5px] text-slate-500">Pengirim email otomatis sudah terhubung. Ubah hanya jika ingin mengganti akun EmailJS:</p>
+              <input id="ejs-service" class="sg-input text-xs py-1.5" placeholder="Service ID (contoh: service_xxxxxx)">
+              <input id="ejs-template" class="sg-input text-xs py-1.5" placeholder="Template ID (contoh: template_xxxxxx)">
+              <input id="ejs-pubkey" class="sg-input text-xs py-1.5" placeholder="Public Key (contoh: user_xxxxxxxxxx)">
+              <button type="button" id="btn-save-emailjs" class="w-full py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-[11px] cursor-pointer">Simpan &amp; Kirim Ulang ke Email</button>
+            </div>
+          </details>
+        </div>
       </div>
 
       <div id="auth-status" class="text-xs font-semibold text-rose-600 min-h-[1rem]" role="status"></div>
@@ -1073,129 +1142,6 @@ tailwind.config = {
           Masuk
         </button>
       </div>
-    </div>
-  </div>
-</div>
-
-<!-- MODAL UPGRADE & AKTIVASI LISENSI SOHIBGURU PRO -->
-<div id="pro-modal" class="noprint fixed inset-0 z-50 hidden items-center justify-center p-4 bg-slate-900/60 backdrop-blur-sm" role="dialog" aria-modal="true" aria-labelledby="pro-modal-title">
-  <div class="bg-white border border-slate-200/90 rounded-3xl max-w-lg w-full shadow-2xl overflow-hidden max-h-[94vh] flex flex-col">
-    <!-- Header -->
-    <div class="bg-gradient-to-r from-amber-50 via-orange-50/80 to-brand-50 px-6 py-5 border-b border-amber-100 flex items-center justify-between gap-3 shrink-0">
-      <div class="flex items-center gap-3">
-        <div class="w-11 h-11 rounded-2xl bg-gradient-to-br from-amber-400 to-orange-500 text-white flex items-center justify-center text-xl shadow-sm shrink-0">👑</div>
-        <div>
-          <span class="text-[11px] font-extrabold uppercase tracking-wider text-amber-700 block">Paket Pendidik Profesional</span>
-          <h3 id="pro-modal-title" class="text-base sm:text-lg font-extrabold text-slate-900">Aktivasi SohibGuru Pro</h3>
-        </div>
-      </div>
-      <button type="button" id="close-pro-x" aria-label="Tutup jendela Pro" class="w-8 h-8 rounded-full bg-white/90 hover:bg-slate-100 border border-slate-200 text-slate-500 hover:text-slate-800 flex items-center justify-center font-bold text-sm transition cursor-pointer shrink-0">✕</button>
-    </div>
-
-    <!-- Body -->
-    <div class="px-6 py-5 overflow-y-auto space-y-4 text-xs sm:text-sm text-slate-600">
-      <div id="pro-limit-banner" class="p-3.5 rounded-2xl bg-amber-50 border border-amber-200 text-xs text-amber-950 leading-relaxed">
-        🎁 Akun Anda mendapatkan <strong>1x kuota uji coba gratis</strong>. Untuk menyusun perangkat ajar tanpa batas &amp; mengakses seluruh fitur ekspor penuh, aktifkan lisensi <strong>SohibGuru Pro</strong>.
-      </div>
-
-      <!-- Pilihan Paket Harga (Contoh) -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-        <div class="p-4 rounded-2xl border border-slate-200 bg-slate-50/70 space-y-1.5">
-          <div class="text-xs font-extrabold text-slate-700">Paket 1 Semester</div>
-          <div class="text-xl font-extrabold text-slate-900">Rp25.000 <span class="text-[11px] font-normal text-slate-500">/ 6 bulan</span></div>
-          <ul class="text-[11px] text-slate-600 space-y-1 pt-1">
-            <li>✅ Susun 7 Perangkat Tanpa Batas</li>
-            <li>✅ Generate Gambar Ilustrasi AI</li>
-            <li>✅ Unduh Word (.doc) &amp; PDF A4</li>
-          </ul>
-        </div>
-        <div class="p-4 rounded-2xl border-2 border-brand-500 bg-brand-50/40 space-y-1.5 relative">
-          <span class="absolute -top-2.5 right-3 bg-brand-600 text-white text-[10px] font-extrabold px-2.5 py-0.5 rounded-full">Paling Hemat</span>
-          <div class="text-xs font-extrabold text-brand-800">Akses Selamanya (Lifetime)</div>
-          <div class="text-xl font-extrabold text-slate-900">Rp49.000 <span class="text-[11px] font-normal text-slate-500">/ 1x bayar</span></div>
-          <ul class="text-[11px] text-slate-700 space-y-1 pt-1">
-            <li>✅ Semua Fitur Semesteran</li>
-            <li>✅ Gratis Pembaruan Kurikulum</li>
-            <li>✅ Prioritas Bantuan Admin</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Tombol Pembayaran Otomatis / WhatsApp Admin (Contoh Integrasi) -->
-      <div class="p-3.5 rounded-2xl bg-mint-50/70 border border-mint-200/80 space-y-2.5">
-        <div class="text-xs font-extrabold text-slate-800">Cara Mendapatkan Kode Lisensi:</div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <a id="pro-qris-link" href="https://mayar.id" target="_blank" rel="noopener" class="py-2.5 px-3 rounded-xl bg-brand-600 hover:bg-brand-700 text-white text-xs font-bold text-center shadow-2xs transition">
-            💳 Bayar via QRIS / Mayar.id ↗
-          </a>
-          <a id="pro-wa-link" href="https://wa.me/6281234567890?text=Halo%20Admin%20SohibGuru,%20saya%20ingin%20memesan%20Kode%20Lisensi%20SohibGuru%20Pro." target="_blank" rel="noopener" class="py-2.5 px-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold text-center shadow-2xs transition">
-            💬 Konfirmasi via WhatsApp ↗
-          </a>
-        </div>
-        <p class="text-[11px] text-slate-500">*Catatan pengembang: Tautan QRIS &amp; nomor WhatsApp di atas dapat Anda ganti dengan tautan Lynk.id / Mayar.id / nomor WA Anda sendiri.</p>
-      </div>
-
-      <!-- Input Kode Aktivasi Lisensi -->
-      <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-2">
-        <div class="flex items-center justify-between gap-2">
-          <label for="pro-license-input" class="block text-xs font-extrabold text-slate-900">🔑 Masukkan Kode Lisensi (Khusus Email Anda):</label>
-          <button type="button" id="toggle-admin-gen-btn" class="text-[11px] font-bold text-brand-700 hover:underline cursor-pointer">
-            🛠️ Generator Admin
-          </button>
-        </div>
-        <div class="flex gap-2">
-          <input id="pro-license-input" type="text" class="sg-input text-xs font-mono uppercase tracking-wider" placeholder="SGPRO-XXXX-XXXX">
-          <button type="button" id="pro-activate-btn" class="px-4 py-2 rounded-xl bg-amber-500 hover:bg-amber-600 text-white text-xs font-extrabold shadow-xs transition shrink-0 cursor-pointer">
-            Aktifkan
-          </button>
-        </div>
-        <p class="text-[11px] text-slate-500">
-          Setiap kode lisensi terkunci otomatis pada alamat email akun pembeli sehingga tidak dapat dipindahtangankan.
-        </p>
-      </div>
-
-      <!-- PANEL GENERATOR KODE LISENSI KHUSUS ADMIN (PEMILIK WEBSITE) -->
-      <div id="admin-license-panel" class="hidden p-4 rounded-2xl bg-indigo-950 text-white space-y-3">
-        <div class="flex items-center justify-between gap-2">
-          <div>
-            <span class="text-[10px] font-extrabold uppercase tracking-wider text-amber-300 block">Khusus Pemilik / Admin SohibGuru</span>
-            <h4 class="text-xs sm:text-sm font-extrabold">Generator Lisensi Terikat Email Pembeli</h4>
-          </div>
-          <span class="text-[10px] px-2 py-0.5 rounded-full bg-white/15 text-indigo-100 font-semibold">1 Kode = 1 Guru</span>
-        </div>
-
-        <div class="space-y-2">
-          <label for="admin-buyer-email" class="block text-[11px] font-semibold text-indigo-200">Email Pembeli yang Sudah Transfer:</label>
-          <div class="flex gap-2">
-            <input id="admin-buyer-email" type="email" class="w-full rounded-xl bg-white/10 border border-white/20 px-3 py-2 text-xs text-white placeholder-indigo-300 focus:outline-none focus:border-amber-400" placeholder="contoh: siti.aminah@gmail.com">
-            <button type="button" id="admin-make-code-btn" class="px-3.5 py-2 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 text-xs font-extrabold shrink-0 cursor-pointer">
-              Buat Kode
-            </button>
-          </div>
-        </div>
-
-        <div id="admin-generated-box" class="hidden p-3 rounded-xl bg-white/10 border border-white/15 space-y-2">
-          <div class="flex items-center justify-between gap-2">
-            <div>
-              <span class="text-[10px] text-indigo-200 block">Kode Lisensi Eksklusif:</span>
-              <code id="admin-output-code" class="text-sm font-extrabold font-mono text-amber-300 tracking-wider">SGPRO-0000-0000</code>
-            </div>
-            <button type="button" id="admin-copy-wa-btn" class="px-3 py-1.5 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-slate-950 text-[11px] font-extrabold cursor-pointer">
-              📋 Salin Pesan WA
-            </button>
-          </div>
-          <p class="text-[10px] text-indigo-200">Kode ini hanya valid jika diaktifkan menggunakan email pembeli di atas.</p>
-        </div>
-      </div>
-
-      <div id="pro-status" class="text-xs font-semibold text-rose-600 min-h-[1rem]" role="status"></div>
-    </div>
-
-    <!-- Footer -->
-    <div class="px-6 py-3.5 bg-slate-50 border-t border-slate-100 flex justify-end">
-      <button type="button" id="close-pro-btn" class="px-4 py-2 rounded-xl border border-slate-200 bg-white hover:bg-slate-100 text-slate-700 text-xs font-bold transition cursor-pointer">
-        Tutup
-      </button>
     </div>
   </div>
 </div>
@@ -1230,128 +1176,37 @@ tailwind.config = {
 </footer>
 
 <script>
-const $ = id => document.getElementById(id);
-const esc = s => String(s || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
-
 const ENV_API_KEY = ""; // Kosong agar publik memakai API Key Gemini pribadi masing-masing
 const USERS_KEY = "sohibguru-accounts-v1";
 const SESSION_KEY = "sohibguru-session-email";
-const EMAILJS_CFG_KEY = "sohibguru-emailjs-cfg-v2";
-const FREE_TRIAL_LIMIT = 1;
-const MEM_STORE = {};
+const EMAILJS_CFG_KEY = "sohibguru-emailjs-cfg";
 
-// Kredensial Default EmailJS (Aktif untuk seluruh pengguna saat website di-deploy)
+// Kredensial default EmailJS terpasang otomatis untuk pengiriman OTP ke inbox pengguna
 const DEFAULT_EMAILJS = {
   serviceId: "service_ttkftl4",
   templateId: "template_ettko46",
   publicKey: "pTN4kMdKZOf7pdQxX"
 };
 
-function getEmailJsConfig() {
-  try {
-    const saved = JSON.parse(readStore(EMAILJS_CFG_KEY) || "null");
-    if (saved && saved.serviceId && saved.templateId && saved.publicKey) {
-      return saved;
-    }
-  } catch (e) {}
-  if (DEFAULT_EMAILJS.serviceId && DEFAULT_EMAILJS.templateId && DEFAULT_EMAILJS.publicKey) {
-    return DEFAULT_EMAILJS;
-  }
-  return null;
-}
-
-function syncEmailJsBadge() {
-  const cfg = getEmailJsConfig();
-  const pill = $("emailjs-status-pill");
-  if (!pill) return;
-  if (cfg) {
-    pill.textContent = "✅ Gmail Aktif";
-    pill.className = "text-[10px] font-extrabold px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800";
-    if ($("ejs-service") && !$("ejs-service").value) $("ejs-service").value = cfg.serviceId;
-    if ($("ejs-template") && !$("ejs-template").value) $("ejs-template").value = cfg.templateId;
-    if ($("ejs-pubkey") && !$("ejs-pubkey").value) $("ejs-pubkey").value = cfg.publicKey;
-  } else {
-    pill.textContent = "Mode Cadangan";
-    pill.className = "text-[10px] font-extrabold px-2 py-0.5 rounded-full bg-slate-200 text-slate-700";
-  }
-}
-
-async function dispatchOtpToGmail(targetEmail, otpCode, purposeLabel) {
-  const cfg = getEmailJsConfig();
-  const badge = $("email-delivery-badge");
-  const simCard = $("simulated-inbox-card");
-
-  if (cfg && window.emailjs) {
-    if (simCard) simCard.classList.add("hidden");
-    if (badge) {
-      badge.className = "p-2.5 rounded-xl bg-skysoft-50 border border-skysoft-100 text-[11px] text-slate-700";
-      badge.innerHTML = `⏳ Sedang mengirimkan kode OTP 6 digit ke inbox <strong>${esc(targetEmail)}</strong>...`;
-    }
-    try {
-      window.emailjs.init({ publicKey: cfg.publicKey });
-      await window.emailjs.send(cfg.serviceId, cfg.templateId, {
-        to_email: targetEmail,
-        user_email: targetEmail,
-        email: targetEmail,
-        otp_code: otpCode,
-        code: otpCode,
-        purpose: purposeLabel,
-        app_name: "SohibGuru"
-      });
-      if (badge) {
-        badge.className = "p-2.5 rounded-xl bg-emerald-50 border border-emerald-200 text-[11px] text-emerald-900";
-        badge.innerHTML = `✅ <strong>Kode OTP telah dikirim ke Gmail Anda (${esc(targetEmail)})!</strong> Silakan cek folder <em>Kotak Masuk (Inbox)</em> atau <em>Spam</em>.`;
-      }
-      return true;
-    } catch (err) {
-      if (badge) {
-        badge.className = "p-2.5 rounded-xl bg-rose-50 border border-rose-200 text-[11px] text-rose-800";
-        badge.innerHTML = `⚠️ Pengiriman EmailJS gagal (${esc(err?.text || err?.message || "periksa konfigurasi")}). Gunakan kode cadangan di bawah:`;
-      }
-      if (simCard) simCard.classList.remove("hidden");
-      if ($("simulated-otp-code")) $("simulated-otp-code").textContent = otpCode;
-      return false;
-    }
-  } else {
-    if (badge) {
-      badge.className = "p-2.5 rounded-xl bg-amber-100/70 border border-amber-200 text-[11px] text-amber-950";
-      badge.innerHTML = `ℹ️ Pengiriman langsung ke Gmail membutuhkan pengaturan <strong>EmailJS</strong> (di bawah). Sementara ini kode verifikasi ditampilkan di kotak cadangan:`;
-    }
-    if (simCard) simCard.classList.remove("hidden");
-    if ($("simulated-otp-code")) $("simulated-otp-code").textContent = otpCode;
-    return false;
-  }
-}
-
-// Penyimpanan berlapis (localStorage + sessionStorage + window.name + memori aktif)
+// Penyimpanan tahan banting (localStorage + sessionStorage + window.name fallback)
+const MEM_STORE = {};
 function readStore(key) {
-  if (MEM_STORE[key] !== undefined) return MEM_STORE[key];
   try {
     const v = localStorage.getItem(key);
-    if (v !== null) {
-      MEM_STORE[key] = v;
-      return v;
-    }
+    if (v !== null) return v;
   } catch (e) {}
   try {
     const v = sessionStorage.getItem(key);
-    if (v !== null) {
-      MEM_STORE[key] = v;
-      return v;
-    }
+    if (v !== null) return v;
   } catch (e) {}
   try {
     if (window.name && window.name.startsWith("SG_STORE:")) {
       const parsed = JSON.parse(window.name.slice(9));
-      if (parsed && parsed[key] !== undefined) {
-        MEM_STORE[key] = parsed[key];
-        return parsed[key];
-      }
+      if (parsed && key in parsed) return parsed[key];
     }
   } catch (e) {}
-  return null;
+  return key in MEM_STORE ? MEM_STORE[key] : null;
 }
-
 function writeStore(key, val) {
   MEM_STORE[key] = val;
   try { localStorage.setItem(key, val); } catch (e) {}
@@ -1365,7 +1220,6 @@ function writeStore(key, val) {
     window.name = "SG_STORE:" + JSON.stringify(parsed);
   } catch (e) {}
 }
-
 function removeStore(key) {
   delete MEM_STORE[key];
   try { localStorage.removeItem(key); } catch (e) {}
@@ -1379,329 +1233,927 @@ function removeStore(key) {
   } catch (e) {}
 }
 
-function getAllUsers() {
+function getUsersDB() {
+  try { return JSON.parse(readStore(USERS_KEY) || "{}"); } catch (e) { return {}; }
+}
+function saveUsersDB(db) {
+  writeStore(USERS_KEY, JSON.stringify(db));
+}
+function getCurrentUser() {
   try {
-    return JSON.parse(readStore(USERS_KEY) || "{}") || {};
+    const email = (readStore(SESSION_KEY) || "").trim().toLowerCase();
+    if (!email) return null;
+    const db = getUsersDB();
+    return db[email] || null;
   } catch (e) {
-    return {};
+    return null;
   }
 }
-
-function saveAllUsers(users) {
-  writeStore(USERS_KEY, JSON.stringify(users));
-}
-
-function getCurrentUser() {
-  const email = (readStore(SESSION_KEY) || "").trim().toLowerCase();
-  if (!email) return null;
-  const users = getAllUsers();
-  return users[email] || null;
-}
-
 function getActiveApiKey() {
   const user = getCurrentUser();
-  if (user && user.apiKey && user.apiKey.trim()) return user.apiKey.trim();
+  if (user && user.apiKey) return user.apiKey.trim();
   return ENV_API_KEY;
 }
-
-// Generator Kode Lisensi Terkunci ke Email Pembeli (1 Kode = 1 Guru)
-function generateLicenseForEmail(email) {
-  const clean = String(email || "").trim().toLowerCase();
-  const salt = "SOHIBGURU_DWI_NURAENI_2026";
-  let h1 = 0x811c9dc5;
-  let h2 = 0x1b873593;
-  const str = clean + "::" + salt;
-  for (let i = 0; i < str.length; i++) {
-    const ch = str.charCodeAt(i);
-    h1 ^= ch;
-    h1 = Math.imul(h1, 0x01000193);
-    h2 ^= ch + i;
-    h2 = Math.imul(h2, 0x85ebca6b);
-  }
-  const part1 = (h1 >>> 0).toString(36).toUpperCase().padStart(4, "0").slice(0, 4);
-  const part2 = (h2 >>> 0).toString(36).toUpperCase().padStart(4, "0").slice(0, 4);
-  return `SGPRO-${part1}-${part2}`;
-}
-
-function isUserPro() {
-  const user = getCurrentUser();
-  return Boolean(user && user.isPro);
-}
-
-function getUserUsageCount() {
-  const user = getCurrentUser();
-  return user ? Number(user.usageCount || 0) : 0;
-}
-
-function incrementUserUsage() {
-  const user = getCurrentUser();
-  if (!user) return;
-  const users = getAllUsers();
-  if (users[user.email]) {
-    users[user.email].usageCount = Number(users[user.email].usageCount || 0) + 1;
-    saveAllUsers(users);
-  }
-  syncAuthUI();
-}
-
-function checkProAccessOrPrompt(actionLabel = "fitur ini") {
-  if (isUserPro()) return true;
-  const used = getUserUsageCount();
-  if (used < FREE_TRIAL_LIMIT) return true;
-  openProModal(`Kuota uji coba gratis (${FREE_TRIAL_LIMIT}x susun) pada akun Anda telah terpakai. Aktifkan Lisensi SohibGuru Pro untuk melanjutkan ${actionLabel} tanpa batas.`);
-  return false;
+function isValidEmailFormat(email) {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(String(email || "").trim());
 }
 
 // ==========================================
-// KONFIGURASI 7 TAB ADMINISTRASI & DRAF GURU
+// 1. KONFIGURASI 4 TAB PERANGKAT + TAB PROFIL
 // ==========================================
 const T = {
   modul: {
-    n: "📘 Modul Ajar",
-    pill: "Modul Ajar",
-    hint: "Modul ajar lengkap sesuai Kurikulum Merdeka, K-13, Deep Learning, atau KMA 183.",
+    n: "Modul Ajar",
+    icon: "📘",
+    hint: "Rencana pelaksanaan pembelajaran lengkap sesuai Kurikulum Merdeka atau K-13.",
     extra: [
-      ["model", "Model Pembelajaran", ["Discovery Learning", "Problem Based Learning (PBL)", "Project Based Learning (PjBL)", "Ceramah Interaktif & Diskusi", "Kooperatif (Kelompok)"]]
+      ["model", "Model Pembelajaran", ["Discovery Learning", "Problem Based Learning (PBL)", "Project Based Learning (PjBL)", "Inquiry Learning", "Kooperatif (Kelompok)", "Ceramah Interaktif & Diskusi"]],
+      ["pertemuan", "Jumlah Pertemuan", ["1 Pertemuan", "2 Pertemuan", "3 Pertemuan", "4 Pertemuan"]]
     ]
   },
   lkpd: {
-    n: "📝 LKPD",
-    pill: "LKPD Siswa",
-    hint: "Lembar Kerja Peserta Didik berisi langkah kegiatan, pengamatan, dan kolom jawaban.",
+    n: "LKPD",
+    icon: "📝",
+    hint: "Lembar Kerja Peserta Didik berisi langkah aktivitas, pengamatan gambar, dan tabel isian.",
     extra: [
-      ["jenis", "Jenis Kegiatan", ["Diskusi Kelompok", "Praktik / Eksperimen", "Analisis Studi Kasus", "Proyek Mini", "Eksplorasi Gambar & Konsep"]],
-      ["jml", "Jumlah Kegiatan", ["2", "3", "4", "5"]]
+      ["jenis", "Jenis Kegiatan Siswa", ["Diskusi Kelompok", "Praktik / Eksperimen", "Analisis Kasus & Gambar", "Proyek Mini"]],
+      ["jml", "Jumlah Aktivitas", ["2 Kegiatan", "3 Kegiatan", "4 Kegiatan", "5 Kegiatan"]]
     ]
   },
   ws: {
-    n: "✏️ Worksheet",
-    pill: "Worksheet Latihan",
-    hint: "Lembar soal latihan harian lengkap dengan kunci jawaban dan pedoman penskoran.",
+    n: "Worksheet",
+    icon: "✏️",
+    hint: "Lembar soal latihan harian bergambar lengkap dengan kunci jawaban & pedoman skor.",
     extra: [
-      ["soal", "Bentuk Soal", ["Pilihan Ganda", "Isian Singkat", "Uraian", "Campuran (PG & Uraian)"]],
-      ["jml", "Jumlah Soal", ["5", "10", "15", "20"]],
-      ["lvl", "Tingkat Kesulitan", ["Mudah", "Sedang", "Sulit (HOTS)", "Bertingkat (Mudah–Sulit)"]]
+      ["soal", "Bentuk Soal Latihan", ["Pilihan Ganda", "Isian Singkat", "Uraian", "Campuran (PG & Uraian)"]],
+      ["jml", "Jumlah Soal", ["5 Soal", "10 Soal", "15 Soal", "20 Soal"]],
+      ["lvl", "Tingkat Kesulitan", ["Mudah (LOTS)", "Sedang (MOTS)", "Sulit (HOTS)", "Bertingkat (LOTS-MOTS-HOTS)"]]
     ]
   },
-  asesmen: {
-    n: "🎓 Asesmen / Ujian",
-    pill: "Naskah Ujian Resmi",
-    hint: "Naskah soal UH, STS/PTS, SAS/PAS, atau SAT/PAT lengkap dengan kop ujian dan penskoran.",
+  ujian: {
+    n: "Asesmen / Ujian",
+    icon: "🎓",
+    hint: "Naskah soal resmi UH, STS/PTS, SAS/PAS, atau SAT/PAT lengkap dengan kop naskah & kunci.",
     extra: [
-      ["ujian", "Jenis Ujian", ["Ulangan Harian (UH)", "Sumatif Tengah Semester (STS / PTS)", "Sumatif Akhir Semester (SAS / PAS)", "Sumatif Akhir Tahun (SAT / PAT)"]],
-      ["komposisi", "Komposisi Bentuk Soal", ["Pilihan Ganda + Uraian", "Pilihan Ganda + PG Kompleks (AKM) + Uraian", "Pilihan Ganda Saja", "Uraian / Esai Saja"]],
-      ["jml", "Total Jumlah Soal", ["10", "15", "20", "25", "30", "40"]],
-      ["sebaran", "Sebaran Kognitif (LOTS:MOTS:HOTS)", ["30% Mudah : 50% Sedang : 20% HOTS", "40% Mudah : 40% Sedang : 20% HOTS", "20% Mudah : 50% Sedang : 30% HOTS"]]
+      ["jenis_ujian", "Jenis Ujian / Asesmen", ["Ulangan Harian (UH)", "Sumatif Tengah Semester (STS / PTS)", "Sumatif Akhir Semester (SAS / PAS)", "Sumatif Akhir Tahun (SAT / PAT)"]],
+      ["komposisi", "Komposisi Bentuk Soal", ["Pilihan Ganda (PG) Saja", "PG + Uraian", "PG + PG Kompleks (AKM) + Menjodohkan + Uraian", "PG + Isian Singkat + Uraian"]],
+      ["jml_ujian", "Total Jumlah Soal", ["10 Soal (8 PG, 2 Uraian)", "20 Soal (15 PG, 5 Uraian)", "25 Soal (20 PG, 5 Uraian)", "35 Soal (30 PG, 5 Uraian)", "40 Soal (35 PG, 5 Uraian)"]],
+      ["sebaran", "Sebaran Kognitif (LOTS : MOTS : HOTS)", ["Proporsional (30% LOTS : 50% MOTS : 20% HOTS)", "Fokus Pemahaman (40% LOTS : 40% MOTS : 20% HOTS)", "Fokus Penalaran (20% LOTS : 50% MOTS : 30% HOTS)"]]
     ]
   },
-  kisikisi: {
-    n: "📊 Kisi-Kisi & Rubrik",
-    pill: "Kisi-Kisi & Kartu Soal",
-    hint: "Tabel pemetaan indikator soal (C1–C6), kartu soal, serta rubrik penilaian praktik/proyek.",
-    extra: [
-      ["dok", "Jenis Dokumen", ["Kisi-Kisi Soal Lengkap", "Kisi-Kisi + Kartu Soal", "Rubrik Penilaian Praktik / Proyek (Skor 1–4)"]],
-      ["jml", "Jumlah Butir / Kriteria", ["5", "10", "15", "20", "25"]]
-    ]
-  },
-  prota: {
-    n: "📅 ATP & Prota-Promes",
-    pill: "Perencanaan Semester",
-    hint: "Alur Tujuan Pembelajaran (ATP)/Silabus, Program Tahunan (Prota), dan Program Semester (Promes).",
-    extra: [
-      ["perangkat", "Jenis Perencanaan", ["Alur Tujuan Pembelajaran (ATP) / Silabus", "Program Tahunan (Prota)", "Program Semester (Promes)"]],
-      ["sem", "Semester", ["Semester Ganjil (1)", "Semester Genap (2)", "Satu Tahun Ajaran (Ganjil & Genap)"]],
-      ["jp", "Alokasi JP per Minggu", ["2 JP / Minggu", "3 JP / Minggu", "4 JP / Minggu", "5 JP / Minggu"]]
-    ]
-  },
-  remedial: {
-    n: "🗂️ Remedial & Jurnal",
-    pill: "Tindak Lanjut & Jurnal",
-    hint: "Program tindak lanjut remedial & pengayaan pasca-ujian atau jurnal mengajar harian.",
-    extra: [
-      ["adm", "Jenis Administrasi", ["Program Remedial & Pengayaan", "Jurnal Mengajar Harian / Mingguan"]],
-      ["kktp", "Kriteria Ketuntasan (KKTP / KKM)", ["70", "75", "78", "80"]]
-    ]
+  profil: {
+    n: "Profil",
+    icon: "🪪",
+    hint: "Identitas default guru dan satuan pendidikan untuk pengisian otomatis semua perangkat ajar.",
+    extra: []
   }
 };
 
 const F = ["sekolah", "ta", "mapel", "kelas", "waktu", "topik", "tujuan", "cat", "kur", "guru", "nip", "kota", "kepsek", "nipk", "materi"];
-const SH = ["sekolah", "ta", "kur", "guru", "nip", "kota", "kepsek", "nipk", "mapel", "kelas", "materi"];
+const SH = ["sekolah", "ta", "kur", "guru", "nip", "kota", "kepsek", "nipk", "mapel", "kelas"];
+const PROFILE_KEYS = ["sekolah", "ta", "kur", "mapel", "kelas", "guru", "nip", "kepsek", "nipk", "kota"];
+
 const KN = {
-  "Kurikulum Merdeka": "gunakan istilah Capaian Pembelajaran (CP), Tujuan Pembelajaran (TP), Alur Tujuan Pembelajaran (ATP), KKTP, dan Dimensi Profil Pelajar Pancasila.",
-  "Kurikulum 2013": "gunakan istilah Kompetensi Inti (KI), Kompetensi Dasar (KD), Indikator Pencapaian Kompetensi (IPK), KKM, serta penilaian sikap, pengetahuan, dan keterampilan.",
-  "Pembelajaran Mendalam (Deep Learning)": "terapkan prinsip Pembelajaran Mendalam (berkesadaran/mindful, bermakna/meaningful, menggembirakan/joyful) dan kaitkan dengan 8 Dimensi Profil Lulusan.",
-  "Kurikulum Madrasah (KMA 183)": "sesuaikan dengan KMA 183 Tahun 2019 untuk madrasah, gunakan KI dan KD, serta integrasikan nilai-nilai keislaman dan moderasi beragama."
+  "Kurikulum Merdeka": "Gunakan istilah Capaian Pembelajaran (CP), Tujuan Pembelajaran (TP), Alur Tujuan Pembelajaran (ATP), KKTP, serta dimensi Profil Pelajar Pancasila.",
+  "Kurikulum 2013": "Gunakan istilah Kompetensi Inti (KI), Kompetensi Dasar (KD), Indikator Pencapaian Kompetensi (IPK), KKM, serta penilaian sikap, pengetahuan, dan keterampilan.",
+  "Pembelajaran Mendalam (Deep Learning)": "Terapkan prinsip Pembelajaran Mendalam (Berkesadaran / Mindful, Bermakna / Meaningful, Menggembirakan / Joyful) dengan pengalaman belajar Memahami, Mengaplikasi, dan Merefleksi serta 8 Dimensi Profil Lulusan.",
+  "Kurikulum Madrasah (KMA 183)": "Sesuaikan dengan KMA 183 Tahun 2019 / Kurikulum Madrasah, integrasikan nilai-nilai moderasi beragama dan keislaman yang relevan."
 };
 
 let cur = "modul";
 let D = {};
-let GEN_IMGS = {}; // Menyimpan gambar hasil generate AI: { id: { dataUrl, caption } }
+const $ = id => document.getElementById(id);
 
 function getDraftStorageKey() {
   const user = getCurrentUser();
-  return user ? `sohibguru-draft-${user.email}` : "sohibguru-draft-guest";
+  return user ? `sohibguru-draft-${user.email}` : "sohibguru-v2";
 }
-
+function applyProfileToDraft(profileObj, forceOverwrite = false) {
+  if (!profileObj) return;
+  D._s = D._s || {};
+  PROFILE_KEYS.forEach(k => {
+    if (profileObj[k] && (forceOverwrite || !D._s[k])) {
+      D._s[k] = profileObj[k];
+    }
+  });
+}
 function loadDraftForCurrentUser() {
-  try {
-    D = JSON.parse(readStore(getDraftStorageKey()) || "{}");
-  } catch (e) {
-    D = {};
-  }
-  GEN_IMGS = D._imgs || {};
+  try { D = JSON.parse(readStore(getDraftStorageKey()) || "{}"); } catch (e) { D = {}; }
+  const user = getCurrentUser();
+  if (user && user.profile) applyProfileToDraft(user.profile, false);
+  if (!g("kota")) put("kota", "Cilegon, 16 November 2026");
+  if (!g("ta")) put("ta", "2026/2027");
 }
-
 function save() {
-  D._imgs = GEN_IMGS;
   writeStore(getDraftStorageKey(), JSON.stringify(D));
 }
 
 function g(k) {
   return ((SH.includes(k) ? D._s : D[cur]) || {})[k] || "";
 }
-
 function put(k, v) {
   const o = SH.includes(k) ? "_s" : cur;
   (D[o] = D[o] || {})[k] = v;
   save();
 }
 
-function toast(m, targetId = "toast") {
-  const el = $(targetId);
-  if (!el) return;
-  el.textContent = m;
-  setTimeout(() => {
-    if (el.textContent === m) el.textContent = "";
-  }, 4000);
-}
+loadDraftForCurrentUser();
 
-async function copy(t, m) {
-  try {
-    if (navigator.clipboard && navigator.clipboard.writeText) {
-      await navigator.clipboard.writeText(t);
-      toast(m);
-      return;
-    }
-  } catch (e) {}
-  const ta = document.createElement("textarea");
-  ta.value = t;
-  ta.style.position = "fixed";
-  ta.style.opacity = "0";
-  document.body.appendChild(ta);
-  ta.select();
-  try {
-    document.execCommand("copy");
-    toast(m);
-  } catch (e) {
-    toast("Salin gagal. Blok teks lalu salin manual.");
-  }
-  document.body.removeChild(ta);
-}
+// In-memory generated images map per tab
+const GEN_IMAGES = {
+  modul: {}, lkpd: {}, ws: {}, ujian: {}
+};
 
+// ==========================================
+// 2. RENDER TABS & DYNAMIC FORM FIELDS
+// ==========================================
 function tabs() {
   const n = $("tabs");
   if (!n) return;
   n.innerHTML = "";
-  Object.keys(T).forEach((k, idx) => {
+  Object.keys(T).forEach(k => {
     const b = document.createElement("button");
     b.type = "button";
-    b.textContent = T[k].n;
+    const active = k === cur;
+    b.className = active
+      ? "flex-none px-3.5 py-2 rounded-xl text-xs font-extrabold bg-brand-600 text-white shadow-xs transition flex items-center gap-1.5 cursor-pointer"
+      : "flex-none px-3.5 py-2 rounded-xl text-xs font-bold text-slate-600 hover:bg-slate-100 hover:text-slate-900 transition flex items-center gap-1.5 cursor-pointer";
+    b.innerHTML = `<span>${T[k].icon}</span><span>${T[k].n}</span>`;
     b.setAttribute("role", "tab");
-    b.setAttribute("aria-selected", k === cur ? "true" : "false");
-    b.className = k === cur
-      ? "shrink-0 px-3.5 py-2 rounded-xl text-xs font-extrabold bg-brand-600 text-white shadow-xs transition cursor-pointer"
-      : "shrink-0 px-3.5 py-2 rounded-xl text-xs font-bold text-slate-600 hover:bg-slate-100 hover:text-slate-900 transition cursor-pointer";
-    b.onclick = () => {
-      cur = k;
-      if ($("tab-badge-icon")) $("tab-badge-icon").textContent = String(idx + 1);
-      load();
-    };
+    b.setAttribute("aria-selected", active);
+    b.onclick = () => { cur = k; load(); };
     n.appendChild(b);
   });
 }
 
+function fillTabProfileInputs() {
+  const user = getCurrentUser();
+  const prof = (user && user.profile) ? user.profile : (D._s || {});
+  if ($("profil-account-badge")) {
+    $("profil-account-badge").textContent = user ? user.email : "Akun Pendidik";
+  }
+  PROFILE_KEYS.forEach(k => {
+    const el = $("tab-prof-" + k);
+    if (el) el.value = prof[k] || (k === "kur" ? "Kurikulum Merdeka" : "");
+  });
+}
+
+function readTabProfileInputs() {
+  const profile = {};
+  PROFILE_KEYS.forEach(k => {
+    const el = $("tab-prof-" + k);
+    profile[k] = el ? el.value.trim() : "";
+  });
+  return profile;
+}
+
 function load() {
   tabs();
-  if ($("t-hint")) $("t-hint").textContent = T[cur].hint;
-  if ($("tab-pill")) $("tab-pill").textContent = T[cur].pill;
+  const isProfil = cur === "profil";
+  if ($("profil-view")) $("profil-view").classList.toggle("hidden", !isProfil);
+  if ($("left-col")) $("left-col").classList.toggle("hidden", isProfil);
+  if ($("right-col")) $("right-col").classList.toggle("hidden", isProfil);
 
-  F.forEach(f => {
-    if ($(f)) $(f).value = g(f);
-  });
-  if ($("kur") && !$("kur").value) $("kur").selectedIndex = 0;
-
-  const ex = $("extra");
-  if (ex) {
-    ex.innerHTML = "";
-    T[cur].extra.forEach(([id, lab, opts]) => {
-      const wrap = document.createElement("div");
-      const l = document.createElement("label");
-      l.textContent = lab;
-      l.htmlFor = "x-" + id;
-      l.className = "block text-xs font-bold text-slate-700 mb-1";
-      const s = document.createElement("select");
-      s.id = "x-" + id;
-      s.className = "sg-input text-xs";
-      opts.forEach(o => {
-        const op = document.createElement("option");
-        op.textContent = o;
-        s.appendChild(op);
-      });
-      s.value = g("x-" + id) || opts[0];
-      s.onchange = () => put("x-" + id, s.value);
-      wrap.append(l, s);
-      ex.appendChild(wrap);
-    });
+  if (isProfil) {
+    fillTabProfileInputs();
+    return;
   }
 
-  if ($("prompt")) $("prompt").value = g("prompt");
-  if ($("res")) $("res").value = g("res");
+  $("tab-pill").textContent = `${T[cur].icon} ${T[cur].n}`;
+  $("t-hint").textContent = T[cur].hint;
+
+  F.forEach(f => { $(f).value = g(f); });
+  if (!$("kur").value) $("kur").selectedIndex = 0;
+
+  const ex = $("extra");
+  ex.innerHTML = `<div class="text-[11px] font-extrabold uppercase tracking-wider text-brand-700 mb-1">⚙️ Pengaturan Khusus ${T[cur].n}</div>`;
+  T[cur].extra.forEach(([id, lab, opts]) => {
+    const wrap = document.createElement("div");
+    const l = document.createElement("label");
+    l.textContent = lab;
+    l.htmlFor = "x-" + id;
+    l.className = "block text-xs font-bold text-slate-700 mb-1";
+    const s = document.createElement("select");
+    s.id = "x-" + id;
+    s.className = "sg-input text-xs";
+    opts.forEach(o => {
+      const op = document.createElement("option");
+      op.textContent = o;
+      s.appendChild(op);
+    });
+    s.value = g("x-" + id) || opts[0];
+    s.onchange = () => put("x-" + id, s.value);
+    wrap.append(l, s);
+    ex.appendChild(wrap);
+  });
+
+  $("prompt").value = g("prompt");
+  $("res").value = g("res");
   render();
 }
 
 F.forEach(f => {
   const e = $(f);
   if (!e) return;
-  const h = () => {
-    put(f, e.value);
-    render();
-  };
+  const h = () => { put(f, e.value); render(); };
   e.addEventListener("input", h);
   e.addEventListener("change", h);
 });
 
 // ==========================================
-// UNGGAH MATERI SUMBER (GAMBAR, DOCX, TXT)
+// 3. PROMPT BUILDER FOR 4 TABS
+// ==========================================
+function build() {
+  const v = k => $(k).value.trim() || "(belum diisi)";
+  const x = id => $("x-" + id) ? $("x-" + id).value : "";
+  const wantImg = $("autoimg").checked;
+
+  const base = [
+    `Satuan Pendidikan: ${v("sekolah")}`,
+    `Tahun Ajaran: ${v("ta")}`,
+    `Mata Pelajaran: ${v("mapel")}`,
+    `Kelas / Fase: ${v("kelas")}`,
+    `Kurikulum: ${$("kur").value}`,
+    `Alokasi Waktu: ${v("waktu")}`,
+    `Topik / Lingkup Materi: ${v("topik")}`,
+    `Tujuan Pembelajaran: ${v("tujuan")}`
+  ].join("\n") + matSrc();
+
+  const note = `\nPetunjuk Kurikulum: ${KN[$("kur").value]}` + ($("cat").value.trim() ? `\nCatatan Khusus Guru: ${$("cat").value.trim()}` : "");
+  const imgRule = wantImg
+    ? `\n\nPENTING - PENANDA ILUSTRASI GAMBAR: Sisipkan 1 sampai 2 penanda gambar edukatif pada baris tersendiri dengan format persis: [GAMBAR: deskripsi visual ilustrasi atau diagram edukatif yang bersih, jelas, dan sesuai konteks soal/kegiatan siswa; jika menampilkan tokoh guru atau siswa, wajib menggambarkan perempuan berjilbab dan laki-laki berpeci hitam].`
+    : "";
+  const fmt = "\n\nFormat Output: Bahasa Indonesia baku yang komunikatif, gunakan Markdown rapi (# untuk judul utama, ## untuk subbagian, - untuk daftar, | untuk tabel). Langsung tulis isi dokumen tanpa kata pengantar atau penutup di luar dokumen.";
+
+  if (cur === "modul") {
+    return `Kamu adalah pakar perangkat ajar dan guru profesional. Susunlah MODUL AJAR yang sistematis dan siap digunakan di kelas.\n\n${base}\nModel Pembelajaran: ${x("model")}\nJumlah Pertemuan: ${x("pertemuan")}${note}${imgRule}\n\nStruktur wajib:\n1. **Informasi Umum**: Identitas modul, kompetensi awal, profil pelajar/lulusan, sarana & prasarana, target peserta didik, model pembelajaran.\n2. **Komponen Inti**: Tujuan pembelajaran, pemahaman bermakna, pertanyaan pemantik, kegiatan pembelajaran terperinci (Pendahuluan, Kegiatan Inti sesuai sintaks ${x("model")}, Penutup lengkap dengan estimasi menit), asesmen (diagnostik, formatif, sumatif beserta rubrik), pengayaan & remedial, serta refleksi guru dan peserta didik.\n3. **Lampiran**: Ringkasan bahan bacaan guru & siswa, glosarium, daftar pustaka.${fmt}`;
+  }
+
+  if (cur === "lkpd") {
+    return `Kamu adalah guru kreatif perancang aktivitas siswa. Susunlah LKPD (Lembar Kerja Peserta Didik) yang menarik dan siap dicetak.\n\n${base}\nJenis Kegiatan: ${x("jenis")}\nJumlah Aktivitas: ${x("jml")}${note}${imgRule}\n\nStruktur wajib: Judul LKPD, Tujuan Pembelajaran singkat, Petunjuk Pengerjaan bagi siswa, Ringkasan Materi Pengantar, Langkah Kegiatan bernomor lengkap dengan ilustrasi/stimulus dan tabel/kolom kosong untuk jawaban siswa, Pertanyaan Refleksi Diri, serta Tabel Rubrik Penilaian Guru.${fmt}`;
+  }
+
+  if (cur === "ws") {
+    return `Kamu adalah guru penyusun evaluasi harian. Buatlah WORKSHEET (Lembar Latihan Soal) siap cetak.\n\n${base}\nBentuk Soal: ${x("soal")}\nJumlah Soal: ${x("jml")}\nTingkat Kesulitan: ${x("lvl")}${note}${imgRule}\n\nStruktur wajib: Petunjuk pengerjaan singkat, daftar soal bernomor yang jelas dan terstruktur (sertakan soal berbasis pengamatan gambar jika ada penanda [GAMBAR: ...]), diikuti bagian terpisah di akhir berjudul **KUNCI JAWABAN & PEDOMAN PENSKORAN**.${fmt}`;
+  }
+
+  return `Kamu adalah tim penyusun naskah evaluasi sekolah/madrasah. Susunlah NASKAH SOAL ${x("jenis_ujian").toUpperCase()} yang resmi dan siap digandakan.\n\n${base}\nJenis Ujian: ${x("jenis_ujian")}\nKomposisi Bentuk Soal: ${x("komposisi")}\nTotal Jumlah Soal: ${x("jml_ujian")}\nSebaran Tingkat Kognitif: ${x("sebaran")}${note}${imgRule}\n\nStruktur wajib:\n1. **Petunjuk Umum Pengerjaan Ujian** (cara menjawab pilihan ganda, PG kompleks/menjodohkan, dan uraian).\n2. **Naskah Soal Terstruktur** dibagi per bagian (misal: I. Pilihan Ganda dengan opsi A, B, C, D/E ke bawah atau rapi; II. Uraian / bentuk soal lainnya). Pastikan butir soal HOTS menggunakan stimulus teks, data tabel, atau penanda [GAMBAR: ...].\n3. **Kunci Jawaban, Pembahasan Singkat & Pedoman Penskoran** (lengkap dengan bobot skor tiap bagian dan rumus perhitungan nilai akhir skala 0–100) di bagian akhir.${fmt}`;
+}
+
+$("mk").onclick = () => {
+  const p = build();
+  $("prompt").value = p;
+  put("prompt", p);
+  toast("Prompt siap! Klik “Salin Prompt” untuk digunakan di AI eksternal.");
+};
+
+function toast(m, elId = "toast") {
+  const el = $(elId);
+  if (!el) return;
+  el.textContent = m;
+  setTimeout(() => { if (el.textContent === m) el.textContent = ""; }, 4500);
+}
+
+async function copy(t, m) {
+  try {
+    await navigator.clipboard.writeText(t);
+    toast(m);
+  } catch (e) {
+    const ta = document.createElement("textarea");
+    ta.value = t;
+    document.body.appendChild(ta);
+    ta.select();
+    try {
+      document.execCommand("copy");
+      toast(m);
+    } catch (err) {
+      toast("Salin gagal. Silakan blok teks dan salin manual.");
+    }
+    document.body.removeChild(ta);
+  }
+}
+
+$("cp").onclick = () => {
+  if (!$("prompt").value) { toast("Klik “Buat Prompt” terlebih dahulu."); return; }
+  copy($("prompt").value, "Prompt berhasil disalin ke clipboard!");
+};
+$("cr").onclick = () => {
+  if (!$("res").value) { toast("Belum ada teks hasil untuk disalin."); return; }
+  copy($("res").value, "Teks dokumen berhasil disalin!");
+};
+
+// ==========================================
+// 4. DIRECT AI GENERATION (GEMINI API)
+// ==========================================
+async function fetchWithRetry(url, options, maxRetries = 4) {
+  let delay = 1000;
+  for (let i = 0; i < maxRetries; i++) {
+    const resp = await fetch(url, options);
+    if (resp.ok) return resp;
+    if (resp.status === 429 || resp.status >= 500) {
+      await new Promise(r => setTimeout(r, delay));
+      delay *= 2;
+      continue;
+    }
+    const errText = await resp.text();
+    throw new Error(`HTTP ${resp.status}: ${errText}`);
+  }
+  throw new Error("Server sedang sibuk. Silakan coba beberapa saat lagi.");
+}
+
+function blobToBase64(blob) {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onloadend = () => resolve((reader.result || "").split(",")[1]);
+    reader.onerror = reject;
+    reader.readAsDataURL(blob);
+  });
+}
+
+$("gen").onclick = async () => {
+  const activeKey = getActiveApiKey();
+  if (!activeKey) {
+    $("gt").textContent = "🔑 Silakan masukkan API Key Gemini gratis Anda terlebih dahulu (atau gunakan tombol “Buat Prompt”).";
+    if (typeof openAuthModal === "function") openAuthModal();
+    return;
+  }
+
+  const p = build();
+  $("prompt").value = p;
+  put("prompt", p);
+  useImg = IM.length > 0;
+  const pg = build();
+  useImg = false;
+
+  const gt = $("gt");
+  const b = $("gen");
+  b.disabled = true;
+  b.innerHTML = '<span class="spinner"></span><span>Menyusun Perangkat...</span>';
+  gt.textContent = "AI sedang menyusun perangkat administrasi Anda. Mohon tunggu sebentar...";
+
+  try {
+    const parts = [{ text: IM.length ? pg : p }];
+    for (const m of IM) {
+      const b64 = await blobToBase64(m.blob);
+      parts.push({
+        inlineData: { mimeType: m.blob.type || "image/jpeg", data: b64 }
+      });
+    }
+
+    const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key=${activeKey}`;
+    const payload = {
+      contents: [{ role: "user", parts }],
+      systemInstruction: {
+        parts: [{ text: "Kamu adalah konsultan kurikulum dan guru teladan di Indonesia yang menyusun perangkat ajar, naskah ujian, dan lembar kerja siswa siap cetak dengan bahasa Indonesia yang baik, tabel terstruktur, dan detail operasional." }]
+      }
+    };
+
+    const response = await fetchWithRetry(url, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload)
+    });
+
+    const data = await response.json();
+    const text = data?.candidates?.[0]?.content?.parts?.[0]?.text || "";
+    if (!text) throw new Error("Respon AI kosong.");
+
+    $("res").value = text.trim();
+    put("res", $("res").value);
+    render();
+
+    const markers = extractMarkers($("res").value);
+    if (markers.length > 0) {
+      gt.textContent = `Selesai! Ditemukan ${markers.length} penanda gambar. Klik “Generate Semua Penanda” di kanan untuk membuat ilustrasinya.`;
+    } else {
+      gt.textContent = "Selesai! Dokumen siap disunting, diberi ilustrasi gambar, atau diunduh ke Word/PDF.";
+    }
+  } catch (err) {
+    gt.textContent = "Gagal menyusun langsung: " + (err.message || "Periksa koneksi internet Anda.");
+  } finally {
+    b.disabled = false;
+    b.innerHTML = "<span>✨ Susun Langsung dengan AI</span>";
+  }
+};
+
+// ==========================================
+// 5. EDUCATIONAL IMAGE GENERATOR STUDIO
+// ==========================================
+async function generateEducationalImage(promptText, styleHint = "Ilustrasi Buku Pelajaran Berwarna") {
+  const activeKey = getActiveApiKey();
+  if (!activeKey) {
+    if (typeof openAuthModal === "function") openAuthModal();
+    throw new Error("API Key Gemini belum diisi. Silakan masukkan API Key gratis Anda terlebih dahulu.");
+  }
+  const fullPrompt = `Educational illustration for Indonesian Islamic/national school teaching material (${styleHint}), clean white background, crisp lines, high clarity, visually appealing, no messy watermark text. IMPORTANT CHARACTER ATTIRE RULE: Whenever human characters, teachers, or students appear in the scene, ALL female teachers and female students MUST wear a neat modest hijab (jilbab), and ALL male teachers and male students MUST wear a neat black Indonesian peci cap (songkok) and modest school attire: ${promptText}`;
+  const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-image:generateContent?key=${activeKey}`;
+  const payload = {
+    contents: [{ role: "user", parts: [{ text: fullPrompt }] }],
+    generationConfig: {
+      responseModalities: ["IMAGE"],
+      imageConfig: { aspectRatio: "4:3" }
+    }
+  };
+
+  const resp = await fetchWithRetry(url, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(payload)
+  });
+
+  const result = await resp.json();
+  const part = result?.candidates?.[0]?.content?.parts?.find(p => p.inlineData);
+  if (!part || !part.inlineData?.data) {
+    throw new Error("Gambar tidak berhasil dibuat oleh AI.");
+  }
+  const mime = part.inlineData.mimeType || "image/png";
+  return `data:${mime};base64,${part.inlineData.data}`;
+}
+
+function extractMarkers(text) {
+  const regex = /\[GAMBAR:\s*([^\]]+)\]/gi;
+  const list = [];
+  let match;
+  while ((match = regex.exec(text)) !== null) {
+    list.push({ full: match[0], desc: match[1].trim() });
+  }
+  return list;
+}
+
+window.generateMarkerImage = async function(desc, btnEl) {
+  const statusEl = $("img-status");
+  const styleVal = $("img-style") ? $("img-style").value : "Ilustrasi Buku Pelajaran Berwarna";
+  if (btnEl) {
+    btnEl.disabled = true;
+    btnEl.innerHTML = '<span class="spinner"></span> Menggambar...';
+  }
+  statusEl.textContent = `Sedang menggambar ilustrasi: "${desc.slice(0, 65)}..."`;
+
+  try {
+    const dataUrl = await generateEducationalImage(desc, styleVal);
+    GEN_IMAGES[cur][desc] = { url: dataUrl, caption: desc };
+    render();
+    statusEl.textContent = "Ilustrasi berhasil dibuat dan disisipkan ke pratinjau A4!";
+  } catch (err) {
+    statusEl.textContent = "Gagal membuat gambar: " + err.message;
+    if (btnEl) {
+      btnEl.disabled = false;
+      btnEl.textContent = "🔄 Coba Lagi";
+    }
+  }
+};
+
+window.removeGeneratedImage = function(desc) {
+  delete GEN_IMAGES[cur][desc];
+  render();
+};
+
+$("gen-all-img").onclick = async () => {
+  const markers = extractMarkers($("res").value);
+  const pending = markers.filter(m => !GEN_IMAGES[cur][m.desc]);
+  if (!pending.length) {
+    toast("Semua penanda gambar sudah berhasil dibuat!", "img-status");
+    return;
+  }
+  const btn = $("gen-all-img");
+  const styleVal = $("img-style").value;
+  btn.disabled = true;
+  btn.innerHTML = `<span class="spinner"></span><span>Membuat ${pending.length} gambar...</span>`;
+
+  for (let i = 0; i < pending.length; i++) {
+    $("img-status").textContent = `Menggambar ${i + 1} dari ${pending.length}: "${pending[i].desc.slice(0, 50)}..."`;
+    try {
+      const dataUrl = await generateEducationalImage(pending[i].desc, styleVal);
+      GEN_IMAGES[cur][pending[i].desc] = { url: dataUrl, caption: pending[i].desc };
+      render();
+    } catch (e) {
+      $("img-status").textContent = `Gagal pada gambar ke-${i + 1}: ${e.message}`;
+    }
+  }
+  btn.disabled = false;
+  $("img-status").textContent = "Semua ilustrasi gambar selesai dibuat!";
+  render();
+};
+
+$("btn-auto-prompt-img").onclick = () => {
+  const topik = $("topik").value.trim() || "materi pembelajaran";
+  const mapel = $("mapel").value.trim() || "pelajaran sekolah";
+  const ctx = cur === "lkpd" ? "Ilustrasi kegiatan pengamatan siswa"
+    : (cur === "ws" || cur === "ujian") ? "Diagram atau ilustrasi stimulus soal"
+    : "Bagan konsep visual materi";
+  $("img-prompt").value = `${ctx} mengenai ${topik} untuk mata pelajaran ${mapel}, jelas, informatif, dan mudah dipahami siswa`;
+};
+
+$("btn-gen-img").onclick = async () => {
+  const desc = $("img-prompt").value.trim();
+  if (!desc) {
+    toast("Tulis deskripsi gambar dulu atau klik “Ide Deskripsi dari Topik”.", "img-status");
+    return;
+  }
+  const btn = $("btn-gen-img");
+  const pos = $("img-pos").value;
+  const styleVal = $("img-style").value;
+
+  btn.disabled = true;
+  btn.innerHTML = '<span class="spinner"></span><span>Menggambar...</span>';
+  $("img-status").textContent = "AI sedang menggambar ilustrasi edukatif Anda...";
+
+  try {
+    const dataUrl = await generateEducationalImage(desc, styleVal);
+    GEN_IMAGES[cur][desc] = { url: dataUrl, caption: desc };
+
+    let currentText = $("res").value;
+    if (!currentText.trim()) {
+      currentText = `# ${T[cur].n}: ${$("topik").value.trim() || "Materi Pembelajaran"}\n\n[GAMBAR: ${desc}]\n\nTuliskan aktivitas atau pertanyaan berdasarkan gambar di atas...`;
+    } else if (pos === "top") {
+      currentText = `[GAMBAR: ${desc}]\n\n` + currentText.trim();
+    } else if (pos === "end") {
+      currentText = currentText.trim() + `\n\n[GAMBAR: ${desc}]`;
+    } else {
+      const blocks = currentText.split("\n\n");
+      const mid = Math.max(1, Math.floor(blocks.length / 2));
+      blocks.splice(mid, 0, `[GAMBAR: ${desc}]`);
+      currentText = blocks.join("\n\n");
+    }
+
+    $("res").value = currentText;
+    put("res", currentText);
+    render();
+    $("img-status").textContent = "Gambar berhasil dibuat dan disisipkan ke dokumen!";
+  } catch (err) {
+    $("img-status").textContent = "Gagal membuat gambar: " + err.message;
+  } finally {
+    btn.disabled = false;
+    btn.innerHTML = "<span>🖼️ Buat &amp; Sisipkan Gambar</span>";
+  }
+};
+
+// ==========================================
+// 6. A4 DOCUMENT PREVIEW & MARKDOWN RENDERER
+// ==========================================
+$("res").addEventListener("input", () => {
+  put("res", $("res").value);
+  render();
+});
+
+const esc = s => String(s || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+const inl = s => esc(s).replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>").replace(/\*(.+?)\*/g, "<em>$1</em>");
+
+function renderFigureBlock(desc) {
+  const existing = GEN_IMAGES[cur][desc];
+  const safeDescAttr = desc.replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+
+  if (existing) {
+    return `
+      <figure class="doc-figure" data-caption="${safeDescAttr}">
+        <img src="${existing.url}" alt="${safeDescAttr}">
+        <figcaption>Gambar: ${esc(desc)}</figcaption>
+        <div class="doc-figure-actions noprint mt-2 flex justify-center gap-2 flex-wrap font-sans" data-html2canvas-ignore="true">
+          <button type="button" onclick="generateMarkerImage('${safeDescAttr}', this)" class="text-xs font-bold px-2.5 py-1 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 cursor-pointer">🔄 Buat Ulang</button>
+          <button type="button" onclick="removeGeneratedImage('${safeDescAttr}')" class="text-xs font-bold px-2.5 py-1 rounded-lg bg-rose-50 hover:bg-rose-100 text-rose-600 cursor-pointer">🗑️ Hapus Gambar</button>
+        </div>
+      </figure>
+    `;
+  }
+
+  return `
+    <div class="img-marker-card noprint my-3 p-3.5 rounded-2xl border-2 border-dashed border-brand-300 bg-brand-50/60 flex items-center justify-between gap-3 flex-wrap font-sans" data-html2canvas-ignore="true">
+      <div class="text-xs text-slate-700 flex-1 min-w-[200px]">
+        <span class="block text-[10px] font-extrabold uppercase tracking-wider text-brand-600 mb-0.5">🖼️ Penanda Ilustrasi Gambar</span>
+        <span class="font-medium">${esc(desc)}</span>
+      </div>
+      <button type="button" onclick="generateMarkerImage('${safeDescAttr}', this)" class="bg-brand-600 hover:bg-brand-700 text-white text-xs font-bold px-3 py-1.5 rounded-xl shadow-xs transition cursor-pointer shrink-0">
+        ✨ Generate Gambar Ini
+      </button>
+    </div>
+  `;
+}
+
+function md(t) {
+  const L = t.split("\n");
+  let o = "", list = null, tb = [];
+  const endL = () => { if (list) { o += `</${list}>`; list = null; } };
+  const endT = () => {
+    if (tb.length) {
+      const rows = tb.filter(r => !/^\|?[\s:|-]+\|?$/.test(r));
+      o += "<table>" + rows.map((r, i) => "<tr>" + r.replace(/^\||\|$/g, "").split("|").map(c => `<${i ? "td" : "th"}>${inl(c.trim())}</${i ? "td" : "th"}>`).join("") + "</tr>").join("") + "</table>";
+      tb = [];
+    }
+  };
+
+  L.forEach(raw => {
+    const l = raw.trimEnd();
+    let m;
+    if (/^\s*\|/.test(l)) { endL(); tb.push(l.trim()); return; }
+    endT();
+
+    if (m = l.trim().match(/^\[GAMBAR:\s*([^\]]+)\]$/i)) {
+      endL();
+      o += renderFigureBlock(m[1].trim());
+      return;
+    }
+
+    if (m = l.match(/^(#{1,3})\s+(.*)/)) {
+      endL();
+      const n = m[1].length;
+      o += `<h${n}>${inl(m[2])}</h${n}>`;
+    } else if (m = l.match(/^\s*[-*•]\s+(.*)/)) {
+      if (list !== "ul") { endL(); o += "<ul>"; list = "ul"; }
+      o += `<li>${inl(m[1])}</li>`;
+    } else if (m = l.match(/^\s*\d+[.)]\s+(.*)/)) {
+      if (list !== "ol") { endL(); o += "<ol>"; list = "ol"; }
+      o += `<li>${inl(m[1])}</li>`;
+    } else if (!l.trim()) {
+      endL();
+    } else {
+      endL();
+      const replaced = l.replace(/\[GAMBAR:\s*([^\]]+)\]/gi, (_, d) => `</p>${renderFigureBlock(d.trim())}<p>`);
+      if (replaced !== l) {
+        o += `<p>${replaced}</p>`.replace(/<p>\s*<\/p>/g, "");
+      } else {
+        o += `<p>${inl(l)}</p>`;
+      }
+    }
+  });
+  endL();
+  endT();
+  return o;
+}
+
+function sig() {
+  const v = id => esc($(id).value.trim());
+  const col = (a, b, n, i) => `<td style="border:0;width:50%;text-align:center;vertical-align:top;padding:8px">${a}<br>${b}<div style="height:64px"></div><strong><u>${n || "..............................."}</u></strong><br>NIP/NIM. ${i || "........................"}</td>`;
+  return `<table style="width:100%;border:0;margin-top:28px;font-size:.92rem;break-inside:avoid"><tr>${col("Mengetahui,", "Kepala Sekolah / Dosen Pembimbing", v("kepsek"), v("nipk"))}${col(v("kota") || "..............., ...............", "Guru / Penyusun", v("guru"), v("nip"))}</tr></table>`;
+}
+
+function buildDocHeader() {
+  const sekolah = esc($("sekolah").value.trim());
+  const ta = esc($("ta").value.trim());
+  const mapel = esc($("mapel").value.trim());
+  const kelas = esc($("kelas").value.trim());
+  const waktu = esc($("waktu").value.trim());
+  const topik = esc($("topik").value.trim());
+
+  if (cur === "ujian") {
+    const jenisUjian = esc(($("x-jenis_ujian") ? $("x-jenis_ujian").value : "ASESMEN SUMATIF").toUpperCase());
+    return `
+      <div class="doc-header">
+        ${sekolah ? `<div style="font-size:1.12rem;font-weight:700;letter-spacing:0.03em">${sekolah.toUpperCase()}</div>` : ""}
+        <div style="font-size:1.05rem;font-weight:700">${jenisUjian}</div>
+        ${ta ? `<div style="font-size:0.9rem">TAHUN AJARAN ${ta}</div>` : ""}
+      </div>
+      <div class="exam-box">
+        <table>
+          <tr>
+            <td style="width:18%"><strong>Mata Pelajaran</strong></td><td style="width:32%">: ${mapel || "...................."}</td>
+            <td style="width:18%"><strong>Hari / Tanggal</strong></td><td style="width:32%">: ....................</td>
+          </tr>
+          <tr>
+            <td><strong>Kelas / Fase</strong></td><td>: ${kelas || "...................."}</td>
+            <td><strong>Alokasi Waktu</strong></td><td>: ${waktu || "...................."}</td>
+          </tr>
+          <tr>
+            <td><strong>Nama Peserta</strong></td><td>: ..............................</td>
+            <td><strong>Nomor Peserta</strong></td><td>: ....................</td>
+          </tr>
+        </table>
+      </div>
+    `;
+  }
+
+  const subParts = [sekolah, ta ? `TA ${ta}` : ""].filter(Boolean).join(" · ");
+  const metaParts = [mapel, kelas, waktu].filter(Boolean).join(" · ");
+  let html = `
+    <div class="doc-header">
+      ${subParts ? `<div style="font-size:0.86rem;font-weight:700;color:#334155;text-transform:uppercase;letter-spacing:0.04em">${subParts}</div>` : ""}
+      <div style="font-size:1.18rem;font-weight:700;margin:2px 0">${esc(T[cur].n.toUpperCase())}</div>
+      ${metaParts ? `<div style="font-size:0.92rem">${metaParts}</div>` : ""}
+      ${topik ? `<div style="font-size:0.94rem;font-weight:700;margin-top:2px">Topik: ${topik}</div>` : ""}
+    </div>
+  `;
+
+  if (cur === "lkpd" || cur === "ws") {
+    html += `
+      <div class="student-meta">
+        <span><strong>Nama:</strong> .................................</span>
+        <span><strong>Kelas:</strong> ............</span>
+        <span><strong>Tanggal:</strong> ................</span>
+      </div>
+    `;
+  }
+  return html;
+}
+
+function render() {
+  if (cur === "profil") return;
+  const t = $("res").value.trim();
+  const p = $("paper");
+  if (!p) return;
+
+  const markers = extractMarkers(t);
+  const imgMap = GEN_IMAGES[cur] || {};
+  const pendingCount = markers.filter(m => !imgMap[m.desc]).length;
+  const genAllBtn = $("gen-all-img");
+  if (genAllBtn) {
+    if (pendingCount > 0) {
+      genAllBtn.style.display = "inline-flex";
+      const countEl = $("marker-count");
+      if (countEl) {
+        countEl.textContent = pendingCount;
+      } else {
+        genAllBtn.innerHTML = `<span>✨ Generate Semua Penanda (<span id="marker-count">${pendingCount}</span>)</span>`;
+      }
+    } else {
+      genAllBtn.style.display = "none";
+    }
+  }
+
+  if (!t) {
+    p.innerHTML = `
+      <div class="py-12 px-4 text-center font-sans">
+        <div class="w-14 h-14 mx-auto mb-3 rounded-2xl bg-brand-50 text-brand-500 flex items-center justify-center text-2xl">📄</div>
+        <div class="text-sm font-bold text-slate-700">Pratinjau Dokumen Kertas A4</div>
+        <p class="text-xs text-slate-500 max-w-sm mx-auto mt-1.5 leading-relaxed">
+          Lembar kerja Anda masih kosong. Isi data di sebelah kiri, lalu lihat keajaibannya muncul di sini.
+        </p>
+      </div>
+    `;
+    return;
+  }
+
+  p.innerHTML = buildDocHeader() + md(t) + sig();
+}
+
+// ==========================================
+// 7. EXPORT WORD (.DOC), PDF (.PDF) & PRINT
+// ==========================================
+function getCleanExportClone() {
+  const clone = $("paper").cloneNode(true);
+  clone.querySelectorAll(".noprint, .doc-figure-actions, .img-marker-card").forEach(el => el.remove());
+  clone.querySelectorAll("img").forEach(img => {
+    img.style.maxWidth = "440px";
+    img.style.height = "auto";
+    img.setAttribute("width", "420");
+  });
+  return clone;
+}
+
+function getFileNameBase() {
+  const topikClean = ($("topik").value || "").replace(/[^\w\s-]/g, "").trim().replace(/\s+/g, "-").slice(0, 40) || "dokumen";
+  return `${T[cur].n.replace(/[^\w-]+/g, "-")}-${topikClean}`;
+}
+
+$("dl-word").onclick = () => {
+  if (!$("res").value.trim()) {
+    toast("Belum ada dokumen. Susun atau tempel hasil terlebih dahulu.", "dl-status");
+    return;
+  }
+
+  const cleanClone = getCleanExportClone();
+  const wordHtml = `
+    <html xmlns:o='urn:schemas-microsoft-com:office:office'
+          xmlns:w='urn:schemas-microsoft-com:office:word'
+          xmlns='http://www.w3.org/TR/REC-html40'>
+    <head>
+      <meta charset='utf-8'>
+      <title>${esc(T[cur].n)}</title>
+      <!--[if gte mso 9]>
+      <xml>
+        <w:WordDocument>
+          <w:View>Print</w:View>
+          <w:Zoom>100</w:Zoom>
+          <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+      </xml>
+      <![endif]-->
+      <style>
+        @page { size: A4; margin: 2cm; }
+        body { font-family: 'Times New Roman', Georgia, serif; font-size: 12pt; line-height: 1.5; color: #111; }
+        h1 { font-size: 15pt; text-align: center; margin: 0 0 6pt 0; }
+        h2 { font-size: 13pt; margin: 14pt 0 4pt 0; border-bottom: 1pt solid #666; padding-bottom: 2pt; }
+        h3 { font-size: 12pt; margin: 10pt 0 4pt 0; }
+        p { margin: 4pt 0; }
+        ul, ol { margin: 4pt 0 8pt 18pt; }
+        table { border-collapse: collapse; width: 100%; margin: 8pt 0; font-size: 11pt; }
+        td, th { border: 1pt solid #444; padding: 5pt 7pt; text-align: left; vertical-align: top; }
+        .doc-header { text-align: center; border-bottom: 2pt solid #111; padding-bottom: 8pt; margin-bottom: 12pt; }
+        .student-meta, .exam-box { border: 1pt solid #444; padding: 6pt 8pt; margin-bottom: 10pt; font-size: 11pt; }
+        .exam-box table, .exam-box td { border: 0; padding: 2pt 4pt; }
+        .doc-figure { text-align: center; margin: 12pt 0; }
+        figcaption { font-size: 10pt; font-style: italic; color: #444; margin-top: 4pt; }
+      </style>
+    </head>
+    <body>${cleanClone.innerHTML}</body>
+    </html>
+  `;
+
+  try {
+    const blob = new Blob(["\ufeff", wordHtml], { type: "application/msword;charset=utf-8" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = getFileNameBase() + ".doc";
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+    toast("File Word (.doc) berhasil diunduh!", "dl-status");
+  } catch (err) {
+    toast("Gagal mengunduh file Word: " + err.message, "dl-status");
+  }
+};
+
+$("dl-pdf").onclick = async () => {
+  if (!$("res").value.trim()) {
+    toast("Belum ada dokumen. Susun atau tempel hasil terlebih dahulu.", "dl-status");
+    return;
+  }
+
+  const btn = $("dl-pdf");
+  const origHtml = btn.innerHTML;
+  btn.disabled = true;
+  btn.innerHTML = '<span class="spinner"></span><span>Membuat PDF...</span>';
+  toast("Sedang mengonversi dokumen ke PDF A4...", "dl-status");
+
+  try {
+    if (typeof html2pdf === "undefined") {
+      throw new Error("Pustaka PDF belum siap. Gunakan tombol Cetak ke Printer.");
+    }
+
+    const cleanClone = getCleanExportClone();
+    const wrapper = document.createElement("div");
+    wrapper.style.padding = "8px";
+    wrapper.style.background = "#ffffff";
+    wrapper.style.color = "#111111";
+    wrapper.style.fontFamily = "Georgia, 'Times New Roman', serif";
+    wrapper.style.fontSize = "10.5pt";
+    wrapper.style.lineHeight = "1.55";
+    wrapper.innerHTML = cleanClone.innerHTML;
+
+    const opt = {
+      margin: [14, 14, 14, 14],
+      filename: getFileNameBase() + ".pdf",
+      image: { type: "jpeg", quality: 0.96 },
+      html2canvas: { scale: 2, useCORS: true, logging: false },
+      jsPDF: { unit: "mm", format: "a4", orientation: "portrait" },
+      pagebreak: { mode: ["avoid-all", "css", "legacy"] }
+    };
+
+    await html2pdf().set(opt).from(wrapper).save();
+    toast("File PDF (.pdf) berhasil diunduh!", "dl-status");
+  } catch (err) {
+    toast("Mengalihkan ke dialog cetak PDF: " + err.message, "dl-status");
+    window.print();
+  } finally {
+    btn.disabled = false;
+    btn.innerHTML = origHtml;
+  }
+};
+
+$("pr").onclick = () => {
+  if (!$("res").value.trim()) {
+    toast("Belum ada dokumen untuk dicetak.", "dl-status");
+    return;
+  }
+  try {
+    window.print();
+  } catch (e) {
+    toast("Cetak langsung tidak tersedia di frame ini. Gunakan Unduh PDF atau Word.", "dl-status");
+  }
+};
+
+// ==========================================
+// 8. UPLOAD SOURCE FILES (IMAGE / DOCX / TXT)
 // ==========================================
 const IM = [];
 let useImg = false;
 
 function matSrc() {
-  const m = ($("materi")?.value || "").trim().slice(0, 14000);
+  const m = $("materi").value.trim().slice(0, 14000);
   let o = "";
   if (m) o += "\n\nMATERI SUMBER (jadikan acuan utama):\n" + m;
-  if (useImg) o += "\n\nFoto halaman buku/materi terlampir: baca teks dan ilustrasinya, lalu jadikan acuan utama.";
+  if (useImg) o += "\n\nFoto halaman buku terlampir: baca teks serta gambar di dalamnya dan jadikan referensi utama.";
   return o;
 }
 
 function chips() {
   const c = $("chips");
-  if (!c) return;
   c.innerHTML = "";
   IM.forEach((m, i) => {
     const d = document.createElement("span");
-    d.className = "inline-flex items-center gap-1.5 bg-white border border-slate-200 rounded-xl px-2 py-1 text-[11px] font-semibold text-slate-700 shadow-2xs";
+    d.className = "inline-flex items-center gap-1.5 bg-white border border-slate-200 rounded-xl p-1 pr-2.5 text-xs shadow-2xs";
     const im = document.createElement("img");
     im.src = m.url;
     im.alt = "";
-    im.className = "w-6 h-6 object-cover rounded-md";
+    im.className = "w-7 h-7 object-cover rounded-lg";
     const t = document.createElement("span");
     t.textContent = m.name;
-    t.className = "max-w-[130px] truncate";
+    t.className = "max-w-[130px] truncate text-slate-700 font-medium";
     const x = document.createElement("button");
     x.type = "button";
-    x.textContent = "✕";
-    x.className = "text-rose-500 hover:text-rose-700 font-bold ml-1 cursor-pointer";
+    x.textContent = "×";
+    x.className = "text-rose-500 font-extrabold text-sm hover:text-rose-700 cursor-pointer ml-0.5";
+    x.setAttribute("aria-label", "Hapus " + m.name);
     x.onclick = () => {
       URL.revokeObjectURL(m.url);
       IM.splice(i, 1);
@@ -1717,658 +2169,56 @@ function shrink(f) {
     const u = URL.createObjectURL(f);
     const i = new Image();
     i.onload = () => {
-      const k = Math.min(1, 1400 / Math.max(i.width, i.height));
+      const k = Math.min(1, 1600 / Math.max(i.width, i.height));
       const c = document.createElement("canvas");
       c.width = Math.round(i.width * k);
       c.height = Math.round(i.height * k);
       c.getContext("2d").drawImage(i, 0, 0, c.width, c.height);
-      const dataUrl = c.toDataURL("image/jpeg", 0.85);
       c.toBlob(b => {
         URL.revokeObjectURL(u);
-        b ? ok({ blob: b, base64: dataUrl.split(",")[1], mime: "image/jpeg" }) : no();
+        b ? ok(b) : no();
       }, "image/jpeg", 0.85);
     };
-    i.onerror = () => {
-      URL.revokeObjectURL(u);
-      no();
-    };
+    i.onerror = () => { URL.revokeObjectURL(u); no(); };
     i.src = u;
   });
 }
 
 function addT(n, t) {
   const el = $("materi");
-  if (!el) return;
   el.value = (el.value ? el.value + "\n\n" : "") + "[" + n + "]\n" + t.trim();
   put("materi", el.value);
 }
 
-if ($("fl")) {
-  $("fl").onchange = async e => {
-    const ms = $("fm");
-    if (ms) ms.textContent = "";
-    for (const f of [...e.target.files]) {
-      try {
-        if (f.type.startsWith("image/")) {
-          if (IM.length >= 6) {
-            if (ms) ms.textContent = "Maksimal 6 foto materi.";
-            continue;
-          }
-          const res = await shrink(f);
-          IM.push({ name: f.name, blob: res.blob, base64: res.base64, mime: res.mime, url: URL.createObjectURL(res.blob) });
-        } else if (/\.docx$/i.test(f.name)) {
-          if (!window.mammoth) {
-            if (ms) ms.textContent = "Pembaca Word gagal dimuat. Tempel teks manual.";
-            continue;
-          }
-          const r = await mammoth.extractRawText({ arrayBuffer: await f.arrayBuffer() });
-          addT(f.name, r.value);
-        } else if (/\.(txt|md)$/i.test(f.name)) {
-          addT(f.name, await f.text());
-        } else if (ms) {
-          ms.textContent = f.name + ": format belum didukung. Gunakan foto, .docx, atau .txt.";
-        }
-      } catch (err) {
-        if (ms) ms.textContent = "Gagal membaca " + f.name + ".";
-      }
-    }
-    chips();
-    e.target.value = "";
-    render();
-  };
-}
-
-// ==========================================
-// PENYUSUN PROMPT UNTUK 7 TAB ADMINISTRASI
-// ==========================================
-function build() {
-  const v = k => ($(k)?.value || "").trim() || "(belum diisi)";
-  const x = id => $("x-" + id)?.value || "";
-  const base = `Satuan Pendidikan: ${v("sekolah")}\nTahun Ajaran: ${v("ta")}\nMata Pelajaran: ${v("mapel")}\nKelas/Fase: ${v("kelas")}\nKurikulum: ${$("kur")?.value || "Kurikulum Merdeka"}\nAlokasi Waktu: ${v("waktu")}\nTopik/Materi: ${v("topik")}\nTujuan Pembelajaran: ${v("tujuan")}` + matSrc();
-  const note = `\nPetunjuk Kurikulum: ${KN[$("kur")?.value] || ""}` + ($("cat")?.value.trim() ? `\nCatatan Khusus: ${$("cat").value.trim()}` : "");
-  const imgRule = $("autoimg")?.checked
-    ? `\n\nATURAN ILUSTRASI GAMBAR: Pada bagian pengamatan siswa, stimulus bacaan, atau butir soal yang membutuhkan bantuan visual/diagram, sisipkan penanda baris tersendiri persis berformat: [GAMBAR: deskripsi visual singkat dan jelas dalam Bahasa Indonesia] (maksimal 2–3 penanda gambar per dokumen; jika menggambarkan tokoh guru atau siswa Indonesia, selalu gambarkan perempuan berjilbab dan laki-laki berpeci hitam).`
-    : "";
-  const fmt = `\n\nFormat Jawaban: Gunakan Bahasa Indonesia yang baku, rapi, dan siap cetak dengan Markdown sederhana (# Judul, ## Subbagian, ### Poin, - Daftar, dan tabel Markdown dengan tanda |). Langsung mulai dari isi dokumen tanpa kalimat pembuka atau penutup basa-basi.${imgRule}`;
-
-  if (cur === "modul") {
-    return `Kamu adalah guru profesional ahli penyusun perangkat ajar. Susunlah MODUL AJAR lengkap dan siap pakai.\n\n${base}\nModel Pembelajaran: ${x("model")}${note}\n\nStruktur wajib:\n1. Informasi Umum (Identitas modul, kompetensi awal, profil/dimensi lulusan sesuai kurikulum, sarana prasarana, target peserta didik, model pembelajaran).\n2. Komponen Inti (Tujuan pembelajaran, pemahaman bermakna, pertanyaan pemantik, kegiatan pembelajaran Pendahuluan–Inti–Penutup lengkap dengan alokasi menit dan sintaks model pembelajaran, asesmen diagnostik/formatif/sumatif beserta rubrik penilaian, kegiatan pengayaan dan remedial, serta refleksi guru dan peserta didik).\n3. Lampiran (Ringkasan bahan bacaan guru & siswa, glosarium, daftar pustaka).${fmt}`;
-  }
-  if (cur === "lkpd") {
-    return `Kamu adalah guru kreatif perancang lembar kerja. Susunlah LKPD (Lembar Kerja Peserta Didik) yang menarik, terstruktur, dan siap dicetak.\n\n${base}\nJenis Kegiatan: ${x("jenis")}\nJumlah Kegiatan: ${x("jml")}${note}\n\nStruktur LKPD: Tujuan kegiatan, petunjuk pengerjaan untuk siswa, ringkasan materi pengantar singkat, kegiatan bernomor (1 sampai ${x("jml")}) lengkap dengan langkah kerja jelas, stimulus gambar/kasus, tabel/kolom isian jawaban siswa, pertanyaan refleksi diri, serta rubrik/kolom penilaian guru.${fmt}`;
-  }
-  if (cur === "ws") {
-    return `Kamu adalah guru penyusun evaluasi pembelajaran. Buatlah WORKSHEET (Lembar Soal Latihan) yang siap dicetak.\n\n${base}\nBentuk Soal: ${x("soal")}\nJumlah Soal: ${x("jml")}\nTingkat Kesulitan: ${x("lvl")}${note}\n\nStruktur Worksheet: Petunjuk pengerjaan singkat, butir soal bernomor (1 sampai ${x("jml")}) sesuai bentuk soal dan tingkat kesulitan, diikuti bagian terpisah di akhir berjudul "## Kunci Jawaban & Pedoman Penskoran".${fmt}`;
-  }
-  if (cur === "asesmen") {
-    return `Kamu adalah guru penyusun naskah ujian sekolah/madrasah. Susunlah NASKAH SOAL UJIAN RESMI yang siap digandakan.\n\n${base}\nJenis Ujian: ${x("ujian")}\nKomposisi Bentuk Soal: ${x("komposisi")}\nTotal Jumlah Soal: ${x("jml")}\nSebaran Kognitif: ${x("sebaran")}${note}\n\nStruktur Naskah Ujian: Petunjuk Umum Pengerjaan Ujian, pembagian soal per Romawi sesuai komposisi bentuk soal (total ${x("jml")} butir soal bermutu dengan opsi jawaban A, B, C, D/E yang rapi), serta halaman akhir terpisah berjudul "## Kunci Jawaban, Pedoman Penskoran & Rumus Nilai Akhir".${fmt}`;
-  }
-  if (cur === "kisikisi") {
-    return `Kamu adalah ahli evaluasi pendidikan. Susunlah ${x("dok").toUpperCase()} yang sistematis dan siap untuk supervisi akademik.\n\n${base}\nJenis Dokumen: ${x("dok")}\nJumlah Butir / Kriteria: ${x("jml")}${note}\n\nStruktur Dokumen: Tabel Kisi-Kisi lengkap (kolom: No | Tujuan Pembelajaran/KD | Materi Pokok | Indikator Soal | Level Kognitif C1–C6 | Bentuk Soal | Nomor Soal), diikuti Kartu Soal atau Rubrik Penskoran Skala 1–4 yang jelas dan terukur.${fmt}`;
-  }
-  if (cur === "prota") {
-    return `Kamu adalah guru perencana kurikulum. Susunlah ${x("perangkat").toUpperCase()} yang rapi dan realistis.\n\n${base}\nJenis Perencanaan: ${x("perangkat")}\nSemester: ${x("sem")}\nAlokasi JP per Minggu: ${x("jp")}${note}\n\nStruktur Dokumen: Jika ATP/Silabus, buat tabel pemetaan Elemen/CP, Tujuan Pembelajaran, Lingkup Materi, Alokasi JP, Asesmen, dan Dimensi Profil Lulusan. Jika Prota/Promes, sertakan rincian perhitungan minggu efektif vs minggu tidak efektif serta tabel distribusi materi dan JP per semester/bulan.${fmt}`;
-  }
-  return `Kamu adalah guru profesional yang tertib administrasi. Susunlah ${x("adm").toUpperCase()} yang lengkap dan praktis.\n\n${base}\nJenis Administrasi: ${x("adm")}\nKriteria Ketuntasan (KKTP/KKM): ${x("kktp")}${note}\n\nStruktur Dokumen: Jika Program Remedial & Pengayaan, buat tabel analisis ketuntasan, bentuk perlakuan remedial (bimbingan individu, tutor sebaya, latihan soal terarah), dan tugas pengayaan bagi siswa yang melampaui KKTP ${x("kktp")}. Jika Jurnal Mengajar, buat tabel catatan pertemuan lengkap (Tanggal, Pertemuan Ke-, Materi/TP, Ringkasan Kegiatan, Presensi/Catatan Kejadian Khusus, dan Tindak Lanjut).${fmt}`;
-}
-
-if ($("mk")) {
-  $("mk").onclick = () => {
-    const p = build();
-    if ($("prompt")) $("prompt").value = p;
-    put("prompt", p);
-    toast("Prompt terstruktur siap! Klik “Salin Prompt”.");
-  };
-}
-
-if ($("cp")) {
-  $("cp").onclick = () => {
-    if (!$("prompt")?.value) {
-      toast("Klik “Buat Prompt” terlebih dahulu.");
-      return;
-    }
-    copy($("prompt").value, "Prompt berhasil disalin ke clipboard.");
-  };
-}
-
-if ($("cr")) {
-  $("cr").onclick = () => {
-    if (!$("res")?.value) {
-      toast("Belum ada teks dokumen untuk disalin.");
-      return;
-    }
-    copy($("res").value, "Teks dokumen berhasil disalin.");
-  };
-}
-
-// ==========================================
-// INTEGRASI GEMINI API (SUSUN DOKUMEN & GAMBAR)
-// ==========================================
-async function callGeminiText(promptText, imageParts = []) {
-  const apiKey = getActiveApiKey();
-  if (!apiKey) {
-    openAuthModal(getCurrentUser() ? "profile" : "login");
-    throw new Error("API Key Gemini belum diisi. Silakan masukkan API Key pribadi Anda terlebih dahulu.");
-  }
-
-  const parts = [{ text: promptText }];
-  imageParts.forEach(img => {
-    if (img && img.base64) {
-      parts.push({ inlineData: { mimeType: img.mime || "image/jpeg", data: img.base64 } });
-    }
-  });
-
-  const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${encodeURIComponent(apiKey)}`;
-  const resp = await fetch(url, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
-      contents: [{ role: "user", parts }],
-      generationConfig: { temperature: 0.7 }
-    })
-  });
-
-  const data = await resp.json();
-  if (!resp.ok) {
-    const msg = data?.error?.message || `Gagal menghubungi Gemini (${resp.status})`;
-    throw new Error(msg);
-  }
-  const text = data?.candidates?.[0]?.content?.parts?.map(p => p.text || "").join("") || "";
-  if (!text.trim()) throw new Error("AI tidak mengembalikan teks. Silakan coba lagi.");
-  return text.trim();
-}
-
-async function generateEducationalImage(desc, styleLabel) {
-  const apiKey = getActiveApiKey();
-  if (!apiKey) {
-    openAuthModal(getCurrentUser() ? "profile" : "login");
-    throw new Error("API Key Gemini belum diisi. Silakan masukkan API Key pribadi Anda.");
-  }
-
-  const enforcedPrompt = `Create a clean, clear Indonesian school educational illustration or diagram for a student worksheet/exam. Subject: ${desc}. Visual style: ${styleLabel || "Ilustrasi Buku Pelajaran Berwarna"}. Clean white or very light background, easy to print on A4 paper, no messy watermarks. IMPORTANT CULTURAL RULE: If any human characters (teachers, students, children, or people) appear in the illustration, ALL female characters MUST wear a neat modest hijab/jilbab, and ALL male characters MUST wear a traditional Indonesian black peci/songkok cap.`;
-
-  // 1. Coba Imagen 3 / 4 via Gemini API
-  try {
-    const imagenUrl = `https://generativelanguage.googleapis.com/v1beta/models/imagen-3.0-generate-002:predict?key=${encodeURIComponent(apiKey)}`;
-    const r = await fetch(imagenUrl, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        instances: [{ prompt: enforcedPrompt }],
-        parameters: { sampleCount: 1, aspectRatio: "4:3" }
-      })
-    });
-    if (r.ok) {
-      const j = await r.json();
-      const b64 = j?.predictions?.[0]?.bytesBase64Encoded;
-      const mime = j?.predictions?.[0]?.mimeType || "image/png";
-      if (b64) return `data:${mime};base64,${b64}`;
-    }
-  } catch (e) {}
-
-  // 2. Fallback ke Gemini 2.0 Flash Image Generation
-  const flashImgUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-exp-image-generation:generateContent?key=${encodeURIComponent(apiKey)}`;
-  const r2 = await fetch(flashImgUrl, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
-      contents: [{ role: "user", parts: [{ text: enforcedPrompt }] }],
-      generationConfig: { responseModalities: ["IMAGE", "TEXT"] }
-    })
-  });
-  const j2 = await r2.json();
-  if (!r2.ok) {
-    throw new Error(j2?.error?.message || "Gagal membuat gambar. Pastikan API Key Gemini Anda aktif.");
-  }
-  const parts = j2?.candidates?.[0]?.content?.parts || [];
-  const imgPart = parts.find(p => p.inlineData && p.inlineData.data);
-  if (!imgPart) {
-    throw new Error("Model gambar tidak mengembalikan ilustrasi. Coba ubah deskripsi gambar.");
-  }
-  return `data:${imgPart.inlineData.mimeType || "image/png"};base64,${imgPart.inlineData.data}`;
-}
-
-if ($("gen")) {
-  $("gen").onclick = async () => {
-    if (!getCurrentUser()) {
-      openAuthModal("login");
-      return;
-    }
-    if (!checkProAccessOrPrompt("menyusun perangkat ajar")) return;
-
-    const p = build();
-    if ($("prompt")) $("prompt").value = p;
-    put("prompt", p);
-    useImg = IM.length > 0;
-    const pg = build();
-    useImg = false;
-
-    const btn = $("gen");
-    const gt = $("gt");
-    btn.disabled = true;
-    btn.innerHTML = `<span class="spinner"></span><span>Sedang menyusun ${T[cur].pill}...</span>`;
-    if (gt) {
-      gt.className = "text-xs font-semibold text-brand-600 min-h-[1.25rem]";
-      gt.textContent = "SohibGuru sedang merangkai dokumen Anda, mohon tunggu sebentar...";
-    }
-
+$("fl").onchange = async e => {
+  const ms = $("fm");
+  ms.textContent = "";
+  for (const f of [...e.target.files]) {
     try {
-      const text = await callGeminiText(IM.length ? pg : p, IM);
-      if ($("res")) $("res").value = text;
-      put("res", text);
-      incrementUserUsage();
-      render();
-      if (gt) {
-        gt.className = "text-xs font-semibold text-emerald-700 min-h-[1.25rem]";
-        gt.textContent = "✅ Dokumen berhasil disusun! Silakan sunting atau cetak pada pratinjau A4.";
+      if (f.type.startsWith("image/")) {
+        if (IM.length >= 6) { ms.textContent = "Maksimal 6 foto referensi."; continue; }
+        const b = await shrink(f);
+        IM.push({ name: f.name, blob: b, url: URL.createObjectURL(b) });
+      } else if (/\.docx$/i.test(f.name)) {
+        if (!window.mammoth) { ms.textContent = "Pembaca Word gagal dimuat. Tempel teks manual."; continue; }
+        const r = await mammoth.extractRawText({ arrayBuffer: await f.arrayBuffer() });
+        addT(f.name, r.value);
+      } else if (/\.(txt|md)$/i.test(f.name)) {
+        addT(f.name, await f.text());
+      } else {
+        ms.textContent = f.name + ": format belum didukung. Gunakan foto, .docx, atau .txt.";
       }
     } catch (err) {
-      if (gt) {
-        gt.className = "text-xs font-semibold text-rose-600 min-h-[1.25rem]";
-        gt.textContent = "⚠️ " + (err.message || "Gagal menyusun dokumen.");
-      }
-    } finally {
-      btn.disabled = false;
-      btn.innerHTML = `<span>✨ Susun Langsung dengan AI</span>`;
+      ms.textContent = "Gagal membaca " + f.name + ".";
     }
-  };
-}
-
-// ==========================================
-// STUDIO GENERATE GAMBAR EDUKATIF
-// ==========================================
-if ($("btn-auto-prompt-img")) {
-  $("btn-auto-prompt-img").onclick = () => {
-    const topik = ($("topik")?.value || "").trim() || ($("mapel")?.value || "").trim() || "kegiatan belajar di kelas";
-    const kelas = ($("kelas")?.value || "").trim();
-    $("img-prompt").value = `Ilustrasi edukatif dan diagram jelas tentang ${topik}${kelas ? " untuk siswa " + kelas : ""}, dengan tokoh siswa berjilbab dan siswa laki-laki berpeci hitam`;
-    $("img-prompt").focus();
-  };
-}
-
-function insertImageTokenAtPosition(tokenText, pos) {
-  const resEl = $("res");
-  if (!resEl) return;
-  const current = resEl.value || "";
-  if (!current.trim() || pos === "end") {
-    resEl.value = (current.trim() ? current.trim() + "\n\n" : "") + tokenText;
-  } else if (pos === "top") {
-    resEl.value = tokenText + "\n\n" + current.trim();
-  } else {
-    const lines = current.split("\n");
-    const mid = Math.floor(lines.length / 2);
-    lines.splice(mid, 0, "", tokenText, "");
-    resEl.value = lines.join("\n");
   }
-  put("res", resEl.value);
-  render();
-}
-
-if ($("btn-gen-img")) {
-  $("btn-gen-img").onclick = async () => {
-    if (!getCurrentUser()) {
-      openAuthModal("login");
-      return;
-    }
-    const desc = ($("img-prompt")?.value || "").trim();
-    const st = $("img-status");
-    if (!desc) {
-      if (st) st.textContent = "Tulis deskripsi gambar atau klik “Ide Deskripsi dari Topik” terlebih dahulu.";
-      $("img-prompt")?.focus();
-      return;
-    }
-
-    const btn = $("btn-gen-img");
-    const style = $("img-style")?.value || "Ilustrasi Buku Pelajaran Berwarna";
-    const pos = $("img-pos")?.value || "top";
-
-    btn.disabled = true;
-    btn.innerHTML = `<span class="spinner"></span><span>Menggambar...</span>`;
-    if (st) st.textContent = "Sedang membuat ilustrasi pendidikan...";
-
-    try {
-      const dataUrl = await generateEducationalImage(desc, style);
-      const id = "img_" + Date.now();
-      GEN_IMGS[id] = { dataUrl, caption: desc };
-      save();
-      insertImageTokenAtPosition(`[IMG_ID:${id}]`, pos);
-      if (st) st.textContent = "✅ Gambar berhasil dibuat dan disisipkan ke pratinjau dokumen!";
-    } catch (err) {
-      if (st) st.textContent = "⚠️ " + (err.message || "Gagal membuat gambar.");
-    } finally {
-      btn.disabled = false;
-      btn.innerHTML = `<span>🖼️ Buat &amp; Sisipkan Gambar</span>`;
-    }
-  };
-}
-
-window.generateFromMarker = async function(markerIdx, rawDesc) {
-  if (!getCurrentUser()) {
-    openAuthModal("login");
-    return;
-  }
-  const st = $("img-status");
-  if (st) st.textContent = `Sedang membuat gambar: "${rawDesc}"...`;
-  try {
-    const style = $("img-style")?.value || "Ilustrasi Buku Pelajaran Berwarna";
-    const dataUrl = await generateEducationalImage(rawDesc, style);
-    const id = "img_" + Date.now() + "_" + markerIdx;
-    GEN_IMGS[id] = { dataUrl, caption: rawDesc };
-    save();
-
-    const resEl = $("res");
-    if (resEl) {
-      const targetRegex = /\[GAMBAR:\s*([^\]]+)\]/i;
-      resEl.value = resEl.value.replace(targetRegex, `[IMG_ID:${id}]`);
-      put("res", resEl.value);
-      render();
-    }
-    if (st) st.textContent = "✅ Ilustrasi berhasil dibuat dan terpasang di dokumen!";
-  } catch (err) {
-    if (st) st.textContent = "⚠️ " + (err.message || "Gagal generate gambar.");
-  }
-};
-
-window.removeGeneratedImage = function(id) {
-  delete GEN_IMGS[id];
-  save();
-  const resEl = $("res");
-  if (resEl) {
-    resEl.value = resEl.value.replace(new RegExp(`\\[IMG_ID:${id}\\]\\n?`, "g"), "");
-    put("res", resEl.value);
-  }
+  chips();
+  e.target.value = "";
   render();
 };
 
-if ($("gen-all-img")) {
-  $("gen-all-img").onclick = async () => {
-    const resEl = $("res");
-    if (!resEl) return;
-    const matches = [...resEl.value.matchAll(/\[GAMBAR:\s*([^\]]+)\]/gi)];
-    if (!matches.length) return;
-    const btn = $("gen-all-img");
-    btn.disabled = true;
-    for (let i = 0; i < matches.length; i++) {
-      await window.generateFromMarker(i, matches[i][1].trim());
-    }
-    btn.disabled = false;
-  };
-}
-
 // ==========================================
-// RENDER PRATINJAU KERTAS A4 (MARKDOWN + TABEL + GAMBAR)
-// ==========================================
-const inl = s => esc(s)
-  .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
-  .replace(/\*(.+?)\*/g, "<em>$1</em>");
-
-function md(t) {
-  const L = t.split("\n");
-  let o = "";
-  let list = null;
-  let tb = [];
-  let markerCounter = 0;
-
-  const endL = () => {
-    if (list) {
-      o += `</${list}>`;
-      list = null;
-    }
-  };
-  const endT = () => {
-    if (tb.length) {
-      const rows = tb.filter(r => !/^\|?[\s:|-]+\|?$/.test(r));
-      o += "<table>" + rows.map((r, i) =>
-        "<tr>" + r.replace(/^\||\|$/g, "").split("|").map(c =>
-          `<${i ? "td" : "th"}>${inl(c.trim())}</${i ? "td" : "th"}>`
-        ).join("") + "</tr>"
-      ).join("") + "</table>";
-      tb = [];
-    }
-  };
-
-  L.forEach(raw => {
-    const l = raw.trimEnd();
-    let m;
-
-    if (/^\s*\|/.test(l)) {
-      endL();
-      tb.push(l.trim());
-      return;
-    }
-    endT();
-
-    if ((m = l.trim().match(/^\[IMG_ID:([^\]]+)\]$/))) {
-      endL();
-      const item = GEN_IMGS[m[1]];
-      if (item && item.dataUrl) {
-        o += `<figure class="doc-figure">
-          <img src="${item.dataUrl}" alt="${esc(item.caption)}">
-          <figcaption>${esc(item.caption)}</figcaption>
-          <div class="doc-figure-actions noprint mt-1.5">
-            <button type="button" onclick="removeGeneratedImage('${esc(m[1])}')" class="text-[11px] font-bold text-rose-600 hover:underline cursor-pointer">Hapus Gambar</button>
-          </div>
-        </figure>`;
-      }
-    } else if ((m = l.trim().match(/^\[GAMBAR:\s*([^\]]+)\]$/i))) {
-      endL();
-      const idx = markerCounter++;
-      const desc = m[1].trim();
-      const safeDesc = desc.replace(/\\/g, "\\\\").replace(/'/g, "\\'");
-      o += `<div class="img-marker-card noprint my-3 p-3.5 rounded-xl border-2 border-dashed border-brand-200 bg-brand-50/60 flex items-center justify-between gap-3 flex-wrap">
-        <div class="text-xs text-slate-700 font-sans">
-          <span class="font-extrabold text-brand-700 block">🖼️ Penanda Ilustrasi Gambar:</span>
-          <span>${esc(desc)}</span>
-        </div>
-        <button type="button" onclick="generateFromMarker(${idx}, '${safeDesc}')" class="px-3 py-1.5 rounded-lg bg-brand-600 hover:bg-brand-700 text-white text-xs font-sans font-bold shadow-2xs shrink-0 cursor-pointer">
-          ✨ Generate Gambar Ini
-        </button>
-      </div>`;
-    } else if ((m = l.match(/^(#{1,3})\s+(.*)/))) {
-      endL();
-      const n = m[1].length;
-      o += `<h${n}>${inl(m[2])}</h${n}>`;
-    } else if ((m = l.match(/^\s*[-*•]\s+(.*)/))) {
-      if (list !== "ul") {
-        endL();
-        o += "<ul>";
-        list = "ul";
-      }
-      o += `<li>${inl(m[1])}</li>`;
-    } else if ((m = l.match(/^\s*\d+[.)]\s+(.*)/))) {
-      if (list !== "ol") {
-        endL();
-        o += "<ol>";
-        list = "ol";
-      }
-      o += `<li>${inl(m[1])}</li>`;
-    } else if (!l.trim()) {
-      endL();
-    } else {
-      endL();
-      o += `<p>${inl(l)}</p>`;
-    }
-  });
-
-  endL();
-  endT();
-  return o;
-}
-
-function sig() {
-  const v = id => esc(($(id)?.value || "").trim());
-  const col = (a, b, n, i) => `<div style="text-align:center;min-width:42%">${a}<br>${b}<div style="height:68px"></div><strong><u>${n || "..............................."}</u></strong><br>NIP/NUPTK. ${i || "........................"}</div>`;
-  return `<div style="display:flex;justify-content:space-between;gap:16px;margin-top:32px;font-size:.92rem;break-inside:avoid">${col("Mengetahui,", "Kepala Sekolah / Madrasah", v("kepsek"), v("nipk"))}${col(v("kota") || "..............., ...............", "Guru Mata Pelajaran / Penyusun", v("guru"), v("nip"))}</div>`;
-}
-
-function render() {
-  const t = ($("res")?.value || "").trim();
-  const p = $("paper");
-  if (!p) return;
-
-  // Update badge jumlah penanda gambar
-  const markers = t.match(/\[GAMBAR:\s*([^\]]+)\]/gi) || [];
-  if ($("gen-all-img") && $("marker-count")) {
-    $("marker-count").textContent = String(markers.length);
-    $("gen-all-img").style.display = markers.length > 0 ? "inline-flex" : "none";
-  }
-
-  if (!t) {
-    p.innerHTML = `<div class="text-center py-14 px-4 text-slate-400 font-sans">
-      <div class="text-3xl mb-2">📄</div>
-      <p class="text-sm font-semibold text-slate-500">Lembar kerja Anda masih kosong.</p>
-      <p class="text-xs text-slate-400 mt-1">Isi data di sebelah kiri, lalu lihat keajaibannya muncul di sini.</p>
-    </div>`;
-    return;
-  }
-
-  const sekolah = esc(($("sekolah")?.value || "").trim());
-  const ta = esc(($("ta")?.value || "").trim());
-  const mapel = esc(($("mapel")?.value || "").trim());
-  const kelas = esc(($("kelas")?.value || "").trim());
-  const waktu = esc(($("waktu")?.value || "").trim());
-  const topik = esc(($("topik")?.value || "").trim());
-  const kur = esc(($("kur")?.value || "").trim());
-  const docTitle = esc(T[cur].pill.toUpperCase());
-
-  let head = `<div class="doc-header">
-    ${sekolah ? `<div style="font-size:1.08rem;font-weight:700;letter-spacing:.02em">${sekolah.toUpperCase()}</div>` : ""}
-    <div style="font-size:1.2rem;font-weight:700;margin-top:2px">${docTitle}${ta ? " – TAHUN AJARAN " + ta : ""}</div>
-    ${kur ? `<div style="font-size:.86rem;font-style:italic;color:#334155;margin-top:2px">${kur}</div>` : ""}
-  </div>`;
-
-  if (cur === "asesmen") {
-    const jenisUjian = esc($("x-ujian")?.value || "ASESMEN SUMATIF");
-    head = `<div class="doc-header">
-      ${sekolah ? `<div style="font-size:1.08rem;font-weight:700;letter-spacing:.02em">${sekolah.toUpperCase()}</div>` : ""}
-      <div style="font-size:1.18rem;font-weight:700;margin-top:2px">${jenisUjian.toUpperCase()}${ta ? " TAHUN AJARAN " + ta : ""}</div>
-      ${kur ? `<div style="font-size:.86rem;font-style:italic;color:#334155;margin-top:2px">${kur}</div>` : ""}
-    </div>
-    <div class="exam-box">
-      <table>
-        <tr><td style="width:18%"><strong>Mata Pelajaran</strong></td><td style="width:32%">: ${mapel || "-"}</td><td style="width:18%"><strong>Hari / Tanggal</strong></td><td style="width:32%">: ...........................</td></tr>
-        <tr><td><strong>Kelas / Fase</strong></td><td>: ${kelas || "-"}</td><td><strong>Alokasi Waktu</strong></td><td>: ${waktu || "-"}</td></tr>
-        <tr><td><strong>Materi Pokok</strong></td><td colspan="3">: ${topik || "-"}</td></tr>
-      </table>
-    </div>`;
-  } else if (cur === "lkpd" || cur === "ws") {
-    head += `<div class="student-meta">
-      <span><strong>Nama Siswa:</strong> ........................................</span>
-      <span><strong>Kelas:</strong> ${kelas || "............"}</span>
-      <span><strong>No. Absen:</strong> ........</span>
-    </div>`;
-  } else if (mapel || kelas || topik || waktu) {
-    head += `<table>
-      <tr><td style="width:22%"><strong>Mata Pelajaran</strong></td><td style="width:28%">${mapel || "-"}</td><td style="width:22%"><strong>Kelas / Fase</strong></td><td style="width:28%">${kelas || "-"}</td></tr>
-      <tr><td><strong>Topik / Materi</strong></td><td>${topik || "-"}</td><td><strong>Alokasi Waktu</strong></td><td>${waktu || "-"}</td></tr>
-    </table>`;
-  }
-
-  p.innerHTML = head + md(t) + sig();
-}
-
-if ($("res")) {
-  $("res").addEventListener("input", () => {
-    put("res", $("res").value);
-    render();
-  });
-}
-
-// ==========================================
-// UNDUH WORD (.DOC), PDF (.PDF) & CETAK PRINTER
-// ==========================================
-if ($("dl-word")) {
-  $("dl-word").onclick = () => {
-    if (!($("res")?.value || "").trim()) {
-      toast("Belum ada dokumen untuk diunduh.", "dl-status");
-      return;
-    }
-    const clone = $("paper").cloneNode(true);
-    clone.querySelectorAll(".noprint, .doc-figure-actions, .img-marker-card").forEach(el => el.remove());
-
-    const wordCss = `
-      body { font-family: Georgia, "Times New Roman", serif; font-size: 11pt; line-height: 1.5; color: #000; }
-      h1 { font-size: 14pt; text-align: center; font-weight: bold; }
-      h2 { font-size: 12pt; font-weight: bold; border-bottom: 1px solid #666; padding-bottom: 2pt; margin-top: 12pt; }
-      h3 { font-size: 11pt; font-weight: bold; margin-top: 10pt; }
-      table { border-collapse: collapse; width: 100%; margin: 8pt 0; font-size: 10pt; }
-      td, th { border: 1px solid #333; padding: 4pt 6pt; text-align: left; vertical-align: top; }
-      th { background-color: #f3f4f6; font-weight: bold; }
-      .doc-header { text-align: center; border-bottom: 2px double #000; padding-bottom: 6pt; margin-bottom: 10pt; }
-      .student-meta, .exam-box { border: 1px solid #000; padding: 6pt; margin-bottom: 8pt; }
-      .doc-figure { text-align: center; margin: 10pt 0; }
-      img { max-width: 440px; height: auto; }
-    `;
-    const htmlDoc = `<html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word' xmlns='http://www.w3.org/TR/REC-html40'>
-      <head><meta charset='utf-8'><title>${esc(T[cur].pill)}</title><style>${wordCss}</style></head>
-      <body>${clone.innerHTML}</body></html>`;
-
-    const blob = new Blob(["\ufeff", htmlDoc], { type: "application/msword" });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement("a");
-    const slug = (($("topik")?.value || "").replace(/[^\w\s-]/g, "").trim().replace(/\s+/g, "-").slice(0, 40)) || "Dokumen";
-    a.href = url;
-    a.download = `SohibGuru-${T[cur].pill.replace(/\s+/g, "-")}-${slug}.doc`;
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-    setTimeout(() => URL.revokeObjectURL(url), 1000);
-    toast("✅ File Word (.doc) berhasil diunduh!", "dl-status");
-  };
-}
-
-if ($("dl-pdf")) {
-  $("dl-pdf").onclick = async () => {
-    if (!($("res")?.value || "").trim()) {
-      toast("Belum ada dokumen untuk diunduh.", "dl-status");
-      return;
-    }
-    if (!window.html2pdf) {
-      toast("Pustaka PDF sedang dimuat. Gunakan Cetak ke Printer -> Simpan sebagai PDF.", "dl-status");
-      return;
-    }
-    const btn = $("dl-pdf");
-    btn.disabled = true;
-    toast("⏳ Sedang menyiapkan berkas PDF A4...", "dl-status");
-
-    const clone = $("paper").cloneNode(true);
-    clone.querySelectorAll(".noprint, .doc-figure-actions, .img-marker-card").forEach(el => el.remove());
-    clone.style.boxShadow = "none";
-    clone.style.border = "none";
-    clone.style.padding = "0";
-
-    const slug = (($("topik")?.value || "").replace(/[^\w\s-]/g, "").trim().replace(/\s+/g, "-").slice(0, 40)) || "Dokumen";
-    const opt = {
-      margin: [14, 14, 14, 14],
-      filename: `SohibGuru-${T[cur].pill.replace(/\s+/g, "-")}-${slug}.pdf`,
-      image: { type: "jpeg", quality: 0.96 },
-      html2canvas: { scale: 2, useCORS: true },
-      jsPDF: { unit: "mm", format: "a4", orientation: "portrait" }
-    };
-
-    try {
-      await html2pdf().set(opt).from(clone).save();
-      toast("✅ File PDF (.pdf) berhasil diunduh!", "dl-status");
-    } catch (e) {
-      toast("⚠️ Gagal membuat PDF otomatis. Gunakan tombol Cetak ke Printer -> Simpan sebagai PDF.", "dl-status");
-    } finally {
-      btn.disabled = false;
-    }
-  };
-}
-
-if ($("pr")) {
-  $("pr").onclick = () => {
-    if (!($("res")?.value || "").trim()) {
-      toast("Belum ada dokumen untuk dicetak.", "dl-status");
-      return;
-    }
-    window.print();
-  };
-}
-
-// ==========================================
-// MODAL KATA PENGANTAR UNTUK GURU
+// 9. MODAL KATA PENGANTAR & TAB PROFIL
 // ==========================================
 const introModal = $("intro-modal");
 function openIntroModal() {
@@ -2381,127 +2231,302 @@ function closeIntroModal() {
   introModal.classList.add("hidden");
   introModal.classList.remove("flex");
 }
-if ($("nav-intro-btn")) $("nav-intro-btn").onclick = openIntroModal;
 if ($("open-intro-btn")) $("open-intro-btn").onclick = openIntroModal;
-if ($("close-intro-x")) $("close-intro-x").onclick = closeIntroModal;
+if ($("nav-intro-btn")) $("nav-intro-btn").onclick = openIntroModal;
 if ($("close-intro-btn")) $("close-intro-btn").onclick = closeIntroModal;
+if ($("close-intro-x")) $("close-intro-x").onclick = closeIntroModal;
 if (introModal) {
   introModal.addEventListener("click", e => {
     if (e.target === introModal) closeIntroModal();
   });
 }
 
+function saveProfileFromTab(redirectToModul = false) {
+  const profile = readTabProfileInputs();
+  const user = getCurrentUser();
+  if (user) {
+    const db = getUsersDB();
+    user.profile = profile;
+    db[user.email] = user;
+    saveUsersDB(db);
+  }
+  applyProfileToDraft(profile, true);
+  save();
+  syncAuthUI();
+
+  if (redirectToModul) {
+    cur = "modul";
+    load();
+    toast("✅ Profil identitas disimpan & otomatis mengisi formulir perangkat ajar!");
+  } else {
+    toast("✅ Profil identitas guru & sekolah berhasil disimpan!", "tab-profil-status");
+  }
+}
+
+if ($("btn-save-tab-profil")) $("btn-save-tab-profil").onclick = () => saveProfileFromTab(false);
+if ($("btn-save-and-go-modul")) $("btn-save-and-go-modul").onclick = () => saveProfileFromTab(true);
+
+if ($("btn-apply-profile")) {
+  $("btn-apply-profile").onclick = () => {
+    const user = getCurrentUser();
+    const prof = user && user.profile ? user.profile : null;
+    const hasAnyValue = prof && PROFILE_KEYS.some(k => prof[k]);
+    if (!hasAnyValue) {
+      cur = "profil";
+      load();
+      toast("Silakan isi identitas Anda pada tab Profil terlebih dahulu.", "tab-profil-status");
+      return;
+    }
+    applyProfileToDraft(prof, true);
+    save();
+    load();
+    toast("✅ Identitas berhasil diisi otomatis dari Profil Anda!");
+  };
+}
+
 // ==========================================
-// 10. SISTEM AKUN PENDIDIK (VERIFIKASI EMAIL & LUPA SANDI)
+// 10. SISTEM AKUN PENDIDIK, VERIFIKASI EMAILJS & LUPA KATA SANDI
 // ==========================================
 const authModal = $("auth-modal");
-let authMode = "login"; // "login" | "register" | "verify-reg" | "forgot" | "reset-pass" | "profile"
-let pendingOtp = "";
-let pendingRegData = null;
+let authMode = "login"; // "login" | "register" | "verify" | "forgot" | "verify_reset" | "profile"
+let pendingVerifyEmail = "";
+let generatedOtpCode = "";
 
-function generateOtp6() {
+function getEmailJsConfig() {
+  try {
+    const saved = JSON.parse(readStore(EMAILJS_CFG_KEY) || "{}");
+    return {
+      serviceId: (saved.serviceId || DEFAULT_EMAILJS.serviceId || "").trim(),
+      templateId: (saved.templateId || DEFAULT_EMAILJS.templateId || "").trim(),
+      publicKey: (saved.publicKey || DEFAULT_EMAILJS.publicKey || "").trim()
+    };
+  } catch (e) {
+    return { ...DEFAULT_EMAILJS };
+  }
+}
+
+function saveEmailJsConfig(cfg) {
+  writeStore(EMAILJS_CFG_KEY, JSON.stringify(cfg));
+}
+
+function generateSixDigitOtp() {
   return String(Math.floor(100000 + Math.random() * 900000));
 }
 
-function setAuthStatus(msg, isError = true) {
-  const el = $("auth-status");
-  if (!el) return;
-  el.className = isError
-    ? "text-xs font-semibold text-rose-600 min-h-[1rem]"
-    : "text-xs font-semibold text-emerald-700 min-h-[1rem]";
-  el.textContent = msg;
-}
+async function sendRealVerificationEmail(toEmail, otpCode, purposeLabel = "Verifikasi Akun Pendidik") {
+  const cfg = getEmailJsConfig();
+  const statusBox = $("otp-delivery-status");
+  if (!cfg.serviceId || !cfg.templateId || !cfg.publicKey) {
+    if (statusBox) {
+      statusBox.innerHTML = `<span class="text-rose-600 font-bold">Konfigurasi EmailJS belum lengkap.</span> Silakan isi Service ID, Template ID, dan Public Key di pengaturan di bawah.`;
+    }
+    return false;
+  }
 
-function openAuthModal(mode = "login") {
-  if (!authModal) return;
-  authMode = mode;
-  setAuthStatus("");
-  const user = getCurrentUser();
+  if (statusBox) {
+    statusBox.innerHTML = `<span class="spinner mr-1.5 text-brand-600"></span> Mengirim kode verifikasi ke <strong>${esc(toEmail)}</strong>...`;
+  }
 
-  const isLoggedIn = Boolean(user);
-  if ($("close-auth-x")) $("close-auth-x").classList.toggle("hidden", !isLoggedIn);
-  if ($("auth-cancel-btn")) $("auth-cancel-btn").classList.toggle("hidden", !isLoggedIn);
-  if ($("auth-logout-btn")) $("auth-logout-btn").classList.toggle("hidden", !isLoggedIn);
-
-  if ($("email-auth-tabs")) $("email-auth-tabs").classList.toggle("hidden", mode === "profile" || mode === "verify-reg" || mode === "forgot" || mode === "reset-pass");
-  if ($("otp-verify-box")) $("otp-verify-box").classList.add("hidden");
-  if ($("new-pass-wrap")) $("new-pass-wrap").classList.add("hidden");
-  if ($("pass-field-wrap")) $("pass-field-wrap").classList.remove("hidden");
-  if ($("apikey-field-box")) $("apikey-field-box").classList.remove("hidden");
-
-  if (mode === "login") {
-    if ($("auth-modal-title")) $("auth-modal-title").textContent = "Masuk ke Akun SohibGuru";
-    if ($("auth-gate-notice")) $("auth-gate-notice").innerHTML = "🔒 Sudah punya akun? Langsung masukkan <strong>Email &amp; Kata Sandi</strong> Anda. Belum punya akun? Pilih tab <strong>Daftar Akun</strong>.";
-    if ($("tab-login-email")) $("tab-login-email").className = "py-2 rounded-xl text-xs font-extrabold bg-white text-brand-700 shadow-2xs transition cursor-pointer";
-    if ($("tab-register-email")) $("tab-register-email").className = "py-2 rounded-xl text-xs font-bold text-slate-600 hover:text-slate-900 transition cursor-pointer";
-    if ($("auth-pass-label")) $("auth-pass-label").innerHTML = 'Kata Sandi <span class="text-rose-500">*</span>';
-    if ($("forgot-pass-link")) $("forgot-pass-link").classList.remove("hidden");
-    if ($("auth-submit-btn")) $("auth-submit-btn").textContent = "Masuk";
-    if ($("auth-email")) {
-      $("auth-email").readOnly = false;
-      const typedEmail = $("auth-email").value.trim().toLowerCase();
-      const users = getAllUsers();
-      if (typedEmail && users[typedEmail]) {
-        $("auth-apikey").value = users[typedEmail].apiKey || "";
+  try {
+    if (window.emailjs && typeof window.emailjs.init === "function") {
+      window.emailjs.init({ publicKey: cfg.publicKey });
+      await window.emailjs.send(cfg.serviceId, cfg.templateId, {
+        to_email: toEmail,
+        email: toEmail,
+        user_email: toEmail,
+        recipient: toEmail,
+        to_name: toEmail.split("@")[0],
+        otp_code: otpCode,
+        passcode: otpCode,
+        code: otpCode,
+        purpose: purposeLabel,
+        app_name: "SohibGuru"
+      });
+    } else {
+      const resp = await fetch("https://api.emailjs.com/api/v1.0/email/send", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          service_id: cfg.serviceId,
+          template_id: cfg.templateId,
+          user_id: cfg.publicKey,
+          template_params: {
+            to_email: toEmail,
+            email: toEmail,
+            user_email: toEmail,
+            recipient: toEmail,
+            to_name: toEmail.split("@")[0],
+            otp_code: otpCode,
+            passcode: otpCode,
+            code: otpCode,
+            purpose: purposeLabel,
+            app_name: "SohibGuru"
+          }
+        })
+      });
+      if (!resp.ok) {
+        const errTxt = await resp.text();
+        throw new Error(errTxt || `HTTP ${resp.status}`);
       }
     }
-  } else if (mode === "register") {
-    if ($("auth-modal-title")) $("auth-modal-title").textContent = "Daftar Akun Pendidik Baru";
-    if ($("auth-gate-notice")) $("auth-gate-notice").innerHTML = "✨ Daftarkan <strong>Email</strong>, <strong>Kata Sandi</strong>, dan <strong>API Key Gemini</strong> Anda. Kami akan mengirimkan kode verifikasi 6 digit ke email Anda.";
-    if ($("tab-register-email")) $("tab-register-email").className = "py-2 rounded-xl text-xs font-extrabold bg-white text-brand-700 shadow-2xs transition cursor-pointer";
-    if ($("tab-login-email")) $("tab-login-email").className = "py-2 rounded-xl text-xs font-bold text-slate-600 hover:text-slate-900 transition cursor-pointer";
-    if ($("auth-pass-label")) $("auth-pass-label").innerHTML = 'Buat Kata Sandi <span class="text-rose-500">*</span>';
-    if ($("forgot-pass-link")) $("forgot-pass-link").classList.add("hidden");
-    if ($("auth-submit-btn")) $("auth-submit-btn").textContent = "Daftar & Kirim Kode Verifikasi";
-    if ($("auth-email")) $("auth-email").readOnly = false;
-  } else if (mode === "verify-reg") {
-    if ($("auth-modal-title")) $("auth-modal-title").textContent = "Verifikasi Email Pendaftaran";
-    if ($("pass-field-wrap")) $("pass-field-wrap").classList.add("hidden");
-    if ($("apikey-field-box")) $("apikey-field-box").classList.add("hidden");
-    if ($("otp-verify-box")) $("otp-verify-box").classList.remove("hidden");
-    if ($("otp-box-title")) $("otp-box-title").textContent = "📧 Verifikasi Email Baru (Kode 6 Digit)";
-    if ($("otp-box-desc")) $("otp-box-desc").textContent = `Kode verifikasi 6 digit telah dikirim ke ${pendingRegData?.email || "email Anda"}.`;
-    if ($("simulated-otp-code")) $("simulated-otp-code").textContent = pendingOtp;
-    if ($("auth-otp-input")) $("auth-otp-input").value = "";
-    if ($("auth-submit-btn")) $("auth-submit-btn").textContent = "Verifikasi & Aktifkan Akun";
-    if (pendingRegData?.email && pendingOtp) {
-      dispatchOtpToGmail(pendingRegData.email, pendingOtp, "Verifikasi Pendaftaran Akun SohibGuru");
+
+    if (statusBox) {
+      statusBox.innerHTML = `✅ Kode verifikasi 6 digit telah dikirim ke kotak masuk <strong>${esc(toEmail)}</strong>. Periksa folder <em>Kotak Masuk</em> atau <em>Spam</em>.`;
     }
-  } else if (mode === "forgot") {
-    if ($("auth-modal-title")) $("auth-modal-title").textContent = "Lupa Kata Sandi";
-    if ($("auth-gate-notice")) $("auth-gate-notice").innerHTML = "🔑 Masukkan alamat <strong>Email</strong> akun SohibGuru Anda yang terdaftar. Kami akan mengirimkan kode OTP 6 digit ke Gmail Anda untuk mengatur ulang kata sandi.";
-    if ($("pass-field-wrap")) $("pass-field-wrap").classList.add("hidden");
-    if ($("apikey-field-box")) $("apikey-field-box").classList.add("hidden");
-    if ($("auth-email")) $("auth-email").readOnly = false;
-    if ($("auth-submit-btn")) $("auth-submit-btn").textContent = "Kirim Kode Reset Sandi ke Gmail";
-  } else if (mode === "reset-pass") {
-    if ($("auth-modal-title")) $("auth-modal-title").textContent = "Atur Ulang Kata Sandi";
-    if ($("pass-field-wrap")) $("pass-field-wrap").classList.add("hidden");
-    if ($("apikey-field-box")) $("apikey-field-box").classList.add("hidden");
-    if ($("otp-verify-box")) $("otp-verify-box").classList.remove("hidden");
-    if ($("new-pass-wrap")) $("new-pass-wrap").classList.remove("hidden");
-    if ($("otp-box-title")) $("otp-box-title").textContent = "🔐 Verifikasi Reset Kata Sandi";
-    if ($("otp-box-desc")) $("otp-box-desc").textContent = `Masukkan kode OTP 6 digit yang dikirim ke ${$("auth-email")?.value || "email Anda"} beserta kata sandi baru.`;
-    if ($("simulated-otp-code")) $("simulated-otp-code").textContent = pendingOtp;
-    if ($("auth-otp-input")) $("auth-otp-input").value = "";
+    return true;
+  } catch (err) {
+    if (statusBox) {
+      statusBox.innerHTML = `<span class="text-rose-600 font-bold">Gagal mengirim email ke ${esc(toEmail)}:</span> ${esc(err?.text || err?.message || "Periksa koneksi internet atau template EmailJS.")}`;
+    }
+    return false;
+  }
+}
+
+async function triggerEmailVerification(email, nextVerifyMode = "verify") {
+  pendingVerifyEmail = email.trim().toLowerCase();
+  generatedOtpCode = generateSixDigitOtp();
+  setAuthMode(nextVerifyMode);
+  $("auth-otp-input").value = "";
+
+  const cfg = getEmailJsConfig();
+  if ($("ejs-service")) $("ejs-service").value = cfg.serviceId;
+  if ($("ejs-template")) $("ejs-template").value = cfg.templateId;
+  if ($("ejs-pubkey")) $("ejs-pubkey").value = cfg.publicKey;
+
+  const purpose = nextVerifyMode === "verify_reset" ? "Atur Ulang Kata Sandi SohibGuru" : "Verifikasi Pendaftaran Akun SohibGuru";
+  await sendRealVerificationEmail(pendingVerifyEmail, generatedOtpCode, purpose);
+  $("auth-otp-input").focus();
+}
+
+function setAuthMode(mode) {
+  authMode = mode;
+  const isReg = mode === "register";
+  const isVerify = mode === "verify";
+  const isForgot = mode === "forgot";
+  const isVerifyReset = mode === "verify_reset";
+  const isProfile = mode === "profile";
+  const user = getCurrentUser();
+
+  $("auth-status").className = "text-xs font-semibold text-rose-600 min-h-[1rem]";
+  $("auth-status").textContent = "";
+
+  const hideTabs = isProfile || isVerify || isForgot || isVerifyReset;
+  $("email-auth-tabs").classList.toggle("hidden", hideTabs);
+
+  const emailWrap = $("auth-email").parentElement;
+  const passWrap = $("auth-pass").parentElement.parentElement;
+  const resetBox = $("reset-pass-box");
+  const apiBox = $("apikey-field-box");
+  const verifyBox = $("email-verify-box");
+  const forgotBtn = $("btn-forgot-pass");
+
+  emailWrap.classList.add("hidden");
+  passWrap.classList.add("hidden");
+  resetBox.classList.add("hidden");
+  apiBox.classList.add("hidden");
+  verifyBox.classList.add("hidden");
+  if (forgotBtn) forgotBtn.classList.toggle("hidden", isReg);
+
+  if (isProfile) {
+    apiBox.classList.remove("hidden");
+    $("auth-modal-title").textContent = "Pengaturan API Key Gemini";
+    $("auth-gate-notice").innerHTML = `👩‍🏫 Masuk dengan akun <strong>${esc(user?.email || "")}</strong>. Anda dapat melihat atau memperbarui API Key Gemini pribadi di bawah ini.`;
+    $("apikey-hint-text").textContent = "API Key ini tersimpan pada akun Anda untuk menjalankan fitur AI & Generate Gambar.";
+    $("auth-submit-btn").textContent = "Simpan API Key";
+  } else if (isVerify || isVerifyReset) {
+    verifyBox.classList.remove("hidden");
+    $("auth-modal-title").textContent = isVerifyReset ? "Verifikasi Atur Ulang Kata Sandi" : "Verifikasi Email Anda";
+    $("auth-gate-notice").innerHTML = `📩 Kami telah mengirimkan kode verifikasi 6 digit ke email <strong>${esc(pendingVerifyEmail)}</strong>.`;
+    $("verify-email-desc").innerHTML = isVerifyReset
+      ? `Masukkan 6 digit kode verifikasi untuk mengonfirmasi perubahan kata sandi akun <strong>${esc(pendingVerifyEmail)}</strong>.`
+      : `Masukkan 6 digit kode verifikasi untuk mengaktifkan akun pendidik <strong>${esc(pendingVerifyEmail)}</strong>.`;
+    $("auth-submit-btn").textContent = isVerifyReset ? "Konfirmasi & Simpan Kata Sandi" : "Verifikasi & Masuk";
+  } else if (isForgot) {
+    emailWrap.classList.remove("hidden");
+    resetBox.classList.remove("hidden");
+    $("auth-modal-title").textContent = "Lupa Kata Sandi";
+    $("auth-gate-notice").innerHTML = "🔑 Masukkan <strong>Email</strong> akun terdaftar Anda beserta <strong>Kata Sandi Baru</strong>. Kode verifikasi 6 digit akan dikirimkan ke email Anda.";
+    $("auth-submit-btn").textContent = "Kirim Kode Verifikasi";
+  } else {
+    emailWrap.classList.remove("hidden");
+    passWrap.classList.remove("hidden");
+    apiBox.classList.remove("hidden");
+    $("auth-modal-title").textContent = isReg ? "Daftar Akun Baru" : "Masuk ke Akun SohibGuru";
+    $("auth-gate-notice").innerHTML = isReg
+      ? "📝 Daftarkan <strong>Email</strong>, <strong>Kata Sandi</strong>, dan <strong>API Key Gemini</strong> Anda. Kode verifikasi akan dikirim langsung ke email Anda."
+      : "🔒 Sudah punya akun? Langsung masukkan <strong>Email</strong> dan <strong>Kata Sandi</strong> Anda untuk masuk.";
+    $("apikey-hint-text").textContent = isReg
+      ? "Simpan API Key Gemini gratis Anda sekalian saat mendaftar agar siap digunakan."
+      : "Jika sebelumnya sudah disimpan saat daftar, kolom ini boleh dikosongkan (otomatis memakai API Key akun Anda).";
+    $("auth-submit-btn").textContent = isReg ? "Daftar & Kirim Verifikasi" : "Masuk";
+  }
+
+  $("tab-login-email").className = !isReg
+    ? "py-2 rounded-xl text-xs font-extrabold bg-white text-brand-700 shadow-2xs transition cursor-pointer"
+    : "py-2 rounded-xl text-xs font-bold text-slate-600 hover:text-slate-900 transition cursor-pointer";
+  $("tab-register-email").className = isReg
+    ? "py-2 rounded-xl text-xs font-extrabold bg-white text-brand-700 shadow-2xs transition cursor-pointer"
+    : "py-2 rounded-xl text-xs font-bold text-slate-600 hover:text-slate-900 transition cursor-pointer";
+
+  $("close-auth-x").classList.toggle("hidden", !user);
+  $("auth-cancel-btn").classList.toggle("hidden", !user);
+  $("auth-logout-btn").classList.toggle("hidden", !user);
+}
+
+function syncAuthUI() {
+  const user = getCurrentUser();
+  const key = getActiveApiKey();
+  const labelEl = $("nav-auth-label");
+  const iconEl = $("nav-auth-icon");
+  const remBar = $("api-reminder-bar");
+  const remText = $("api-reminder-text");
+  const accBar = $("user-account-bar");
+
+  if (user) {
+    const profGuru = user.profile && user.profile.guru ? user.profile.guru.trim() : "";
+    const emailPrefix = user.email.split("@")[0];
+    const displayLabel = profGuru || emailPrefix;
+    labelEl.textContent = displayLabel;
+    iconEl.textContent = "👩‍🏫";
+
+    if (accBar) {
+      accBar.classList.remove("hidden");
+      $("acc-avatar").textContent = displayLabel.charAt(0).toUpperCase();
+      $("acc-display-name").textContent = displayLabel;
+      $("acc-display-email").textContent = user.profile && user.profile.sekolah ? `${user.email} · ${user.profile.sekolah}` : user.email;
+      $("acc-provider-badge").textContent = key ? "Email Terverifikasi · API Aktif" : "Email Terverifikasi";
+    }
+  } else {
+    labelEl.textContent = "Masuk / Daftar";
+    iconEl.textContent = "🔐";
+    if (accBar) accBar.classList.add("hidden");
+  }
+
+  if (remBar && remText) {
+    if (key) {
+      remBar.className = "px-3 py-2 rounded-xl bg-mint-50/90 border border-mint-200/80 flex items-center justify-between gap-2 text-[11px] text-emerald-900";
+      remText.textContent = "✅ API Key Gemini pribadi aktif — siap menyusun perangkat & gambar ilustrasi.";
+    } else {
+      remBar.className = "px-3 py-2 rounded-xl bg-amber-50/90 border border-amber-200/80 flex items-center justify-between gap-2 text-[11px] text-amber-900";
+      remText.textContent = "🔑 API Key Gemini belum diisi. Klik untuk menambahkan kunci gratis Anda.";
+    }
+  }
+}
+
+function openAuthModal(preferredMode) {
+  if (!authModal) return;
+  const user = getCurrentUser();
+  const mode = preferredMode || (user ? "profile" : "login");
+  setAuthMode(mode);
+
+  if (user) {
+    $("auth-apikey").value = user.apiKey || "";
+  } else {
+    $("auth-email").value = "";
+    $("auth-pass").value = "";
+    $("auth-apikey").value = "";
     if ($("auth-new-pass")) $("auth-new-pass").value = "";
-    if ($("auth-submit-btn")) $("auth-submit-btn").textContent = "Simpan Kata Sandi Baru";
-    const targetMail = ($("auth-email")?.value || "").trim().toLowerCase();
-    if (targetMail && pendingOtp) {
-      dispatchOtpToGmail(targetMail, pendingOtp, "Reset Kata Sandi Akun SohibGuru");
-    }
-  } else if (mode === "profile" && user) {
-    if ($("auth-modal-title")) $("auth-modal-title").textContent = "Profil Akun & API Key Gemini";
-    if ($("auth-gate-notice")) $("auth-gate-notice").innerHTML = `✅ Masuk sebagai <strong>${esc(user.email)}</strong>. Anda dapat memperbarui kata sandi atau API Key Gemini pribadi di bawah ini.`;
-    if ($("auth-email")) {
-      $("auth-email").value = user.email;
-      $("auth-email").readOnly = true;
-    }
-    if ($("auth-pass-label")) $("auth-pass-label").innerHTML = "Kata Sandi (kosongkan jika tidak diubah)";
-    if ($("auth-pass")) $("auth-pass").value = "";
-    if ($("forgot-pass-link")) $("forgot-pass-link").classList.add("hidden");
-    if ($("auth-apikey")) $("auth-apikey").value = user.apiKey || "";
-    if ($("auth-submit-btn")) $("auth-submit-btn").textContent = "Simpan Perubahan";
+    if ($("auth-confirm-pass")) $("auth-confirm-pass").value = "";
   }
 
   authModal.classList.remove("hidden");
@@ -2509,101 +2534,82 @@ function openAuthModal(mode = "login") {
 }
 
 function closeAuthModal() {
+  if (!getCurrentUser()) return;
   if (!authModal) return;
   authModal.classList.add("hidden");
   authModal.classList.remove("flex");
 }
 
-function syncAuthUI() {
-  const user = getCurrentUser();
-  const hasKey = Boolean(getActiveApiKey());
-  const pro = isUserPro();
-  const used = getUserUsageCount();
+function completeUserLogin(accountObj, welcomeMsg) {
+  const normalizedEmail = (accountObj.email || "").trim().toLowerCase();
+  accountObj.email = normalizedEmail;
+  accountObj.verified = true;
+  const db = getUsersDB();
+  db[normalizedEmail] = accountObj;
+  saveUsersDB(db);
+  writeStore(SESSION_KEY, normalizedEmail);
 
-  if ($("user-account-bar")) {
-    $("user-account-bar").classList.toggle("hidden", !user);
-  }
-
-  if (user) {
-    const labelName = user.name || user.email.split("@")[0];
-    if ($("acc-avatar")) $("acc-avatar").textContent = labelName.charAt(0).toUpperCase();
-    if ($("acc-display-name")) $("acc-display-name").textContent = labelName;
-    if ($("acc-display-email")) $("acc-display-email").textContent = user.email;
-    if ($("acc-provider-badge")) {
-      $("acc-provider-badge").textContent = pro ? "👑 Member Pro" : `Gratis (${Math.max(0, FREE_TRIAL_LIMIT - used)}x sisa coba)`;
-      $("acc-provider-badge").className = pro
-        ? "text-[10px] font-extrabold px-2 py-0.5 rounded-full bg-amber-100 text-amber-800 border border-amber-200"
-        : "text-[10px] font-bold px-2 py-0.5 rounded-full bg-skysoft-50 text-skysoft-500 border border-skysoft-100";
-    }
-    if ($("nav-auth-icon")) $("nav-auth-icon").textContent = "👤";
-    if ($("nav-auth-label")) $("nav-auth-label").textContent = labelName;
-  } else {
-    if ($("nav-auth-icon")) $("nav-auth-icon").textContent = "🔐";
-    if ($("nav-auth-label")) $("nav-auth-label").textContent = "Masuk / Daftar Akun";
-  }
-
-  if ($("nav-pro-label")) {
-    $("nav-pro-label").textContent = pro ? "Member Pro Aktif" : `Gratis (${Math.max(0, FREE_TRIAL_LIMIT - used)}x Coba)`;
-  }
-  if ($("bar-pro-text")) {
-    $("bar-pro-text").textContent = pro ? "👑 Member Pro Aktif" : "👑 Upgrade Pro";
-  }
-
-  if ($("api-reminder-bar") && $("api-reminder-text")) {
-    if (hasKey) {
-      $("api-reminder-bar").className = "px-3 py-2 rounded-xl bg-emerald-50/90 border border-emerald-200/80 flex items-center justify-between gap-2 text-[11px] text-emerald-900";
-      $("api-reminder-text").textContent = "✅ API Key Gemini pribadi Anda aktif dan siap menyusun dokumen & ilustrasi gambar.";
-      if ($("open-auth-inline")) $("open-auth-inline").textContent = "Ubah Kunci →";
-    } else {
-      $("api-reminder-bar").className = "px-3 py-2 rounded-xl bg-amber-50/90 border border-amber-200/80 flex items-center justify-between gap-2 text-[11px] text-amber-900";
-      $("api-reminder-text").textContent = "🔑 Menggunakan AI pribadi: silakan masukkan API Key Gemini gratis Anda untuk fitur susun langsung.";
-      if ($("open-auth-inline")) $("open-auth-inline").textContent = "Atur Kunci →";
-    }
-  }
+  loadDraftForCurrentUser();
+  load();
+  syncAuthUI();
+  closeAuthModal();
+  toast(welcomeMsg);
 }
 
-// Event Listeners Modal Autentikasi
-if ($("nav-auth-btn")) {
-  $("nav-auth-btn").onclick = () => openAuthModal(getCurrentUser() ? "profile" : "login");
-}
-if ($("open-auth-inline")) {
-  $("open-auth-inline").onclick = () => openAuthModal(getCurrentUser() ? "profile" : "login");
-}
-if ($("bar-edit-profile")) {
-  $("bar-edit-profile").onclick = () => openAuthModal("profile");
-}
-if ($("close-auth-x")) {
-  $("close-auth-x").onclick = () => { if (getCurrentUser()) closeAuthModal(); };
-}
-if ($("auth-cancel-btn")) {
-  $("auth-cancel-btn").onclick = () => { if (getCurrentUser()) closeAuthModal(); };
-}
-if ($("tab-login-email")) {
-  $("tab-login-email").onclick = () => openAuthModal("login");
-}
-if ($("tab-register-email")) {
-  $("tab-register-email").onclick = () => openAuthModal("register");
-}
-if ($("forgot-pass-link")) {
-  $("forgot-pass-link").onclick = () => openAuthModal("forgot");
-}
-if ($("back-to-login-link")) {
-  $("back-to-login-link").onclick = () => openAuthModal("login");
-}
+if ($("nav-auth-btn")) $("nav-auth-btn").onclick = () => openAuthModal();
+if ($("open-auth-inline")) $("open-auth-inline").onclick = () => openAuthModal();
+if ($("bar-edit-profile")) $("bar-edit-profile").onclick = () => openAuthModal("profile");
+if ($("close-auth-x")) $("close-auth-x").onclick = closeAuthModal;
+if ($("auth-cancel-btn")) $("auth-cancel-btn").onclick = closeAuthModal;
 
-if ($("toggle-pass-vis") && $("auth-pass")) {
-  $("toggle-pass-vis").onclick = () => {
-    const isPass = $("auth-pass").type === "password";
-    $("auth-pass").type = isPass ? "text" : "password";
-    $("toggle-pass-vis").textContent = isPass ? "Sembunyi" : "Lihat";
+if ($("tab-login-email")) $("tab-login-email").onclick = () => setAuthMode("login");
+if ($("tab-register-email")) $("tab-register-email").onclick = () => setAuthMode("register");
+
+if ($("btn-forgot-pass")) {
+  $("btn-forgot-pass").onclick = () => {
+    const typedEmail = $("auth-email").value.trim().toLowerCase();
+    setAuthMode("forgot");
+    if (typedEmail) $("auth-email").value = typedEmail;
+    if ($("auth-new-pass")) $("auth-new-pass").value = "";
+    if ($("auth-confirm-pass")) $("auth-confirm-pass").value = "";
+    ($("auth-email").value ? $("auth-new-pass") : $("auth-email")).focus();
   };
 }
 
-if ($("toggle-key-vis") && $("auth-apikey")) {
-  $("toggle-key-vis").onclick = () => {
-    const isPass = $("auth-apikey").type === "password";
-    $("auth-apikey").type = isPass ? "text" : "password";
-    $("toggle-key-vis").textContent = isPass ? "Sembunyi" : "Lihat";
+if ($("btn-back-to-login")) {
+  $("btn-back-to-login").onclick = () => {
+    const typedEmail = $("auth-email").value.trim().toLowerCase();
+    setAuthMode("login");
+    if (typedEmail) $("auth-email").value = typedEmail;
+    $("auth-pass").value = "";
+    $("auth-pass").focus();
+  };
+}
+
+if ($("btn-resend-otp")) {
+  $("btn-resend-otp").onclick = async () => {
+    if (!pendingVerifyEmail) return;
+    generatedOtpCode = generateSixDigitOtp();
+    const purpose = authMode === "verify_reset" ? "Atur Ulang Kata Sandi SohibGuru" : "Verifikasi Pendaftaran Akun SohibGuru";
+    await sendRealVerificationEmail(pendingVerifyEmail, generatedOtpCode, purpose);
+    $("auth-status").className = "text-xs font-semibold text-emerald-700 min-h-[1rem]";
+    $("auth-status").textContent = "🔄 Kode verifikasi baru telah dikirim ulang ke email Anda.";
+  };
+}
+
+if ($("btn-save-emailjs")) {
+  $("btn-save-emailjs").onclick = async () => {
+    const cfg = {
+      serviceId: ($("ejs-service")?.value || "").trim(),
+      templateId: ($("ejs-template")?.value || "").trim(),
+      publicKey: ($("ejs-pubkey")?.value || "").trim()
+    };
+    saveEmailJsConfig(cfg);
+    if (pendingVerifyEmail) {
+      generatedOtpCode = generateSixDigitOtp();
+      const purpose = authMode === "verify_reset" ? "Atur Ulang Kata Sandi SohibGuru" : "Verifikasi Pendaftaran Akun SohibGuru";
+      await sendRealVerificationEmail(pendingVerifyEmail, generatedOtpCode, purpose);
+    }
   };
 }
 
@@ -2611,337 +2617,223 @@ if ($("auth-email")) {
   $("auth-email").addEventListener("input", () => {
     if (authMode !== "login") return;
     const em = $("auth-email").value.trim().toLowerCase();
-    const users = getAllUsers();
-    if (users[em] && users[em].apiKey && !$("auth-apikey").value.trim()) {
-      $("auth-apikey").value = users[em].apiKey;
+    const existing = getUsersDB()[em];
+    if (existing && existing.apiKey && !$("auth-apikey").value.trim()) {
+      $("auth-apikey").value = existing.apiKey;
     }
   });
 }
 
-if ($("autofill-otp-btn")) {
-  $("autofill-otp-btn").onclick = () => {
-    if ($("auth-otp-input") && pendingOtp) {
-      $("auth-otp-input").value = pendingOtp;
-      setAuthStatus("Kode OTP berhasil ditempel.", false);
-    }
+["auth-email", "auth-pass", "auth-apikey", "auth-otp-input", "auth-new-pass", "auth-confirm-pass"].forEach(id => {
+  if ($(id)) {
+    $(id).addEventListener("keydown", e => {
+      if (e.key === "Enter") {
+        e.preventDefault();
+        $("auth-submit-btn").click();
+      }
+    });
+  }
+});
+
+if ($("toggle-pass-vis")) {
+  $("toggle-pass-vis").onclick = () => {
+    const inp = $("auth-pass");
+    const isHidden = inp.type === "password";
+    inp.type = isHidden ? "text" : "password";
+    $("toggle-pass-vis").textContent = isHidden ? "Sembunyi" : "Lihat";
   };
 }
 
-if ($("resend-otp-btn")) {
-  $("resend-otp-btn").onclick = () => {
-    pendingOtp = generateOtp6();
-    if ($("simulated-otp-code")) $("simulated-otp-code").textContent = pendingOtp;
-    const targetEmail = authMode === "verify-reg"
-      ? (pendingRegData?.email || "")
-      : (($("auth-email")?.value || "").trim().toLowerCase());
-    const purpose = authMode === "verify-reg"
-      ? "Verifikasi Pendaftaran Akun SohibGuru"
-      : "Reset Kata Sandi Akun SohibGuru";
-    if (targetEmail) {
-      dispatchOtpToGmail(targetEmail, pendingOtp, purpose);
-    }
-    setAuthStatus("Kode verifikasi baru sedang dikirim ulang.", false);
+if ($("toggle-newpass-vis")) {
+  $("toggle-newpass-vis").onclick = () => {
+    const inp = $("auth-new-pass");
+    const isHidden = inp.type === "password";
+    inp.type = isHidden ? "text" : "password";
+    $("toggle-newpass-vis").textContent = isHidden ? "Sembunyi" : "Lihat";
   };
 }
 
-if ($("ejs-save-btn")) {
-  $("ejs-save-btn").onclick = () => {
-    const serviceId = ($("ejs-service")?.value || "").trim();
-    const templateId = ($("ejs-template")?.value || "").trim();
-    const publicKey = ($("ejs-pubkey")?.value || "").trim();
-    if (!serviceId || !templateId || !publicKey) {
-      setAuthStatus("Lengkapi Service ID, Template ID, dan Public Key EmailJS.");
-      return;
-    }
-    writeStore(EMAILJS_CFG_KEY, JSON.stringify({ serviceId, templateId, publicKey }));
-    syncEmailJsBadge();
-    setAuthStatus("✅ Pengaturan EmailJS tersimpan! Kode OTP kini terkirim langsung ke inbox Gmail.", false);
+if ($("toggle-key-vis")) {
+  $("toggle-key-vis").onclick = () => {
+    const inp = $("auth-apikey");
+    const isHidden = inp.type === "password";
+    inp.type = isHidden ? "text" : "password";
+    $("toggle-key-vis").textContent = isHidden ? "Sembunyi" : "Lihat";
   };
 }
-
-function handleLogout() {
-  removeStore(SESSION_KEY);
-  loadDraftForCurrentUser();
-  load();
-  syncAuthUI();
-  openAuthModal("login");
-}
-
-if ($("bar-logout-btn")) $("bar-logout-btn").onclick = handleLogout;
-if ($("auth-logout-btn")) $("auth-logout-btn").onclick = handleLogout;
 
 if ($("auth-submit-btn")) {
-  $("auth-submit-btn").onclick = () => {
-    const email = ($("auth-email")?.value || "").trim().toLowerCase();
-    const pass = ($("auth-pass")?.value || "").trim();
-    const apiKey = ($("auth-apikey")?.value || "").trim();
-    const users = getAllUsers();
+  $("auth-submit-btn").onclick = async () => {
+    const st = $("auth-status");
+    st.className = "text-xs font-semibold text-rose-600 min-h-[1rem]";
+    st.textContent = "";
 
-    if (authMode === "login") {
-      if (!email || !email.includes("@")) {
-        setAuthStatus("Masukkan alamat email yang valid.");
-        return;
-      }
-      if (!users[email]) {
-        setAuthStatus("Email belum terdaftar. Silakan pilih tab “Daftar Akun” terlebih dahulu.");
-        return;
-      }
-      if (!pass) {
-        setAuthStatus("Masukkan kata sandi akun Anda.");
-        return;
-      }
-      if (users[email].password !== pass) {
-        setAuthStatus("Kata sandi salah. Silakan periksa kembali atau klik “Lupa kata sandi?”.");
-        return;
-      }
-      if (apiKey) {
-        users[email].apiKey = apiKey;
-        saveAllUsers(users);
-      }
-      writeStore(SESSION_KEY, email);
-      loadDraftForCurrentUser();
-      load();
-      syncAuthUI();
-      closeAuthModal();
-      toast(`Selamat datang kembali, ${email}!`);
-      return;
-    }
+    const db = getUsersDB();
 
-    if (authMode === "register") {
-      if (!email || !email.includes("@")) {
-        setAuthStatus("Masukkan alamat email yang valid.");
-        return;
-      }
-      if (users[email]) {
-        setAuthStatus("Email ini sudah terdaftar! Anda langsung diarahkan ke tab Masuk.");
-        openAuthModal("login");
-        $("auth-email").value = email;
-        $("auth-apikey").value = users[email].apiKey || "";
-        return;
-      }
-      if (!pass || pass.length < 4) {
-        setAuthStatus("Buat kata sandi minimal 4 karakter.");
-        return;
-      }
-      pendingRegData = {
-        email,
-        name: email.split("@")[0],
-        password: pass,
-        apiKey,
-        isPro: false,
-        usageCount: 0,
-        createdAt: new Date().toISOString()
-      };
-      pendingOtp = generateOtp6();
-      openAuthModal("verify-reg");
-      return;
-    }
-
-    if (authMode === "verify-reg") {
-      const otp = ($("auth-otp-input")?.value || "").trim();
-      if (!otp || otp !== pendingOtp) {
-        setAuthStatus("Kode verifikasi 6 digit tidak sesuai. Klik “Tempel Kode” atau periksa kotak masuk.");
-        return;
-      }
-      if (pendingRegData) {
-        users[pendingRegData.email] = pendingRegData;
-        saveAllUsers(users);
-        const savedEmail = pendingRegData.email;
-        const savedKey = pendingRegData.apiKey || "";
-        pendingRegData = null;
-        pendingOtp = "";
-        openAuthModal("login");
-        if ($("auth-email")) $("auth-email").value = savedEmail;
-        if ($("auth-pass")) $("auth-pass").value = "";
-        if ($("auth-apikey")) $("auth-apikey").value = savedKey;
-        setAuthStatus("✅ Email berhasil diverifikasi! Silakan masukkan kata sandi Anda untuk Masuk.", false);
-      }
+    if (authMode === "profile") {
+      const current = getCurrentUser();
+      if (!current) return;
+      const apiKey = $("auth-apikey").value.trim();
+      const updated = { ...current, apiKey };
+      completeUserLogin(updated, "API Key Gemini berhasil disimpan!");
       return;
     }
 
     if (authMode === "forgot") {
-      if (!email || !email.includes("@")) {
-        setAuthStatus("Masukkan alamat email Anda yang terdaftar.");
-        return;
-      }
-      if (!users[email]) {
-        setAuthStatus("Email tersebut belum terdaftar di SohibGuru.");
-        return;
-      }
-      pendingOtp = generateOtp6();
-      openAuthModal("reset-pass");
-      return;
-    }
+      const email = $("auth-email").value.trim().toLowerCase();
+      const newPass = $("auth-new-pass").value;
+      const confirmPass = $("auth-confirm-pass").value;
 
-    if (authMode === "reset-pass") {
-      const otp = ($("auth-otp-input")?.value || "").trim();
-      const newPass = ($("auth-new-pass")?.value || "").trim();
-      if (!otp || otp !== pendingOtp) {
-        setAuthStatus("Kode OTP 6 digit salah.");
+      if (!isValidEmailFormat(email)) {
+        st.textContent = "Masukkan alamat email yang valid.";
+        $("auth-email").focus();
+        return;
+      }
+      const existing = db[email];
+      if (!existing) {
+        st.textContent = "Email belum terdaftar. Silakan pilih tab “Daftar Akun” terlebih dahulu.";
+        $("auth-email").focus();
         return;
       }
       if (!newPass || newPass.length < 4) {
-        setAuthStatus("Kata sandi baru minimal 4 karakter.");
+        st.textContent = "Kata sandi baru minimal 4 karakter.";
+        $("auth-new-pass").focus();
         return;
       }
-      if (users[email]) {
-        users[email].password = newPass;
-        saveAllUsers(users);
+      if (newPass !== confirmPass) {
+        st.textContent = "Konfirmasi kata sandi baru tidak cocok.";
+        $("auth-confirm-pass").focus();
+        return;
       }
-      pendingOtp = "";
-      openAuthModal("login");
-      if ($("auth-email")) $("auth-email").value = email;
-      if ($("auth-pass")) $("auth-pass").value = "";
-      setAuthStatus("✅ Kata sandi berhasil diperbarui! Silakan masuk dengan sandi baru Anda.", false);
+
+      existing.pendingNewPass = newPass;
+      db[email] = existing;
+      saveUsersDB(db);
+      await triggerEmailVerification(email, "verify_reset");
       return;
     }
 
-    if (authMode === "profile") {
-      const curUser = getCurrentUser();
-      if (!curUser) return;
-      if (pass) {
-        if (pass.length < 4) {
-          setAuthStatus("Kata sandi baru minimal 4 karakter.");
-          return;
-        }
-        users[curUser.email].password = pass;
+    if (authMode === "verify_reset") {
+      const enteredOtp = ($("auth-otp-input").value || "").trim();
+      if (enteredOtp !== generatedOtpCode) {
+        st.textContent = "Kode verifikasi tidak sesuai. Periksa 6 digit kode di kotak masuk email Anda.";
+        $("auth-otp-input").focus();
+        return;
       }
-      users[curUser.email].apiKey = apiKey;
-      saveAllUsers(users);
-      syncAuthUI();
-      closeAuthModal();
-      toast("✅ Profil & API Key Gemini berhasil disimpan!");
-    }
-  };
-}
-
-// ==========================================
-// 11. MODAL LISENSI PRO & GENERATOR ADMIN
-// ==========================================
-const proModal = $("pro-modal");
-
-function openProModal(customNotice) {
-  if (!proModal) return;
-  if ($("pro-status")) $("pro-status").textContent = "";
-  const user = getCurrentUser();
-  if ($("pro-limit-banner")) {
-    if (customNotice) {
-      $("pro-limit-banner").innerHTML = `⚠️ ${esc(customNotice)}`;
-    } else if (isUserPro()) {
-      $("pro-limit-banner").innerHTML = `👑 Akun <strong>${esc(user?.email || "")}</strong> sudah berstatus <strong>Member SohibGuru Pro</strong>. Nikmati penyusunan perangkat ajar &amp; ilustrasi tanpa batas!`;
-    } else {
-      const sisa = Math.max(0, FREE_TRIAL_LIMIT - getUserUsageCount());
-      $("pro-limit-banner").innerHTML = `🎁 Akun Anda memiliki sisa <strong>${sisa}x uji coba gratis</strong>. Aktifkan kode lisensi <strong>SohibGuru Pro</strong> untuk akses tanpa batas.`;
-    }
-  }
-  proModal.classList.remove("hidden");
-  proModal.classList.add("flex");
-}
-
-function closeProModal() {
-  if (!proModal) return;
-  proModal.classList.add("hidden");
-  proModal.classList.remove("flex");
-}
-
-if ($("nav-pro-btn")) $("nav-pro-btn").onclick = () => openProModal();
-if ($("bar-pro-btn")) $("bar-pro-btn").onclick = () => openProModal();
-if ($("close-pro-x")) $("close-pro-x").onclick = closeProModal;
-if ($("close-pro-btn")) $("close-pro-btn").onclick = closeProModal;
-if (proModal) {
-  proModal.addEventListener("click", e => {
-    if (e.target === proModal) closeProModal();
-  });
-}
-
-if ($("pro-activate-btn")) {
-  $("pro-activate-btn").onclick = () => {
-    const user = getCurrentUser();
-    const st = $("pro-status");
-    if (!user) {
-      openAuthModal("login");
-      return;
-    }
-    const code = ($("pro-license-input")?.value || "").trim().toUpperCase();
-    if (!code) {
-      if (st) {
-        st.className = "text-xs font-semibold text-rose-600 min-h-[1rem]";
-        st.textContent = "Masukkan kode lisensi terlebih dahulu.";
+      const account = db[pendingVerifyEmail];
+      if (!account || !account.pendingNewPass) {
+        st.textContent = "Data pengaturan ulang kata sandi tidak ditemukan. Silakan ulangi proses.";
+        return;
       }
-      return;
-    }
-    const expected = generateLicenseForEmail(user.email);
-    if (code !== expected) {
-      if (st) {
-        st.className = "text-xs font-semibold text-rose-600 min-h-[1rem]";
-        st.textContent = `❌ Kode lisensi tidak valid untuk email ${user.email}. Pastikan kode dibuat khusus untuk email akun Anda.`;
-      }
-      return;
-    }
-    const users = getAllUsers();
-    if (users[user.email]) {
-      users[user.email].isPro = true;
-      users[user.email].licenseCode = code;
-      saveAllUsers(users);
-    }
-    syncAuthUI();
-    if (st) {
+      account.pass = account.pendingNewPass;
+      delete account.pendingNewPass;
+      account.verified = true;
+      db[pendingVerifyEmail] = account;
+      saveUsersDB(db);
+
+      setAuthMode("login");
+      $("auth-email").value = pendingVerifyEmail;
+      $("auth-pass").value = "";
+      $("auth-apikey").value = account.apiKey || "";
       st.className = "text-xs font-semibold text-emerald-700 min-h-[1rem]";
-      st.textContent = "🎉 Selamat! Akun Anda resmi aktif sebagai Member SohibGuru Pro.";
-    }
-    setTimeout(() => closeProModal(), 1200);
-  };
-}
-
-if ($("toggle-admin-gen-btn") && $("admin-license-panel")) {
-  $("toggle-admin-gen-btn").onclick = () => {
-    $("admin-license-panel").classList.toggle("hidden");
-  };
-}
-
-if ($("admin-make-code-btn")) {
-  $("admin-make-code-btn").onclick = () => {
-    const buyerEmail = ($("admin-buyer-email")?.value || "").trim().toLowerCase();
-    if (!buyerEmail || !buyerEmail.includes("@")) {
-      if ($("pro-status")) {
-        $("pro-status").className = "text-xs font-semibold text-rose-600 min-h-[1rem]";
-        $("pro-status").textContent = "Masukkan alamat email pembeli yang valid pada panel Generator Admin.";
-      }
+      st.textContent = "✅ Kata sandi berhasil diperbarui! Silakan masuk dengan kata sandi baru Anda.";
+      $("auth-pass").focus();
       return;
     }
-    const code = generateLicenseForEmail(buyerEmail);
-    if ($("admin-output-code")) $("admin-output-code").textContent = code;
-    if ($("admin-generated-box")) $("admin-generated-box").classList.remove("hidden");
+
+    if (authMode === "verify") {
+      const enteredOtp = ($("auth-otp-input").value || "").trim();
+      if (enteredOtp !== generatedOtpCode) {
+        st.textContent = "Kode verifikasi tidak sesuai. Silakan periksa kembali 6 digit kode di email Anda.";
+        $("auth-otp-input").focus();
+        return;
+      }
+      const verifiedAccount = db[pendingVerifyEmail];
+      if (!verifiedAccount) {
+        st.textContent = "Data akun tidak ditemukan. Silakan daftar ulang.";
+        return;
+      }
+      completeUserLogin(verifiedAccount, `✅ Email terverifikasi! Selamat datang di SohibGuru, ${pendingVerifyEmail}!`);
+      return;
+    }
+
+    const email = $("auth-email").value.trim().toLowerCase();
+    const pass = $("auth-pass").value;
+    const key = $("auth-apikey").value.trim();
+
+    if (!isValidEmailFormat(email)) {
+      st.textContent = "Format email tidak valid (contoh: nama@sekolah.sch.id).";
+      $("auth-email").focus();
+      return;
+    }
+    if (!pass || pass.length < 4) {
+      st.textContent = "Masukkan kata sandi (minimal 4 karakter).";
+      $("auth-pass").focus();
+      return;
+    }
+
+    if (authMode === "register") {
+      if (db[email] && db[email].verified) {
+        const savedKey = db[email].apiKey || "";
+        setAuthMode("login");
+        $("auth-email").value = email;
+        $("auth-pass").value = "";
+        $("auth-apikey").value = savedKey;
+        st.className = "text-xs font-semibold text-brand-700 min-h-[1rem]";
+        st.textContent = "Akun sudah terdaftar & terverifikasi! Silakan masukkan kata sandi untuk masuk.";
+        $("auth-pass").focus();
+        return;
+      }
+      db[email] = { email, pass, apiKey: key, verified: false, profile: db[email]?.profile || {} };
+      saveUsersDB(db);
+      await triggerEmailVerification(email, "verify");
+    } else {
+      const existing = db[email];
+      if (!existing) {
+        st.textContent = "Akun belum terdaftar. Silakan pilih tab “Daftar Akun” terlebih dahulu.";
+        return;
+      }
+      if (existing.pass !== pass) {
+        st.textContent = "Kata sandi salah. Silakan periksa kembali atau klik “Lupa Kata Sandi?”.";
+        $("auth-pass").focus();
+        return;
+      }
+      existing.apiKey = key || existing.apiKey || "";
+      db[email] = existing;
+      saveUsersDB(db);
+
+      if (!existing.verified) {
+        await triggerEmailVerification(email, "verify");
+        return;
+      }
+      completeUserLogin(existing, `Berhasil masuk sebagai ${email}!`);
+    }
   };
 }
 
-if ($("admin-copy-wa-btn")) {
-  $("admin-copy-wa-btn").onclick = () => {
-    const buyerEmail = ($("admin-buyer-email")?.value || "").trim().toLowerCase();
-    const code = ($("admin-output-code")?.textContent || "").trim();
-    const msg = `Terima kasih telah berlangganan *SohibGuru Pro*! 👑\n\nBerikut detail aktivasi akun Anda:\n• Email Terdaftar: ${buyerEmail}\n• Kode Lisensi Eksklusif: *${code}*\n\nCara aktivasi:\n1. Masuk ke SohibGuru menggunakan email *${buyerEmail}*\n2. Klik tombol *Upgrade Pro* di bagian atas\n3. Masukkan kode *${code}* lalu klik *Aktifkan*.\n\nSelamat berkarya, Bapak/Ibu Guru hebat! 🙏`;
-    copy(msg, "Pesan konfirmasi WhatsApp & kode lisensi disalin!");
-  };
+function logoutCurrentUser() {
+  removeStore(SESSION_KEY);
+  D = {};
+  cur = "modul";
+  load();
+  syncAuthUI();
+  openAuthModal("login");
+  $("auth-status").className = "text-xs font-semibold text-brand-700 min-h-[1rem]";
+  $("auth-status").textContent = "Anda telah keluar. Masukkan email dan kata sandi untuk masuk kembali.";
 }
+
+if ($("bar-logout-btn")) $("bar-logout-btn").onclick = logoutCurrentUser;
+if ($("auth-logout-btn")) $("auth-logout-btn").onclick = logoutCurrentUser;
 
 document.addEventListener("keydown", e => {
-  if (e.ctrlKey && e.shiftKey && (e.key === "A" || e.key === "a")) {
-    e.preventDefault();
-    openProModal();
-    if ($("admin-license-panel")) $("admin-license-panel").classList.remove("hidden");
-    return;
-  }
   if (e.key === "Escape") {
     closeIntroModal();
-    closeProModal();
     if (getCurrentUser()) closeAuthModal();
   }
 });
 
 // Inisialisasi aplikasi & cek sesi akun pendidik
-loadDraftForCurrentUser();
 load();
-syncEmailJsBadge();
 syncAuthUI();
 if (!getCurrentUser()) {
   openAuthModal("login");
